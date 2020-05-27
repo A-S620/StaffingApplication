@@ -2,6 +2,9 @@ import setuptools
 from setuptools import setup, find_packages
 import os
 import sys
+from setuptools import setup, find_packages
+
+setup(name="PACKAGENAME", packages=find_packages())
 lib_path = os.path.abspath(os.path.join(__file__, '..', '..', '..', 'lib'))
 sys.path.append(lib_path)
 
@@ -34,7 +37,6 @@ setup(
       },
       #   no dependencies in this example
       install_requires=[
-            'Python=3.7',
             'pip==20.1.1',
             'kivy==1.11.1',
             'Kivy_Garden==0.1.4',
@@ -44,5 +46,5 @@ setup(
       classifiers=[
             'Development Status :: 5 - Production/Stable',
             'Intended Audience :: Science/Research',
-            'Programming Language :: Python :: 3.7'],
+            'Programming Language :: Python :: 3.7.7'],
 )
