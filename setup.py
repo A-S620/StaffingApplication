@@ -4,7 +4,6 @@ import os
 import sys
 from setuptools import setup, find_packages
 
-setup(name="PACKAGENAME", packages=find_packages())
 lib_path = os.path.abspath(os.path.join(__file__, '..', '..', '..', 'lib'))
 sys.path.append(lib_path)
 
