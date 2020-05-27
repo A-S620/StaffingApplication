@@ -1,2 +1,4 @@
 pytest
 pycodestyle
+pip==20.1.1
+kivy==1.11.1

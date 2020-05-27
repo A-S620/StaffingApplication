@@ -6,7 +6,7 @@ lib_path = os.path.abspath(os.path.join(__file__, '..', '..', '..', 'lib'))
 sys.path.append(lib_path)
 
 _here = os.path.abspath(os.path.dirname(__file__))
-with open("README", 'r') as f:
+with open("README.md", 'r') as f:
       long_description = f.read()
 
 
@@ -34,12 +34,15 @@ setup(
       },
       #   no dependencies in this example
       install_requires=[
-            'pip==20.0.1',
-            'Kivy'],
+            'Python=3.7',
+            'pip==20.1.1',
+            'kivy==1.11.1',
+            'Kivy_Garden==0.1.4',
+            'Pygments==2.6.1'],
       #   no scripts in this example
       include_package_data=True,
       classifiers=[
             'Development Status :: 5 - Production/Stable',
             'Intended Audience :: Science/Research',
-            'Programming Language :: Python :: 3.7.7'],
+            'Programming Language :: Python :: 3.7'],
 )
