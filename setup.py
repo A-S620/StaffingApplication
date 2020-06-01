@@ -17,7 +17,7 @@ with open(os.path.join(_here, 'Staffly', 'version.py')) as f:
       exec(f.read(), version)
 
 setup(
-      name='Staffly',
+      name='StaffingApplication',
       version=version['__version__'],
       description=('A human resourcing solution'),
       long_description=long_description,
@@ -27,6 +27,7 @@ setup(
             "Source Code": "https://github.com/AatikaSeedat/StaffingApplication",
       },
       license='MIT',
+      #packages =['Staffly'],
 
       packages=setuptools.find_packages(),
       package_data={
@@ -34,12 +35,19 @@ setup(
             "": ["*.txt", "*.rst"],
             # And include any *.msg files found in the "hello" package, too:
       },
+     # entry_points={
+           # 'console_scripts': [
+                #  'start = Staffly.__main__:main',
+           # ],
+     # },
       #   no dependencies in this example
       install_requires=[
             'pip==20.1.1',
             'kivy==1.11.1',
             'Kivy_Garden==0.1.4',
-            'Pygments==2.6.1'],
+            'Pygments==2.6.1',
+            'kivymd==0.104.1'
+            'pytest==5.4.2'],
       #   no scripts in this example
       include_package_data=True,
       classifiers=[
