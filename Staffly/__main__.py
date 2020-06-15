@@ -4,8 +4,6 @@ __package__ == 'Staffly'
 
 # Imports from project
 # from Staffly.UI.navigation import navigation
-#from .UI import navigation
-#from .navigation import createUI
 from Staffly import navigation
 
 

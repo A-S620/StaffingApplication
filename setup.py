@@ -24,7 +24,7 @@ setup(
     author='Aatika Seedat',
     author_email='aatikaseedat00@gmail.com',
     project_urls={
-        "Source Code": "https://github.com/AatikaSeedat/StaffingApplication",
+        "Source Code": "https://github.com/A-S620/StaffingApplication",
     },
     license='MIT',
     # packages =['Staffly'],
