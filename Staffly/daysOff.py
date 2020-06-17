@@ -1,7 +1,7 @@
 import os
 from kivy.lang import Builder
 from kivy.factory import Factory
-from kivy.properties import ObjectProperty
+from kivy.properties import ObjectProperty, StringProperty
 from kivymd.app import MDApp
 from kivymd.uix.menu import MDDropdownMenu
 from kivymd.uix.picker import MDDatePicker
@@ -9,12 +9,19 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.gridlayout import GridLayout
 from kivy.core.window import Window
 from kivy.uix.spinner import Spinner
-
-
+from kivymd.uix.list import IRightBodyTouch, OneLineAvatarIconListItem
+from kivymd.uix.selectioncontrol import MDCheckbox
+from kivymd.icon_definitions import md_icons
 class daysOff(Screen):
     menu: MDDropdownMenu
     window_sizes = Window.size
     print("window" + str(window_sizes))
+    def holidayType(self):
+        print (1)
+    def sickType(self):
+        print (2)
+
+
 
     def getComment(self):
         comment = self.ids.comment.text

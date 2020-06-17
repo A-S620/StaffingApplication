@@ -8,6 +8,8 @@
 #:import GridLayout  kivy.uix.gridlayout
 #:import utils kivy.utils
 #:import Spinner kivy.uix.spinner
+#:import OneLineListItem kivymd.uix.list
+#:import MDCheckbox kivymd.uix.selectioncontrol
 #include daysOff.py
 
 <daysOff@Screen>:
@@ -28,15 +30,6 @@
             orientation: 'horizontal'
             MDBoxLayout:
                 orientation: 'vertical'
-                AnchorLayout:
-                    anchor_x: 'center'
-                    anchor_y: 'top'
-                    MDRaisedButton:
-                        id: button
-                        text: "PRESS ME"
-                        pos_hint: {"center_x": .5, "center_y": .5}
-                        on_release: root.typeMenu()
-
                 MDBoxLayout:
                     orientation: 'horizontal'
                     AnchorLayout:
@@ -74,6 +67,29 @@
                             theme_text_color: "Primary"
                 MDBoxLayout:
                     orientation: 'vertical'
+                    MDLabel:
+                        text: "Select Type:"
+                        theme_text_color: "Primary"
+                        halign: 'center'
+                        valign: 'top'
+                    AnchorLayout:
+                        anchor_x: 'center'
+                        anchor_y: 'top'
+                        ScrollView:
+                            MDList:
+                                id: type_list
+                                OneLineAvatarIconListItem:
+                                    text: "One-line item with avatar"
+                                    on_release:root.holidayType()
+                                OneLineAvatarIconListItem:
+                                    text: "One-line item with avatar"
+                                    on_release:root.sickType()
+                                OneLineAvatarIconListItem:
+                                    text: "One-line item with avatar"
+                                    on_release:root.holidayType()
+                MDBoxLayout:
+                    orientation: 'vertical'
+
                     AnchorLayout:
                         anchor_x: 'center'
                         anchor_y: 'center'
@@ -90,6 +106,8 @@
                             text: "Submit"
                             on_release: root.getComment()
                             opposite_colors: True
+                MDBoxLayout:
+                    orientation: 'horizontal'
 
 
             MDBoxLayout:
@@ -162,8 +180,12 @@
                             text: "Balance"
                             theme_text_color: "Custom"
                             text_color: 0, 0, 1, 1
-        MDBoxLayout:
-            orientation: 'horizontal'
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                MDBoxLayout:
+                    orientation: 'horizontal'
 
 
 
