@@ -79,14 +79,26 @@
                             MDList:
                                 id: type_list
                                 OneLineAvatarIconListItem:
-                                    text: "One-line item with avatar"
-                                    on_release:root.holidayType()
+                                    text: "Vacation"
+                                    on_release:root.vacationType()
                                 OneLineAvatarIconListItem:
-                                    text: "One-line item with avatar"
-                                    on_release:root.sickType()
+                                    text: "Designated Holiday"
+                                    on_release:root.desHolidayType()
                                 OneLineAvatarIconListItem:
-                                    text: "One-line item with avatar"
-                                    on_release:root.holidayType()
+                                    text: "Illness"
+                                    on_release:root.illnessType()
+                                OneLineAvatarIconListItem:
+                                    text: "Non-Work Learning/ Training"
+                                    on_release:root.nonTrainType()
+                                OneLineAvatarIconListItem:
+                                    text: "Work Learning/ Training"
+                                    on_release:root.workTrainType()
+                                OneLineAvatarIconListItem:
+                                    text: "Military Time Away"
+                                    on_release:root.militaryType()
+                                OneLineAvatarIconListItem:
+                                    text: "Parenting Time Off"
+                                    on_release:root.parentType()
                 MDBoxLayout:
                     orientation: 'vertical'
 
@@ -104,7 +116,7 @@
                         padding: 0,150,0,0
                         MDFillRoundFlatButton:
                             text: "Submit"
-                            on_release: root.getComment()
+                            on_release: root.createDaysOff()
                             opposite_colors: True
                 MDBoxLayout:
                     orientation: 'horizontal'
