@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-
-import Navigation from "./Navigation/Navigation";
-import TextFields from "./DaysOff/TextFields";
+import React, {Component} from 'react';
+import DaysOffTable from "./HomePage/DaysOffTable";
 
 class HomePage extends Component {
     render() {
         return (
-            <div className="HomePage">
+            <div className="HomePage" style={{marginTop: 60}}>
+                <DaysOffTable/>
             </div>
         );
     }

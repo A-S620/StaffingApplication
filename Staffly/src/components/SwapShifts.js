@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
-import DaysOffGrid from "./DaysOff/DaysOffGrid"
-import {Typography, Grid} from "@material-ui/core"
-import DaysOffCalendar from "./DaysOff/DaysOffCalendar";
+import {Grid, Typography} from "@material-ui/core";
+import SwapShiftsGrid from "./SwapShifts/SwapShiftsGrid";
 
-class DaysOff extends Component {
+class SwapShifts extends Component {
     render() {
         return (
-
-            <div className="DaysOff" style={{marginTop: 60}}>
+            <div className="SwapShifts" style={{marginTop: 60}}>
                 <Grid
                     container
                     direction="column"
@@ -16,14 +14,13 @@ class DaysOff extends Component {
                     style={{marginBottom: 30}}
                 >
                     <Typography variant="h4" component="h2" gutterBottom justify="center">
-                        Days Off
+                        Swap Shifts
                     </Typography>
                 </Grid>
-
-                <DaysOffGrid/>
+                <SwapShiftsGrid/>
             </div>
         );
     }
 }
 
-export default DaysOff;
+export default SwapShifts;

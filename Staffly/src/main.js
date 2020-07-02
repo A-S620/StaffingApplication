@@ -7,19 +7,29 @@ import DaysOff from "./components/DaysOff";
 import Navigation from "./components/Navigation/Navigation";
 
 class Main extends Component {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { apiResponse: "" };
+    // }
+    //
+    // callAPI() {
+    //     fetch("http://localhost:9000/testAPI")
+    //         .then(res => res.text())
+    //         .then(res => this.setState({ apiResponse: res }));
+    // }
+    //
+    // componentWillMount() {
+    //     this.callAPI();
+    // }//<p className="App-intro">;{this.state.apiResponse}</p>
     render() {
         return (
             <div className="root">
+
                 <Navigation/>
                 <BrowserRouter basename="/">
                     <Route exact path={"/"}>
-                        <HomePage/>
-                    </Route>
-                    <Route exact path={"/DaysOff"}>
-                        <DaysOff/>
                     </Route>
                 </BrowserRouter>
-
             </div>
 
 

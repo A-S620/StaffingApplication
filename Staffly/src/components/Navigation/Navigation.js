@@ -1,17 +1,19 @@
 import React, {useState} from 'react';
 import clsx from 'clsx';
 import {makeStyles, useTheme} from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
+import {AppBar, Typography, IconButton, Tabs, Toolbar, Drawer, Tab} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
-
 import {useHistory} from "react-router-dom";
-import {Tabs, Toolbar, Drawer, Grid} from "@material-ui/core"
+
 import HomePage from "../HomePage";
 import DaysOff from "../DaysOff";
 import TabPanel from "./TabPanel";
-import Tab from "@material-ui/core/Tab/Tab";
+import SwapShifts from "../SwapShifts";
+import AmendData from "../AmendData";
+import Notifications from "../Notifications";
+import Calendar from "../Calendar";
+import HelpCentre from "../HelpCentre";
+import Settings from "../Settings";
 
 const drawerWidth = 240;
 
@@ -79,10 +81,6 @@ function a11yProps(index) {
 }
 
 export default function Navigation() {
-    const history = useHistory();
-    const toDaysOff = () => history.push('/DaysOff');
-    const toHome = () => history.push('/');
-
 
     const classes = useStyles();
     const theme = useTheme();
@@ -90,6 +88,7 @@ export default function Navigation() {
     const [tab, setTab] = useState(0);
     const handleTabChange=(e, newValue) => {
         setTab(newValue);
+        setOpen(false)
     };
     console.log(tab);
 
@@ -121,7 +120,7 @@ export default function Navigation() {
                     >
                         <MenuIcon/>
                     </IconButton>
-                    <Typography variant="h4" noWrap>
+                    <Typography variant="h6" noWrap>
                         Staffly
                     </Typography>
                 </Toolbar>
@@ -135,64 +134,41 @@ export default function Navigation() {
                     paper: classes.drawerPaper,
                 }}
             >
-                <Tabs value={tab} onChange={handleTabChange}>
-                    <Grid container direction={"column"} alignItems={"center"}>
-                        <Grid item>
-                            <Tab label={"Home"} {...a11yProps(0)}  />
-                        </Grid>
-                        <Grid item>
-                            <Tab label={"Days Off"} {...a11yProps(1)} />
-                        </Grid>
-                    </Grid>
+                <Tabs value={tab} onChange={handleTabChange} orientation={'vertical'}>
+                    <Tab label={"Home"} {...a11yProps(0)}  />
+                    <Tab label={"Days Off"} {...a11yProps(1)} />
+                    <Tab label={"Swap Shifts"} {...a11yProps(2)} />
+                    <Tab label={"Amend Data"} {...a11yProps(3)} />
+                    <Tab label={"Notifications"} {...a11yProps(4)} />
+                    <Tab label={"Calendar"} {...a11yProps(5)} />
+                    <Tab label={"Help Centre"} {...a11yProps(6)} />
+                    <Tab label={"Settings"} {...a11yProps(7)} />
                 </Tabs>
-
-                {/*<div className={classes.drawerHeader}>*/}
-                {/*    <IconButton onClick={handleDrawerClose}>*/}
-                {/*        {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}*/}
-                {/*    </IconButton>*/}
-                {/*</div>*/}
-                {/*<Divider />*/}
-                {/*/!*<List>*!/*/}
-                {/*/!*    <ListItem button onClick={toHome}>*!/*/}
-                {/*/!*        <ListItemText primary="Home" />*!/*/}
-                {/*/!*    </ListItem>*!/*/}
-                {/*/!*    <ListItem button>*!/*/}
-                {/*/!*        <ListItemText primary="Swap Shifts" />*!/*/}
-                {/*/!*    </ListItem>*!/*/}
-                {/*/!*    <ListItem button onClick={toDaysOff}>*!/*/}
-                {/*/!*        <ListItemText primary="Days Off" />*!/*/}
-                {/*/!*    </ListItem>*!/*/}
-                {/*/!*    <ListItem button>*!/*/}
-                {/*/!*        <ListItemText primary="Ammend Data" />*!/*/}
-                {/*/!*    </ListItem>*!/*/}
-
-                {/*/!*</List>*!/*/}
-                {/*<Divider />*/}
-                {/*<List>*/}
-                {/*    <ListItem button>*/}
-                {/*        <ListItemText primary="Notifications" />*/}
-                {/*    </ListItem>*/}
-                {/*    <ListItem button>*/}
-                {/*        <ListItemText primary="Calendar" />*/}
-                {/*    </ListItem>*/}
-                {/*    <ListItem button>*/}
-                {/*        <ListItemText primary="Help Centre" />*/}
-                {/*    </ListItem>*/}
-                {/*    <ListItem button>*/}
-                {/*        <ListItemText primary="Settings" />*/}
-                {/*    </ListItem>*/}
-                {/*</List>*/}
 
             </Drawer>
             <TabPanel value={tab} index={0}>
-                <div style={{marginTop:"200px"}}>
-                    test 1
-                </div>
+                <HomePage/>
             </TabPanel>
             <TabPanel value={tab} index={1}>
-                <div style={{marginTop:"200px"}}>
-                    test 2
-                </div>
+                <DaysOff/>
+            </TabPanel>
+            <TabPanel value={tab} index={2}>
+                <SwapShifts/>
+            </TabPanel>
+            <TabPanel value={tab} index={3}>
+                <AmendData/>
+            </TabPanel>
+            <TabPanel value={tab} index={4}>
+                <Notifications/>
+            </TabPanel>
+            <TabPanel value={tab} index={5}>
+                <Calendar/>
+            </TabPanel>
+            <TabPanel value={tab} index={6}>
+                <HelpCentre/>
+            </TabPanel>
+            <TabPanel value={tab} index={7}>
+                <Settings/>
             </TabPanel>
         </div>
     );
