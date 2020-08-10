@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyComponent should render correctly in "debug" mode 1`] = `
+<div
+  className="Notifications"
+  style={
+    Object {
+      "marginTop": 60,
+    }
+  }
+>
+  <div>
+    test 5
+  </div>
+</div>
+`;

@@ -1,29 +1,30 @@
-import React, {Component} from 'react';
-import DaysOffGrid from "./DaysOff/DaysOffGrid"
-import {Typography, Grid} from "@material-ui/core"
-import DaysOffCalendar from "./DaysOff/DaysOffCalendar";
+import React from 'react';
+import {Grid, makeStyles, Paper} from "@material-ui/core";
+import DaysOffStepper from "./DaysOff/DaysOffStepper";
 
-class DaysOff extends Component {
-    render() {
-        return (
+const useStyles = makeStyles((theme) => ({
+    root: {
+        width: '100%',
+    },
+    container: {
+        width: '40%'
+    },
 
-            <div className="DaysOff" style={{marginTop: 60}}>
-                <Grid
-                    container
-                    direction="column"
-                    justify="flex-start"
-                    alignItems="center"
-                    style={{marginBottom: 30}}
-                >
-                    <Typography variant="h4" component="h2" gutterBottom justify="center">
-                        Days Off
-                    </Typography>
-                </Grid>
+}));
+export default function DaysOff() {
+    const classes = useStyles();
 
-                <DaysOffGrid/>
-            </div>
-        );
-    }
+    return (
+        <Grid className={classes.root}
+              direction="column"
+              justify="center"
+              alignItems="center">
+            <Paper>
+                <DaysOffStepper/>
+            </Paper>
+        </Grid>
+
+
+    );
+
 }
-
-export default DaysOff;

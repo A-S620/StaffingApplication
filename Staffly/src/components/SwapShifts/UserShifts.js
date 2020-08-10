@@ -1,54 +1,52 @@
 import React from 'react';
-import {Grid, makeStyles, Typography} from '@material-ui/core';
-import ShiftToSwap from "./ShiftToSwap";
-import NewShift from "./NewShift";
+import {makeStyles} from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-        '& > *': {
-            margin: theme.spacing(1),
-            width: theme.spacing(50),
-            height: theme.spacing(50),
-        },
+    formControl: {
+        margin: theme.spacing(1),
+        minWidth: 120,
     },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
+    selectEmpty: {
+        marginTop: theme.spacing(2),
     },
-    container: {
-        maxHeight: '100%',
-        width: '100%',
-    },
-    TextField: {
-        marginTop: "30px",
-        padding: "40px"
-    }
 }));
 
 export default function UserShifts() {
     const classes = useStyles();
+    const [value, setValue] = React.useState({
+        typeSelect: '',
+    });
+
+
 
     return (
-        <Grid
-            container
-            direction="column"
-            justify="center"
-            alignItems="flex-start"
-        >
-            <Grid item>
-                <Typography variant="h6" gutterBottom justify="center">
-                    Select Your shift:
-                </Typography>
-            </Grid>
-            <Grid item>
-                <ShiftToSwap/>
-            </Grid>
+        <FormControl className={classes.formControl}>
+            <InputLabel htmlFor="type-selector">Your Shift</InputLabel>
+            <Select
+                native
+                value={value}
+                onChange={(event) => {
+                    setValue(event.target.value);
+                    console.log("value   " + value.toString())
+                }}
+                inputProps={{
+                    name: 'typeSelector',
+                    id: 'type-selector',
+                }}
+            >
+                <option aria-label="None" value=""/>
+                <option value={1}>Vacation</option>
+                <option value={2}>Designated Holiday</option>
+                <option value={3}>Illness</option>
+                <option value={4}>Non-work learning/ Training</option>
+                <option value={5}>Work learning/ Training</option>
+                <option value={6}>Military Time Off</option>
+                <option value={7}>Parenting Time Off</option>
 
-
-        </Grid>
-
-
+            </Select>
+        </FormControl>
     );
 }

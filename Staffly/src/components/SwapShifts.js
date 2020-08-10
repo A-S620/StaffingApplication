@@ -1,26 +1,27 @@
-import React, {Component} from 'react';
-import {Grid, Typography} from "@material-ui/core";
-import SwapShiftsGrid from "./SwapShifts/SwapShiftsGrid";
+import React from 'react';
+import {Grid} from "@material-ui/core";
+import SwapCard from "./SwapShifts/SwapCard";
 
-class SwapShifts extends Component {
-    render() {
-        return (
-            <div className="SwapShifts" style={{marginTop: 60}}>
-                <Grid
-                    container
-                    direction="column"
-                    justify="flex-start"
-                    alignItems="center"
-                    style={{marginBottom: 30}}
-                >
-                    <Typography variant="h4" component="h2" gutterBottom justify="center">
-                        Swap Shifts
-                    </Typography>
-                </Grid>
-                <SwapShiftsGrid/>
-            </div>
-        );
-    }
+export default function SwapShifts() {
+    return (
+        <Grid style={{marginTop: 10}}
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+        >
+            <Grid
+                container
+                direction="column"
+                justify="flex-start"
+                alignItems="center"
+                style={{marginBottom: 20}}
+            >
+                <SwapCard/>
+            </Grid>
+
+
+        </Grid>
+    )
 }
 
-export default SwapShifts;

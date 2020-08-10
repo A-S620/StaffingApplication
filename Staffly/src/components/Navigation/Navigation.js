@@ -1,9 +1,6 @@
 import React, {useState} from 'react';
-import clsx from 'clsx';
 import {makeStyles, useTheme} from '@material-ui/core/styles';
-import {AppBar, Typography, IconButton, Tabs, Toolbar, Drawer, Tab} from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu';
-import {useHistory} from "react-router-dom";
+import {Drawer, Tab, Tabs, Typography} from '@material-ui/core'
 
 import HomePage from "../HomePage";
 import DaysOff from "../DaysOff";
@@ -20,20 +17,6 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
-    },
-    appBar: {
-        transition: theme.transitions.create(['margin', 'width'], {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
-        }),
-    },
-    appBarShift: {
-        width: `calc(100% - ${drawerWidth}px)`,
-        marginLeft: drawerWidth,
-        transition: theme.transitions.create(['margin', 'width'], {
-            easing: theme.transitions.easing.easeOut,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -54,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(0, 1),
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
     },
     content: {
         flexGrow: 1,
@@ -72,7 +55,9 @@ const useStyles = makeStyles((theme) => ({
         }),
         marginLeft: 0,
     },
+
 }));
+
 function a11yProps(index) {
     return {
         id: `simple-tab-${index}`,
@@ -86,9 +71,9 @@ export default function Navigation() {
     const theme = useTheme();
     const [open, setOpen] = useState(false);
     const [tab, setTab] = useState(0);
-    const handleTabChange=(e, newValue) => {
+    const handleTabChange = (e, newValue) => {
         setTab(newValue);
-        setOpen(false)
+        setOpen(true)
     };
     console.log(tab);
 
@@ -102,39 +87,21 @@ export default function Navigation() {
 
 
     return (
-
         <div className={classes.root}>
-            <AppBar
-                position="fixed"
-                className={clsx(classes.appBar, {
-                    [classes.appBarShift]: open,
-                })}
-            >
-                <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        onClick={handleDrawerOpen}
-                        edge="start"
-                        className={clsx(classes.menuButton, open && classes.hide)}
-                    >
-                        <MenuIcon/>
-                    </IconButton>
-                    <Typography variant="h6" noWrap>
-                        Staffly
-                    </Typography>
-                </Toolbar>
-            </AppBar>
             <Drawer
                 className={classes.drawer}
-                variant="persistent"
+                variant="permanent"
                 anchor="left"
                 open={open}
                 classes={{
                     paper: classes.drawerPaper,
                 }}
             >
-                <Tabs value={tab} onChange={handleTabChange} orientation={'vertical'}>
+                <div className={classes.drawerHeader}>
+                <Typography variant="h6" noWrap align="center">
+                    Staffly
+                </Typography></div>
+                <Tabs value={tab} onChange={handleTabChange} orientation={'vertical'} indicatorColor="primary" textColor="primary">
                     <Tab label={"Home"} {...a11yProps(0)}  />
                     <Tab label={"Days Off"} {...a11yProps(1)} />
                     <Tab label={"Swap Shifts"} {...a11yProps(2)} />

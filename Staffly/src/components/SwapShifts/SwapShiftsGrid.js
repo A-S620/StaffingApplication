@@ -1,6 +1,8 @@
 import React from 'react';
-import {Box, Grid, makeStyles} from '@material-ui/core';
-import ShiftGrid from "./ShiftGrid";
+import {Box, makeStyles} from '@material-ui/core';
+import UserShifts from "./UserShifts";
+import NewShift from "./NewShift";
+import Comment from "./Comment";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,18 +32,11 @@ export default function SwapShiftsGrid() {
     const classes = useStyles();
 
     return (
-        <Box
-            display="flex"
-            flexWrap="nowrap"
-            alignItems="center"
-            justify="center"
-        >
-            <ShiftGrid/>
+        <Box display="flex" justifyContent="center" orientation="vertical">
+            <UserShifts/>
+            <NewShift/>
+            <Comment/>
         </Box>
-
-
-
-
 
 
     );

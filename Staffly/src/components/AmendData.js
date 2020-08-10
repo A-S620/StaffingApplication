@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-
+import LeaveTable from "./AmendData/ShiftsTable";
+import AmendButttons from "./AmendData/AmendButttons";
 
 class AmendData extends Component {
     render() {
         return (
-            <div className="AmendData" style={{marginTop:60}} >
-                <div>
-                    test 1
-                </div>
+            <div className="AmendData" >
+                <LeaveTable/>
+                <AmendButttons/>
             </div>
         );
     }

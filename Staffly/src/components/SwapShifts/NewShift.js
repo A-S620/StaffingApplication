@@ -1,56 +1,51 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import {List, ListItemText, ListItemSecondaryAction, ListItem, ListSubheader} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        width: 200,
-        maxWidth: 360,
-        backgroundColor: theme.palette.background.paper,
-        position: 'relative',
-        overflow: 'auto',
-        maxHeight: 250,
+    formControl: {
+        margin: theme.spacing(1),
+        minWidth: 120,
     },
-    listSection: {
-        backgroundColor: 'inherit',
-    },
-    ul: {
-        backgroundColor: 'inherit',
-        padding: 0,
+    selectEmpty: {
+        marginTop: theme.spacing(2),
     },
 }));
 
 export default function NewShift() {
     const classes = useStyles();
-    const [checked, setChecked] = React.useState([1]);
+    const [value, setValue] = React.useState({
+        typeSelect: '',
+    });
 
-    const handleToggle = (value) => () => {
-        const currentIndex = checked.indexOf(value);
-        const newChecked = [...checked];
-
-        if (currentIndex === -1) {
-            newChecked.push(value);
-        } else {
-            newChecked.splice(currentIndex, 1);
-        }
-
-        setChecked(newChecked);
-    };
 
     return (
-        <List className={classes.root} subheader={<li />}>
-            {[0, 1, 2, 3, 4].map((sectionId) => (
-                <li key={`section-${sectionId}`} className={classes.listSection}>
-                    <ul className={classes.ul}>
-                        <ListSubheader>{`I'm sticky ${sectionId}`}</ListSubheader>
-                        {[0, 1, 2].map((item) => (
-                            <ListItem key={`item-${sectionId}-${item}`}>
-                                <ListItemText primary={`Item ${item}`} />
-                            </ListItem>
-                        ))}
-                    </ul>
-                </li>
-            ))}
-        </List>
+        <FormControl className={classes.formControl}>
+            <InputLabel htmlFor="type-selector">Swap With</InputLabel>
+            <Select
+                native
+                value={value}
+                onChange={(event) => {
+                    setValue(event.target.value);
+                    console.log("value   " + value.toString())
+                }}
+                inputProps={{
+                    name: 'typeSelector',
+                    id: 'type-selector',
+                }}
+            >
+                <option aria-label="None" value=""/>
+                <option value={1}>Vacation</option>
+                <option value={2}>Designated Holiday</option>
+                <option value={3}>Illness</option>
+                <option value={4}>Non-work learning/ Training</option>
+                <option value={5}>Work learning/ Training</option>
+                <option value={6}>Military Time Off</option>
+                <option value={7}>Parenting Time Off</option>
+
+            </Select>
+        </FormControl>
     );
 }

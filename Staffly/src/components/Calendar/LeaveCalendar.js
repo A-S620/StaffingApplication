@@ -1,34 +1,37 @@
 import * as React from 'react';
 import Paper from '@material-ui/core/Paper';
-import { ViewState } from '@devexpress/dx-react-scheduler';
 import {
     Scheduler,
-    DayView,
+    WeekView,
     Appointments,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
-const currentDate = '2018-11-01';
-const schedulerData = [
-    { startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting' },
-    { startDate: '2018-11-01T12:00', endDate: '2018-11-01T13:30', title: 'Go to a gym' },
-];
+import appointments from '../demo-data/today-appointments';
 
-export default function  Scheduler() (
-    return(
+export default class LeaveCalendar extends React.PureComponent {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: appointments,
+        };
+    }
+
+    render() {
+        const { data } = this.state;
+
+        return (
             <Paper>
                 <Scheduler
-                    data={schedulerData}
+                    data={data}
+                    height={660}
                 >
-                    <ViewState
-                        currentDate={currentDate}
-                    />
-                    <DayView
+                    <WeekView
                         startDayHour={9}
-                        endDayHour={14}
+                        endDayHour={19}
                     />
                     <Appointments />
                 </Scheduler>
             </Paper>
-        )
-
-);
+        );
+    }
+}
