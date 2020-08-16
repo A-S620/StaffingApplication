@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MyComponent should render correctly in "debug" mode 1`] = `
+exports[`Shifts Table should render correctly 1`] = `
 <Provider
   store={
     Object {
@@ -12,18 +12,25 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
     }
   }
 >
-  <Connect(DaysOffTable)>
-    <DaysOffTable
-      daysoff={
+  <Connect(ShiftsTable)>
+    <ShiftsTable
+      shifts={
         Array [
           Object {
-            "Comment": "Approved by team lead",
-            "EndDate": "24/07/2020",
-            "PersonId": "2444",
-            "RequestDate": "13/07/2020",
-            "RequestId": "123",
-            "StartDate": "20/07/2020",
-            "TypeId": "1",
+            "Location": "G336",
+            "PersonId": 244,
+            "ShiftEndDate": "27/03/2020",
+            "ShiftId": 233,
+            "ShiftStartDate": "27/03/2020",
+            "ShiftType": 1,
+          },
+          Object {
+            "Location": "G336",
+            "PersonId": 244,
+            "ShiftEndDate": "28/06/2020",
+            "ShiftId": 234,
+            "ShiftStartDate": "27/06/2020",
+            "ShiftType": 2,
           },
         ]
       }
@@ -131,10 +138,10 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                     role={null}
                                   >
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="RequestID"
+                                      key="ShiftId"
                                       style={
                                         Object {
-                                          "minWidth": 50,
+                                          "minWidth": 170,
                                         }
                                       }
                                     >
@@ -157,7 +164,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                         }
                                         style={
                                           Object {
-                                            "minWidth": 50,
+                                            "minWidth": 170,
                                           }
                                         }
                                       >
@@ -167,56 +174,11 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           scope="col"
                                           style={
                                             Object {
-                                              "minWidth": 50,
+                                              "minWidth": 170,
                                             }
                                           }
                                         >
-                                          Request ID
-                                        </th>
-                                      </ForwardRef(TableCell)>
-                                    </WithStyles(ForwardRef(TableCell))>
-                                    <WithStyles(ForwardRef(TableCell))
-                                      key="TypeId"
-                                      style={
-                                        Object {
-                                          "minWidth": 50,
-                                        }
-                                      }
-                                    >
-                                      <ForwardRef(TableCell)
-                                        classes={
-                                          Object {
-                                            "alignCenter": "MuiTableCell-alignCenter",
-                                            "alignJustify": "MuiTableCell-alignJustify",
-                                            "alignLeft": "MuiTableCell-alignLeft",
-                                            "alignRight": "MuiTableCell-alignRight",
-                                            "body": "MuiTableCell-body",
-                                            "footer": "MuiTableCell-footer",
-                                            "head": "MuiTableCell-head",
-                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
-                                            "paddingNone": "MuiTableCell-paddingNone",
-                                            "root": "MuiTableCell-root",
-                                            "sizeSmall": "MuiTableCell-sizeSmall",
-                                            "stickyHeader": "MuiTableCell-stickyHeader",
-                                          }
-                                        }
-                                        style={
-                                          Object {
-                                            "minWidth": 50,
-                                          }
-                                        }
-                                      >
-                                        <th
-                                          aria-sort={null}
-                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader"
-                                          scope="col"
-                                          style={
-                                            Object {
-                                              "minWidth": 50,
-                                            }
-                                          }
-                                        >
-                                          Type ID
+                                          Shift ID
                                         </th>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
@@ -266,7 +228,8 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="RequestDate"
+                                      align="right"
+                                      key="ShiftStartDate"
                                       style={
                                         Object {
                                           "minWidth": 170,
@@ -274,6 +237,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       }
                                     >
                                       <ForwardRef(TableCell)
+                                        align="right"
                                         classes={
                                           Object {
                                             "alignCenter": "MuiTableCell-alignCenter",
@@ -298,52 +262,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       >
                                         <th
                                           aria-sort={null}
-                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader"
-                                          scope="col"
-                                          style={
-                                            Object {
-                                              "minWidth": 170,
-                                            }
-                                          }
-                                        >
-                                          Request Date
-                                        </th>
-                                      </ForwardRef(TableCell)>
-                                    </WithStyles(ForwardRef(TableCell))>
-                                    <WithStyles(ForwardRef(TableCell))
-                                      key="StartDate"
-                                      style={
-                                        Object {
-                                          "minWidth": 170,
-                                        }
-                                      }
-                                    >
-                                      <ForwardRef(TableCell)
-                                        classes={
-                                          Object {
-                                            "alignCenter": "MuiTableCell-alignCenter",
-                                            "alignJustify": "MuiTableCell-alignJustify",
-                                            "alignLeft": "MuiTableCell-alignLeft",
-                                            "alignRight": "MuiTableCell-alignRight",
-                                            "body": "MuiTableCell-body",
-                                            "footer": "MuiTableCell-footer",
-                                            "head": "MuiTableCell-head",
-                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
-                                            "paddingNone": "MuiTableCell-paddingNone",
-                                            "root": "MuiTableCell-root",
-                                            "sizeSmall": "MuiTableCell-sizeSmall",
-                                            "stickyHeader": "MuiTableCell-stickyHeader",
-                                          }
-                                        }
-                                        style={
-                                          Object {
-                                            "minWidth": 170,
-                                          }
-                                        }
-                                      >
-                                        <th
-                                          aria-sort={null}
-                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader"
+                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight MuiTableCell-stickyHeader"
                                           scope="col"
                                           style={
                                             Object {
@@ -356,7 +275,8 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="EndDate"
+                                      align="right"
+                                      key="ShiftEndDate"
                                       style={
                                         Object {
                                           "minWidth": 170,
@@ -364,6 +284,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       }
                                     >
                                       <ForwardRef(TableCell)
+                                        align="right"
                                         classes={
                                           Object {
                                             "alignCenter": "MuiTableCell-alignCenter",
@@ -388,7 +309,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       >
                                         <th
                                           aria-sort={null}
-                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader"
+                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight MuiTableCell-stickyHeader"
                                           scope="col"
                                           style={
                                             Object {
@@ -401,7 +322,8 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="Comment"
+                                      align="right"
+                                      key="ShiftType"
                                       style={
                                         Object {
                                           "minWidth": 170,
@@ -409,6 +331,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       }
                                     >
                                       <ForwardRef(TableCell)
+                                        align="right"
                                         classes={
                                           Object {
                                             "alignCenter": "MuiTableCell-alignCenter",
@@ -433,7 +356,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       >
                                         <th
                                           aria-sort={null}
-                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader"
+                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight MuiTableCell-stickyHeader"
                                           scope="col"
                                           style={
                                             Object {
@@ -441,7 +364,52 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                             }
                                           }
                                         >
-                                          Comment
+                                          Shift Type
+                                        </th>
+                                      </ForwardRef(TableCell)>
+                                    </WithStyles(ForwardRef(TableCell))>
+                                    <WithStyles(ForwardRef(TableCell))
+                                      key="Location"
+                                      style={
+                                        Object {
+                                          "minWidth": 100,
+                                        }
+                                      }
+                                    >
+                                      <ForwardRef(TableCell)
+                                        classes={
+                                          Object {
+                                            "alignCenter": "MuiTableCell-alignCenter",
+                                            "alignJustify": "MuiTableCell-alignJustify",
+                                            "alignLeft": "MuiTableCell-alignLeft",
+                                            "alignRight": "MuiTableCell-alignRight",
+                                            "body": "MuiTableCell-body",
+                                            "footer": "MuiTableCell-footer",
+                                            "head": "MuiTableCell-head",
+                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
+                                            "paddingNone": "MuiTableCell-paddingNone",
+                                            "root": "MuiTableCell-root",
+                                            "sizeSmall": "MuiTableCell-sizeSmall",
+                                            "stickyHeader": "MuiTableCell-stickyHeader",
+                                          }
+                                        }
+                                        style={
+                                          Object {
+                                            "minWidth": 100,
+                                          }
+                                        }
+                                      >
+                                        <th
+                                          aria-sort={null}
+                                          className="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader"
+                                          scope="col"
+                                          style={
+                                            Object {
+                                              "minWidth": 100,
+                                            }
+                                          }
+                                        >
+                                          Location
                                         </th>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
@@ -465,7 +433,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                             >
                               <WithStyles(ForwardRef(TableRow))
                                 hover={true}
-                                key="123"
+                                key="233"
                                 role="checkbox"
                                 tabIndex={-1}
                               >
@@ -489,34 +457,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                     tabIndex={-1}
                                   >
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="RequestID"
-                                    >
-                                      <ForwardRef(TableCell)
-                                        classes={
-                                          Object {
-                                            "alignCenter": "MuiTableCell-alignCenter",
-                                            "alignJustify": "MuiTableCell-alignJustify",
-                                            "alignLeft": "MuiTableCell-alignLeft",
-                                            "alignRight": "MuiTableCell-alignRight",
-                                            "body": "MuiTableCell-body",
-                                            "footer": "MuiTableCell-footer",
-                                            "head": "MuiTableCell-head",
-                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
-                                            "paddingNone": "MuiTableCell-paddingNone",
-                                            "root": "MuiTableCell-root",
-                                            "sizeSmall": "MuiTableCell-sizeSmall",
-                                            "stickyHeader": "MuiTableCell-stickyHeader",
-                                          }
-                                        }
-                                      >
-                                        <td
-                                          aria-sort={null}
-                                          className="MuiTableCell-root MuiTableCell-body"
-                                        />
-                                      </ForwardRef(TableCell)>
-                                    </WithStyles(ForwardRef(TableCell))>
-                                    <WithStyles(ForwardRef(TableCell))
-                                      key="TypeId"
+                                      key="ShiftId"
                                     >
                                       <ForwardRef(TableCell)
                                         classes={
@@ -540,7 +481,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           aria-sort={null}
                                           className="MuiTableCell-root MuiTableCell-body"
                                         >
-                                          1
+                                          233
                                         </td>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
@@ -569,12 +510,105 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           aria-sort={null}
                                           className="MuiTableCell-root MuiTableCell-body"
                                         >
-                                          2444
+                                          244
                                         </td>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="RequestDate"
+                                      align="right"
+                                      key="ShiftStartDate"
+                                    >
+                                      <ForwardRef(TableCell)
+                                        align="right"
+                                        classes={
+                                          Object {
+                                            "alignCenter": "MuiTableCell-alignCenter",
+                                            "alignJustify": "MuiTableCell-alignJustify",
+                                            "alignLeft": "MuiTableCell-alignLeft",
+                                            "alignRight": "MuiTableCell-alignRight",
+                                            "body": "MuiTableCell-body",
+                                            "footer": "MuiTableCell-footer",
+                                            "head": "MuiTableCell-head",
+                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
+                                            "paddingNone": "MuiTableCell-paddingNone",
+                                            "root": "MuiTableCell-root",
+                                            "sizeSmall": "MuiTableCell-sizeSmall",
+                                            "stickyHeader": "MuiTableCell-stickyHeader",
+                                          }
+                                        }
+                                      >
+                                        <td
+                                          aria-sort={null}
+                                          className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                                        >
+                                          27/03/2020
+                                        </td>
+                                      </ForwardRef(TableCell)>
+                                    </WithStyles(ForwardRef(TableCell))>
+                                    <WithStyles(ForwardRef(TableCell))
+                                      align="right"
+                                      key="ShiftEndDate"
+                                    >
+                                      <ForwardRef(TableCell)
+                                        align="right"
+                                        classes={
+                                          Object {
+                                            "alignCenter": "MuiTableCell-alignCenter",
+                                            "alignJustify": "MuiTableCell-alignJustify",
+                                            "alignLeft": "MuiTableCell-alignLeft",
+                                            "alignRight": "MuiTableCell-alignRight",
+                                            "body": "MuiTableCell-body",
+                                            "footer": "MuiTableCell-footer",
+                                            "head": "MuiTableCell-head",
+                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
+                                            "paddingNone": "MuiTableCell-paddingNone",
+                                            "root": "MuiTableCell-root",
+                                            "sizeSmall": "MuiTableCell-sizeSmall",
+                                            "stickyHeader": "MuiTableCell-stickyHeader",
+                                          }
+                                        }
+                                      >
+                                        <td
+                                          aria-sort={null}
+                                          className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                                        >
+                                          27/03/2020
+                                        </td>
+                                      </ForwardRef(TableCell)>
+                                    </WithStyles(ForwardRef(TableCell))>
+                                    <WithStyles(ForwardRef(TableCell))
+                                      align="right"
+                                      key="ShiftType"
+                                    >
+                                      <ForwardRef(TableCell)
+                                        align="right"
+                                        classes={
+                                          Object {
+                                            "alignCenter": "MuiTableCell-alignCenter",
+                                            "alignJustify": "MuiTableCell-alignJustify",
+                                            "alignLeft": "MuiTableCell-alignLeft",
+                                            "alignRight": "MuiTableCell-alignRight",
+                                            "body": "MuiTableCell-body",
+                                            "footer": "MuiTableCell-footer",
+                                            "head": "MuiTableCell-head",
+                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
+                                            "paddingNone": "MuiTableCell-paddingNone",
+                                            "root": "MuiTableCell-root",
+                                            "sizeSmall": "MuiTableCell-sizeSmall",
+                                            "stickyHeader": "MuiTableCell-stickyHeader",
+                                          }
+                                        }
+                                      >
+                                        <td
+                                          aria-sort={null}
+                                          className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                                        >
+                                          1
+                                        </td>
+                                      </ForwardRef(TableCell)>
+                                    </WithStyles(ForwardRef(TableCell))>
+                                    <WithStyles(ForwardRef(TableCell))
+                                      key="Location"
                                     >
                                       <ForwardRef(TableCell)
                                         classes={
@@ -598,12 +632,40 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           aria-sort={null}
                                           className="MuiTableCell-root MuiTableCell-body"
                                         >
-                                          13/07/2020
+                                          G336
                                         </td>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
+                                  </tr>
+                                </ForwardRef(TableRow)>
+                              </WithStyles(ForwardRef(TableRow))>
+                              <WithStyles(ForwardRef(TableRow))
+                                hover={true}
+                                key="234"
+                                role="checkbox"
+                                tabIndex={-1}
+                              >
+                                <ForwardRef(TableRow)
+                                  classes={
+                                    Object {
+                                      "footer": "MuiTableRow-footer",
+                                      "head": "MuiTableRow-head",
+                                      "hover": "MuiTableRow-hover",
+                                      "root": "MuiTableRow-root",
+                                      "selected": "Mui-selected",
+                                    }
+                                  }
+                                  hover={true}
+                                  role="checkbox"
+                                  tabIndex={-1}
+                                >
+                                  <tr
+                                    className="MuiTableRow-root MuiTableRow-hover"
+                                    role="checkbox"
+                                    tabIndex={-1}
+                                  >
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="StartDate"
+                                      key="ShiftId"
                                     >
                                       <ForwardRef(TableCell)
                                         classes={
@@ -627,12 +689,12 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           aria-sort={null}
                                           className="MuiTableCell-root MuiTableCell-body"
                                         >
-                                          20/07/2020
+                                          234
                                         </td>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="EndDate"
+                                      key="PersonId"
                                     >
                                       <ForwardRef(TableCell)
                                         classes={
@@ -656,12 +718,105 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           aria-sort={null}
                                           className="MuiTableCell-root MuiTableCell-body"
                                         >
-                                          24/07/2020
+                                          244
                                         </td>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
                                     <WithStyles(ForwardRef(TableCell))
-                                      key="Comment"
+                                      align="right"
+                                      key="ShiftStartDate"
+                                    >
+                                      <ForwardRef(TableCell)
+                                        align="right"
+                                        classes={
+                                          Object {
+                                            "alignCenter": "MuiTableCell-alignCenter",
+                                            "alignJustify": "MuiTableCell-alignJustify",
+                                            "alignLeft": "MuiTableCell-alignLeft",
+                                            "alignRight": "MuiTableCell-alignRight",
+                                            "body": "MuiTableCell-body",
+                                            "footer": "MuiTableCell-footer",
+                                            "head": "MuiTableCell-head",
+                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
+                                            "paddingNone": "MuiTableCell-paddingNone",
+                                            "root": "MuiTableCell-root",
+                                            "sizeSmall": "MuiTableCell-sizeSmall",
+                                            "stickyHeader": "MuiTableCell-stickyHeader",
+                                          }
+                                        }
+                                      >
+                                        <td
+                                          aria-sort={null}
+                                          className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                                        >
+                                          27/06/2020
+                                        </td>
+                                      </ForwardRef(TableCell)>
+                                    </WithStyles(ForwardRef(TableCell))>
+                                    <WithStyles(ForwardRef(TableCell))
+                                      align="right"
+                                      key="ShiftEndDate"
+                                    >
+                                      <ForwardRef(TableCell)
+                                        align="right"
+                                        classes={
+                                          Object {
+                                            "alignCenter": "MuiTableCell-alignCenter",
+                                            "alignJustify": "MuiTableCell-alignJustify",
+                                            "alignLeft": "MuiTableCell-alignLeft",
+                                            "alignRight": "MuiTableCell-alignRight",
+                                            "body": "MuiTableCell-body",
+                                            "footer": "MuiTableCell-footer",
+                                            "head": "MuiTableCell-head",
+                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
+                                            "paddingNone": "MuiTableCell-paddingNone",
+                                            "root": "MuiTableCell-root",
+                                            "sizeSmall": "MuiTableCell-sizeSmall",
+                                            "stickyHeader": "MuiTableCell-stickyHeader",
+                                          }
+                                        }
+                                      >
+                                        <td
+                                          aria-sort={null}
+                                          className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                                        >
+                                          28/06/2020
+                                        </td>
+                                      </ForwardRef(TableCell)>
+                                    </WithStyles(ForwardRef(TableCell))>
+                                    <WithStyles(ForwardRef(TableCell))
+                                      align="right"
+                                      key="ShiftType"
+                                    >
+                                      <ForwardRef(TableCell)
+                                        align="right"
+                                        classes={
+                                          Object {
+                                            "alignCenter": "MuiTableCell-alignCenter",
+                                            "alignJustify": "MuiTableCell-alignJustify",
+                                            "alignLeft": "MuiTableCell-alignLeft",
+                                            "alignRight": "MuiTableCell-alignRight",
+                                            "body": "MuiTableCell-body",
+                                            "footer": "MuiTableCell-footer",
+                                            "head": "MuiTableCell-head",
+                                            "paddingCheckbox": "MuiTableCell-paddingCheckbox",
+                                            "paddingNone": "MuiTableCell-paddingNone",
+                                            "root": "MuiTableCell-root",
+                                            "sizeSmall": "MuiTableCell-sizeSmall",
+                                            "stickyHeader": "MuiTableCell-stickyHeader",
+                                          }
+                                        }
+                                      >
+                                        <td
+                                          aria-sort={null}
+                                          className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                                        >
+                                          2
+                                        </td>
+                                      </ForwardRef(TableCell)>
+                                    </WithStyles(ForwardRef(TableCell))>
+                                    <WithStyles(ForwardRef(TableCell))
+                                      key="Location"
                                     >
                                       <ForwardRef(TableCell)
                                         classes={
@@ -685,7 +840,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           aria-sort={null}
                                           className="MuiTableCell-root MuiTableCell-body"
                                         >
-                                          Approved by team lead
+                                          G336
                                         </td>
                                       </ForwardRef(TableCell)>
                                     </WithStyles(ForwardRef(TableCell))>
@@ -703,7 +858,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
             </WithStyles(ForwardRef(TableContainer))>
             <WithStyles(ForwardRef(TablePagination))
               component="div"
-              count={1}
+              count={2}
               onChangePage={[Function]}
               onChangeRowsPerPage={[Function]}
               page={0}
@@ -732,7 +887,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                   }
                 }
                 component="div"
-                count={1}
+                count={2}
                 onChangePage={[Function]}
                 onChangeRowsPerPage={[Function]}
                 page={0}
@@ -771,7 +926,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                         <WithStyles(ForwardRef(Typography))
                           className="MuiTablePagination-caption"
                           color="inherit"
-                          id="mui-39436"
+                          id="mui-99531"
                           variant="body2"
                         >
                           <ForwardRef(Typography)
@@ -811,12 +966,12 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                               }
                             }
                             color="inherit"
-                            id="mui-39436"
+                            id="mui-99531"
                             variant="body2"
                           >
                             <p
                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                              id="mui-39436"
+                              id="mui-99531"
                             >
                               Rows per page:
                             </p>
@@ -829,13 +984,13 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                               "select": "MuiTablePagination-select",
                             }
                           }
-                          id="mui-85433"
+                          id="mui-14513"
                           input={
                             <ForwardRef(WithStyles)
                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                             />
                           }
-                          labelId="mui-39436"
+                          labelId="mui-99531"
                           onChange={[Function]}
                           value={10}
                         >
@@ -855,13 +1010,13 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                 "selectMenu": "MuiSelect-selectMenu",
                               }
                             }
-                            id="mui-85433"
+                            id="mui-14513"
                             input={
                               <ForwardRef(WithStyles)
                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                               />
                             }
-                            labelId="mui-39436"
+                            labelId="mui-99531"
                             onChange={[Function]}
                             value={10}
                           >
@@ -915,7 +1070,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                   },
                                   "MenuProps": undefined,
                                   "SelectDisplayProps": Object {
-                                    "id": "mui-85433",
+                                    "id": "mui-14513",
                                   },
                                   "autoWidth": false,
                                   "children": Array [
@@ -952,7 +1107,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   },
                                   "displayEmpty": false,
-                                  "labelId": "mui-39436",
+                                  "labelId": "mui-99531",
                                   "multiple": false,
                                   "onClose": undefined,
                                   "onOpen": undefined,
@@ -1037,7 +1192,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                     },
                                     "MenuProps": undefined,
                                     "SelectDisplayProps": Object {
-                                      "id": "mui-85433",
+                                      "id": "mui-14513",
                                     },
                                     "autoWidth": false,
                                     "children": Array [
@@ -1074,7 +1229,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       "selectMenu": "MuiSelect-selectMenu",
                                     },
                                     "displayEmpty": false,
-                                    "labelId": "mui-39436",
+                                    "labelId": "mui-99531",
                                     "multiple": false,
                                     "onClose": undefined,
                                     "onOpen": undefined,
@@ -1104,7 +1259,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                     }
                                     SelectDisplayProps={
                                       Object {
-                                        "id": "mui-85433",
+                                        "id": "mui-14513",
                                       }
                                     }
                                     autoWidth={false}
@@ -1126,7 +1281,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                     }
                                     displayEmpty={false}
                                     inputRef={[Function]}
-                                    labelId="mui-39436"
+                                    labelId="mui-99531"
                                     multiple={false}
                                     onAnimationStart={[Function]}
                                     onBlur={[Function]}
@@ -1137,9 +1292,9 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                   >
                                     <div
                                       aria-haspopup="listbox"
-                                      aria-labelledby="mui-39436 mui-85433"
+                                      aria-labelledby="mui-99531 mui-14513"
                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                      id="mui-85433"
+                                      id="mui-14513"
                                       onBlur={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
@@ -1195,7 +1350,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                     <WithStyles(ForwardRef(Menu))
                                       MenuListProps={
                                         Object {
-                                          "aria-labelledby": "mui-39436",
+                                          "aria-labelledby": "mui-99531",
                                           "disableListWrap": true,
                                           "role": "listbox",
                                         }
@@ -1210,9 +1365,9 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       anchorEl={
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-39436 mui-85433"
+                                          aria-labelledby="mui-99531 mui-14513"
                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-85433"
+                                          id="mui-14513"
                                           role="button"
                                           tabindex="0"
                                         >
@@ -1226,7 +1381,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                       <ForwardRef(Menu)
                                         MenuListProps={
                                           Object {
-                                            "aria-labelledby": "mui-39436",
+                                            "aria-labelledby": "mui-99531",
                                             "disableListWrap": true,
                                             "role": "listbox",
                                           }
@@ -1241,9 +1396,9 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                         anchorEl={
                                           <div
                                             aria-haspopup="listbox"
-                                            aria-labelledby="mui-39436 mui-85433"
+                                            aria-labelledby="mui-99531 mui-14513"
                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                            id="mui-85433"
+                                            id="mui-14513"
                                             role="button"
                                             tabindex="0"
                                           >
@@ -1274,9 +1429,9 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-39436 mui-85433"
+                                              aria-labelledby="mui-99531 mui-14513"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-85433"
+                                              id="mui-14513"
                                               role="button"
                                               tabindex="0"
                                             >
@@ -1316,9 +1471,9 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                                             anchorEl={
                                               <div
                                                 aria-haspopup="listbox"
-                                                aria-labelledby="mui-39436 mui-85433"
+                                                aria-labelledby="mui-99531 mui-14513"
                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                id="mui-85433"
+                                                id="mui-14513"
                                                 role="button"
                                                 tabindex="0"
                                               >
@@ -1419,7 +1574,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                             <p
                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
                             >
-                              1-1 of 1
+                              1-2 of 2
                             </p>
                           </ForwardRef(Typography)>
                         </WithStyles(ForwardRef(Typography))>
@@ -1431,7 +1586,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
                             }
                           }
                           className="MuiTablePagination-actions"
-                          count={1}
+                          count={2}
                           nextIconButtonProps={
                             Object {
                               "aria-label": "Next page",
@@ -1678,7 +1833,7 @@ exports[`MyComponent should render correctly in "debug" mode 1`] = `
           </div>
         </ForwardRef(Paper)>
       </WithStyles(ForwardRef(Paper))>
-    </DaysOffTable>
-  </Connect(DaysOffTable)>
+    </ShiftsTable>
+  </Connect(ShiftsTable)>
 </Provider>
 `;

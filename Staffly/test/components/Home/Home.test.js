@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import { Provider } from 'react-redux'
 import HomePage from "../../../src/components/HomePage";
 describe('Home', () => {
-    it('should render correctly in "debug" mode', () => {
-        const component = shallow(<HomePage debug />);
+    it('should render correctly', () => {
+        const component = shallow(<HomePage/>);
 
         expect(component).toMatchSnapshot();
     });

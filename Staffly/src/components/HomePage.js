@@ -1,8 +1,7 @@
 import React from 'react';
 import ShiftsTable from "./HomePage/ShiftsTable";
 import DaysOffTable from "./HomePage/DaysOffTable";
-import {Grid, makeStyles, Typography, Button} from "@material-ui/core";
-import {Container} from "@material-ui/core"
+import {Container, Grid, makeStyles, Typography} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,10 +28,11 @@ export default function HomePage() {
     const classes = useStyles();
     return (
         <Grid className={classes.root}
-                   direction="column"
-                   justify="flex-start"
-                   alignItems="center">
-            <Container style={{marginBottom: 20}} >
+              container
+              direction="column"
+              justify="flex-start"
+              alignItems="center">
+            <Container style={{marginBottom: 20}}>
                 <Typography variant="h6" style={{marginBottom: 5}}>
                     Days Off:
                 </Typography>

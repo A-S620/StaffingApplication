@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import DaysOffTable from "../../../src/components/HomePage/DaysOffTable";
 import {store} from "../../../src/store/Store";
 
-describe('MyComponent', () => {
+describe('Days Off Table', () => {
     const component = mount(<Provider store={store}>
         <DaysOffTable/>
     </Provider>);

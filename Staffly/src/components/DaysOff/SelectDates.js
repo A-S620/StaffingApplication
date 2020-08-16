@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {CardActionArea, CardActions, CardContent, Container} from "@material-ui/core"
+import {CardActionArea, CardActions, CardContent, Container, Typography} from "@material-ui/core"
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import {Calendar} from "react-modern-calendar-datepicker";
+import {connect} from "react-redux";
+import {store} from "../../store/Store";
 
 const useStyles = makeStyles({
     root: {
@@ -13,7 +15,6 @@ const useStyles = makeStyles({
         height: 140,
     },
 });
-
 export default function SelectDates() {
     const classes = useStyles();
     const [selectedDayRange, setSelectedDayRange] = useState({
@@ -22,6 +23,7 @@ export default function SelectDates() {
         }
     );
     const getDates = () => {
+
         return (selectedDayRange)
     };
 
@@ -39,6 +41,7 @@ export default function SelectDates() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
+
             </CardActions>
         </Container>
     );

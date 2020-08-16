@@ -1,51 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home should render correctly in "debug" mode 1`] = `
+exports[`Home should render correctly 1`] = `
 <WithStyles(ForwardRef(Grid))
   alignItems="center"
   className="makeStyles-root-1"
-  direction="column"
-  justify="flex-start"
->
-  <WithStyles(ForwardRef(Container))
-    style={
-      Object {
-        "marginBottom": 20,
-      }
-    }
-  >
-    <WithStyles(ForwardRef(Typography))
-      style={
-        Object {
-          "marginBottom": 5,
-        }
-      }
-      variant="h6"
-    >
-      Days Off:
-    </WithStyles(ForwardRef(Typography))>
-    <Connect(DaysOffTable) />
-  </WithStyles(ForwardRef(Container))>
-  <WithStyles(ForwardRef(Container))>
-    <WithStyles(ForwardRef(Typography))
-      style={
-        Object {
-          "marginBottom": 5,
-        }
-      }
-      variant="h6"
-    >
-      Shifts:
-    </WithStyles(ForwardRef(Typography))>
-    <Connect(ShiftsTable) />
-  </WithStyles(ForwardRef(Container))>
-</WithStyles(ForwardRef(Grid))>
-`;
-
-exports[`MyComponent should render correctly in "debug" mode 1`] = `
-<WithStyles(ForwardRef(Grid))
-  alignItems="center"
-  className="makeStyles-root-1"
+  container={true}
   direction="column"
   justify="flex-start"
 >

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App  should render correctly in "debug" mode 1`] = `
+<WithStyles(ForwardRef(Grid))
+  alignItems="center"
+  className="makeStyles-root-1"
+  direction="column"
+  justify="flex-start"
+  style={
+    Object {
+      "marginTop": 30,
+    }
+  }
+>
+  <LeaveCalendar />
+</WithStyles(ForwardRef(Grid))>
+`;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-
+import PersonalDetails from "./Settings/PersonalDetails";
 
 class Settings extends Component {
     constructor(props) {
@@ -11,9 +11,7 @@ class Settings extends Component {
         // store.dispatch({type: "ADD_PERSON", payload})
         return (
             <div className="Settings" style={{marginTop:60}} >
-                <div>
-                    test
-                </div>
+                <PersonalDetails/>
             </div>
         );
     }

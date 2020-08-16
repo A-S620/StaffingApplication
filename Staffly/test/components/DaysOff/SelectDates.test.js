@@ -3,12 +3,12 @@ import {mount} from 'enzyme';
 import SelectDates from "../../../src/components/DaysOff/SelectDates";
 describe('SelectDates', () => {
     const component = mount(<SelectDates/>);
-    // it('should render correctly', () => {
-    //
-    //     expect(toJson(component)).toMatchSnapshot();
-    // });
+    it('should render correctly', () => {
 
-    it('should only have 1 TypeSelec', () => {
+        expect(component).toMatchSnapshot();
+    });
+
+    it('should only have 1 TypeSelect', () => {
         expect(component.find('select')).toHaveLength(1);
 
     });

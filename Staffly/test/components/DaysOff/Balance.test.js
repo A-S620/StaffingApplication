@@ -3,8 +3,9 @@ import {mount, shallow} from 'enzyme';
 import { Provider } from 'react-redux'
 import Balance from "../../../src/components/DaysOff/Balance";
 import toJson from 'enzyme-to-json';
+import {store} from "../../../src/store/Store";
 describe('Balances and TypeSelector', () => {
-    const component = mount(<Balance/>);
+    const component = mount(<Provider store={store}><Balance/></Provider>);
     it('should render correctly', () => {
 
         expect(toJson(component)).toMatchSnapshot();

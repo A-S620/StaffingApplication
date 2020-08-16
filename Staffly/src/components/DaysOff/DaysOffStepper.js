@@ -1,9 +1,11 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {Box, Button, Container, Grid, Step, StepButton, Stepper, Typography} from "@material-ui/core"
+import {CardActionArea, CardActions, CardContent,Box, Button, Container, Grid, Step, StepButton, Stepper, Typography} from "@material-ui/core"
 import SelectDates from "./SelectDates";
 import Balance from "./Balance";
 import CommentField from "./CommentField";
+import "react-modern-calendar-datepicker/lib/DatePicker.css";
+import {Calendar} from "react-modern-calendar-datepicker";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(1),
     },
+
 }));
 
 function getSteps() {
@@ -233,7 +236,7 @@ export default function DaysOffStepper() {
                             </Button>
                             {isStepOptional(activeStep) && !completed.has(activeStep) && (
                                 <Button
-                                    variant="contained"
+                                    variant="outlined"
                                     color="primary"
                                     onClick={handleSkip}
                                     className={classes.button}

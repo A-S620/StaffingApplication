@@ -9,4 +9,8 @@ module.exports = {
         "enzyme-to-json/serializer"
     ],
     moduleFileExtensions: ["ts", "tsx", "js"],
+    transform: {
+        "^.+\\.js$": "babel-jest",
+        "^.+\\.css$": "jest-transform-css"
+    }
 };

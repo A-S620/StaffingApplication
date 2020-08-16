@@ -9,6 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import {connect} from "react-redux";
+import {store} from "../../store/Store";
 
 const columns = [
     {id: 'ShiftId', label: 'Shift ID', minWidth: 170},
@@ -32,6 +33,7 @@ function ShiftsTable(props) {
     const classes = useStyles();
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
+    const [selectedRow, setSelectedRow] = React.useState('');
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
@@ -41,6 +43,7 @@ function ShiftsTable(props) {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
+    console.log(props.shifts);
 
     // function getData() {
     //     var request = new XMLHttpRequest();
@@ -73,7 +76,17 @@ function ShiftsTable(props) {
                     <TableBody>
                         {props.shifts.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
                             return (
-                                <TableRow hover role="checkbox" tabIndex={-1} key={row.RequestID}>
+                                <TableRow hover role="checkbox" tabIndex={-1} key={row.ShiftId}
+                                          onClick={() => {setSelectedRow(row.ShiftId);
+                                          console.log(row);
+
+                                          store.dispatch({
+                                              type: "SET_SELECTED_ROW",
+                                              payload: row
+                                          });
+                                              console.log("selected row   "+ selectedRow)}
+                                          }
+                                >
                                     {columns.map((column) => {
                                         const value = row[column.id];
                                         return (
@@ -104,6 +117,7 @@ function ShiftsTable(props) {
 const mapStateToProps = state => {
     return {
         shifts: state.shifts
+
     }
 }
 

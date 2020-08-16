@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {Box, CardActionArea, CardActions, CardContent,
-    Container, Grid, Typography,InputLabel, FormControl,Select} from "@material-ui/core"
+import {Box, Container, FormControl, Grid, InputLabel, Select, Typography} from "@material-ui/core"
+import {connect} from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -20,87 +20,102 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function BalancePaper() {
+function BalancePaper(props) {
     const classes = useStyles();
     const [value, setValue] = React.useState({
         typeSelect: '',
     });
 
+
+
     return (
         <Container className={classes.root}>
-                    <div>
-                        <Box
-                            direction="column"
-                            justify="center"
-                            alignItems="center">
-                            <Grid
-                                container
-                                direction="row"
-                                alignItems="center"
-                            >
-                                <Typography variant="h6" gutterBottom justify="center">
-                                    As Off:
-                                </Typography>
-                                <Typography variant="h6" gutterBottom justify="center" style={{marginLeft: 20}}>
-                                    balance
-                                </Typography>
-                            </Grid>
-                            <Grid
-                                container
-                                direction="row"
-                                justify="flex-start"
-                                alignItems="center"
-                            >
-                                <Typography variant="h6" gutterBottom justify="center">
-                                    Days Used:
-                                </Typography>
-                                <Typography variant="h6" gutterBottom justify="center" style={{marginLeft: 20}}>
-                                    Days Used
+            <div>
+                {props.bal.map((bals) => {
+                        return (
 
-                                </Typography>
-                            </Grid>
-                            <Grid
-                                container
-                                direction="row"
-                                justify="felx-start"
-                                alignItems="center"
-                            >
-                                <Typography variant="h6" gutterBottom justify="center">
-                                    Days Left:
-                                </Typography>
-                                <Typography variant="h6" gutterBottom justify="center" style={{marginLeft: 20}}>
-                                    XX
-                                </Typography>
-                            </Grid>
-                        </Box>
+                            <Box>
 
 
-                    </div>
-                    <FormControl className={classes.formControl}>
-                        <InputLabel htmlFor="type-selector">Type</InputLabel>
-                        <Select
-                            native
-                            value={value}
-                            onChange={(event) => {
-                                setValue(event.target.value);
-                                console.log("value   " + value.toString())
-                            }}
-                            inputProps={{
-                                name: 'typeSelector',
-                                id: 'type-selector',
-                            }}
-                        >
-                            <option aria-label="None" value=""/>
-                            <option value={1}>Vacation</option>
-                            <option value={2}>Designated Holiday</option>
-                            <option value={3}>Illness</option>
-                            <option value={4}>Non-work learning/ Training</option>
-                            <option value={5}>Work learning/ Training</option>
-                            <option value={6}>Military Time Off</option>
-                            <option value={7}>Parenting Time Off</option>
+                                <Grid
+                                    container
+                                    direction="row"
+                                    alignItems="center"
+                                >
 
-                        </Select>
-                    </FormControl>
+
+                                    <Typography variant="h6" gutterBottom justify="center">
+                                        As Off:
+                                    </Typography>
+                                    <Typography variant="h6" gutterBottom justify="center" style={{marginLeft: 20}}>
+                                        {bals.AsOff}
+                                    </Typography>
+                                </Grid>
+                                <Grid
+                                    container
+                                    direction="row"
+                                    justify="flex-start"
+                                    alignItems="center"
+                                >
+                                    <Typography variant="h6" gutterBottom justify="center">
+                                        Total Days:
+                                    </Typography>
+                                    <Typography variant="h6" gutterBottom justify="center" style={{marginLeft: 20}}>
+                                        {bals.TotalDays}
+
+                                    </Typography>
+                                </Grid>
+                                <Grid
+                                    container
+                                    direction="row"
+                                    justify="flex-start"
+                                    alignItems="center"
+                                >
+                                    <Typography variant="h6" gutterBottom justify="center">
+                                        Days Used:
+                                    </Typography>
+                                    <Typography variant="h6" gutterBottom justify="center" style={{marginLeft: 20}}>
+                                        {bals.DaysUsed}
+                                    </Typography>
+                                </Grid>
+                            </Box>
+                        )
+                    }
+                )}
+
+
+            </div>
+            <FormControl className={classes.formControl}>
+                <InputLabel htmlFor="type-selector">Type</InputLabel>
+                <Select
+                    native
+                    value={value}
+                    onChange={(event) => {
+                        setValue(event.target.value);
+                    }}
+                    inputProps={{
+                        name: 'typeSelector',
+                        id: 'type-selector',
+                    }}
+                >
+                    <option aria-label="None" value=""/>
+                    {props.types.map((type) => {
+                        return (
+                            <option value={type.Key}>{type.Value}</option>
+                        )
+                    })}
+
+                </Select>
+            </FormControl>
         </Container>
     );
 }
+
+const mapStateToProps = state => {
+    return {
+        bal: state.balance,
+        types: state.daysOffTypes,
+
+    }
+}
+export default connect(mapStateToProps, {})(BalancePaper);

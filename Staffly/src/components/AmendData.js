@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LeaveTable from "./AmendData/ShiftsTable";
-import AmendButttons from "./AmendData/AmendButttons";
+import AmendButttons from "./AmendData/AmendButtons";
 
 class AmendData extends Component {
     render() {

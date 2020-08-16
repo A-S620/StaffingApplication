@@ -1,567 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CommentField renders correctly 1`] = `
-<CommentField>
-  <WithStyles(ForwardRef(Container))
-    className="makeStyles-root-1"
-  >
-    <ForwardRef(Container)
-      className="makeStyles-root-1"
-      classes={
-        Object {
-          "disableGutters": "MuiContainer-disableGutters",
-          "fixed": "MuiContainer-fixed",
-          "maxWidthLg": "MuiContainer-maxWidthLg",
-          "maxWidthMd": "MuiContainer-maxWidthMd",
-          "maxWidthSm": "MuiContainer-maxWidthSm",
-          "maxWidthXl": "MuiContainer-maxWidthXl",
-          "maxWidthXs": "MuiContainer-maxWidthXs",
-          "root": "MuiContainer-root",
-        }
-      }
-    >
-      <div
-        className="MuiContainer-root makeStyles-root-1 MuiContainer-maxWidthLg"
-      >
-        <WithStyles(ForwardRef(CardActionArea))>
-          <ForwardRef(CardActionArea)
-            classes={
-              Object {
-                "focusHighlight": "MuiCardActionArea-focusHighlight",
-                "focusVisible": "Mui-focusVisible",
-                "root": "MuiCardActionArea-root",
-              }
-            }
-          >
-            <WithStyles(ForwardRef(ButtonBase))
-              className="MuiCardActionArea-root"
-              focusVisibleClassName="Mui-focusVisible"
-            >
-              <ForwardRef(ButtonBase)
-                className="MuiCardActionArea-root"
-                classes={
-                  Object {
-                    "disabled": "Mui-disabled",
-                    "focusVisible": "Mui-focusVisible",
-                    "root": "MuiButtonBase-root",
-                  }
-                }
-                focusVisibleClassName="Mui-focusVisible"
-              >
-                <button
-                  className="MuiButtonBase-root MuiCardActionArea-root"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <WithStyles(ForwardRef(CardContent))>
-                    <ForwardRef(CardContent)
-                      classes={
-                        Object {
-                          "root": "MuiCardContent-root",
-                        }
-                      }
-                    >
-                      <div
-                        className="MuiCardContent-root"
-                      >
-                        <div>
-                          <WithStyles(ForwardRef(TextField))
-                            id="Comment"
-                            label="Comment"
-                            multiline={true}
-                            onChange={[Function]}
-                            rows={4}
-                            style={
-                              Object {
-                                "width": 250,
-                              }
-                            }
-                            value=""
-                            variant="outlined"
-                          >
-                            <ForwardRef(TextField)
-                              classes={
-                                Object {
-                                  "root": "MuiTextField-root",
-                                }
-                              }
-                              id="Comment"
-                              label="Comment"
-                              multiline={true}
-                              onChange={[Function]}
-                              rows={4}
-                              style={
-                                Object {
-                                  "width": 250,
-                                }
-                              }
-                              value=""
-                              variant="outlined"
-                            >
-                              <WithStyles(ForwardRef(FormControl))
-                                className="MuiTextField-root"
-                                color="primary"
-                                disabled={false}
-                                error={false}
-                                fullWidth={false}
-                                required={false}
-                                style={
-                                  Object {
-                                    "width": 250,
-                                  }
-                                }
-                                variant="outlined"
-                              >
-                                <ForwardRef(FormControl)
-                                  className="MuiTextField-root"
-                                  classes={
-                                    Object {
-                                      "fullWidth": "MuiFormControl-fullWidth",
-                                      "marginDense": "MuiFormControl-marginDense",
-                                      "marginNormal": "MuiFormControl-marginNormal",
-                                      "root": "MuiFormControl-root",
-                                    }
-                                  }
-                                  color="primary"
-                                  disabled={false}
-                                  error={false}
-                                  fullWidth={false}
-                                  required={false}
-                                  style={
-                                    Object {
-                                      "width": 250,
-                                    }
-                                  }
-                                  variant="outlined"
-                                >
-                                  <div
-                                    className="MuiFormControl-root MuiTextField-root"
-                                    style={
-                                      Object {
-                                        "width": 250,
-                                      }
-                                    }
-                                  >
-                                    <WithStyles(ForwardRef(InputLabel))
-                                      htmlFor="Comment"
-                                      id="Comment-label"
-                                    >
-                                      <ForwardRef(InputLabel)
-                                        classes={
-                                          Object {
-                                            "animated": "MuiInputLabel-animated",
-                                            "asterisk": "MuiInputLabel-asterisk",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "filled": "MuiInputLabel-filled",
-                                            "focused": "Mui-focused",
-                                            "formControl": "MuiInputLabel-formControl",
-                                            "marginDense": "MuiInputLabel-marginDense",
-                                            "outlined": "MuiInputLabel-outlined",
-                                            "required": "Mui-required",
-                                            "root": "MuiInputLabel-root",
-                                            "shrink": "MuiInputLabel-shrink",
-                                          }
-                                        }
-                                        htmlFor="Comment"
-                                        id="Comment-label"
-                                      >
-                                        <WithStyles(ForwardRef(FormLabel))
-                                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                          classes={
-                                            Object {
-                                              "asterisk": "MuiInputLabel-asterisk",
-                                              "disabled": "Mui-disabled",
-                                              "error": "Mui-error",
-                                              "focused": "Mui-focused",
-                                              "required": "Mui-required",
-                                            }
-                                          }
-                                          data-shrink={false}
-                                          htmlFor="Comment"
-                                          id="Comment-label"
-                                        >
-                                          <ForwardRef(FormLabel)
-                                            className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                            classes={
-                                              Object {
-                                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
-                                                "colorSecondary": "MuiFormLabel-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "filled": "MuiFormLabel-filled",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "required": "Mui-required Mui-required",
-                                                "root": "MuiFormLabel-root",
-                                              }
-                                            }
-                                            data-shrink={false}
-                                            htmlFor="Comment"
-                                            id="Comment-label"
-                                          >
-                                            <label
-                                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                              data-shrink={false}
-                                              htmlFor="Comment"
-                                              id="Comment-label"
-                                            >
-                                              Comment
-                                            </label>
-                                          </ForwardRef(FormLabel)>
-                                        </WithStyles(ForwardRef(FormLabel))>
-                                      </ForwardRef(InputLabel)>
-                                    </WithStyles(ForwardRef(InputLabel))>
-                                    <WithStyles(ForwardRef(OutlinedInput))
-                                      autoFocus={false}
-                                      fullWidth={false}
-                                      id="Comment"
-                                      label={
-                                        <React.Fragment>
-                                          Comment
-                                        </React.Fragment>
-                                      }
-                                      multiline={true}
-                                      onChange={[Function]}
-                                      rows={4}
-                                      value=""
-                                    >
-                                      <ForwardRef(OutlinedInput)
-                                        autoFocus={false}
-                                        classes={
-                                          Object {
-                                            "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                            "adornedStart": "MuiOutlinedInput-adornedStart",
-                                            "colorSecondary": "MuiOutlinedInput-colorSecondary",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "focused": "Mui-focused",
-                                            "input": "MuiOutlinedInput-input",
-                                            "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                            "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                            "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                            "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                            "marginDense": "MuiOutlinedInput-marginDense",
-                                            "multiline": "MuiOutlinedInput-multiline",
-                                            "notchedOutline": "MuiOutlinedInput-notchedOutline",
-                                            "root": "MuiOutlinedInput-root",
-                                          }
-                                        }
-                                        fullWidth={false}
-                                        id="Comment"
-                                        label={
-                                          <React.Fragment>
-                                            Comment
-                                          </React.Fragment>
-                                        }
-                                        multiline={true}
-                                        onChange={[Function]}
-                                        rows={4}
-                                        value=""
-                                      >
-                                        <WithStyles(ForwardRef(InputBase))
-                                          autoFocus={false}
-                                          classes={
-                                            Object {
-                                              "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                              "adornedStart": "MuiOutlinedInput-adornedStart",
-                                              "colorSecondary": "MuiOutlinedInput-colorSecondary",
-                                              "disabled": "Mui-disabled",
-                                              "error": "Mui-error",
-                                              "focused": "Mui-focused",
-                                              "input": "MuiOutlinedInput-input",
-                                              "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                              "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                              "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                              "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                              "marginDense": "MuiOutlinedInput-marginDense",
-                                              "multiline": "MuiOutlinedInput-multiline",
-                                              "notchedOutline": null,
-                                              "root": "MuiOutlinedInput-root",
-                                            }
-                                          }
-                                          fullWidth={false}
-                                          id="Comment"
-                                          inputComponent="input"
-                                          multiline={true}
-                                          onChange={[Function]}
-                                          renderSuffix={[Function]}
-                                          rows={4}
-                                          type="text"
-                                          value=""
-                                        >
-                                          <ForwardRef(InputBase)
-                                            autoFocus={false}
-                                            classes={
-                                              Object {
-                                                "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
-                                                "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
-                                                "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "formControl": "MuiInputBase-formControl",
-                                                "fullWidth": "MuiInputBase-fullWidth",
-                                                "input": "MuiInputBase-input MuiOutlinedInput-input",
-                                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
-                                                "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
-                                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
-                                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
-                                                "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
-                                                "inputTypeSearch": "MuiInputBase-inputTypeSearch",
-                                                "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
-                                                "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
-                                                "root": "MuiInputBase-root MuiOutlinedInput-root",
-                                              }
-                                            }
-                                            fullWidth={false}
-                                            id="Comment"
-                                            inputComponent="input"
-                                            multiline={true}
-                                            onChange={[Function]}
-                                            renderSuffix={[Function]}
-                                            rows={4}
-                                            type="text"
-                                            value=""
-                                          >
-                                            <div
-                                              className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
-                                              onClick={[Function]}
-                                            >
-                                              <textarea
-                                                aria-invalid={false}
-                                                autoFocus={false}
-                                                className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
-                                                disabled={false}
-                                                id="Comment"
-                                                onAnimationStart={[Function]}
-                                                onBlur={[Function]}
-                                                onChange={[Function]}
-                                                onFocus={[Function]}
-                                                required={false}
-                                                rows={4}
-                                                value=""
-                                              />
-                                              <WithStyles(ForwardRef(NotchedOutline))
-                                                className="MuiOutlinedInput-notchedOutline"
-                                                label={
-                                                  <React.Fragment>
-                                                    Comment
-                                                  </React.Fragment>
-                                                }
-                                                labelWidth={0}
-                                                notched={false}
-                                              >
-                                                <ForwardRef(NotchedOutline)
-                                                  className="MuiOutlinedInput-notchedOutline"
-                                                  classes={
-                                                    Object {
-                                                      "legend": "PrivateNotchedOutline-legend-4",
-                                                      "legendLabelled": "PrivateNotchedOutline-legendLabelled-5",
-                                                      "legendNotched": "PrivateNotchedOutline-legendNotched-6",
-                                                      "root": "PrivateNotchedOutline-root-3",
-                                                    }
-                                                  }
-                                                  label={
-                                                    <React.Fragment>
-                                                      Comment
-                                                    </React.Fragment>
-                                                  }
-                                                  labelWidth={0}
-                                                  notched={false}
-                                                >
-                                                  <fieldset
-                                                    aria-hidden={true}
-                                                    className="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
-                                                  >
-                                                    <legend
-                                                      className="PrivateNotchedOutline-legendLabelled-5"
-                                                    >
-                                                      <span>
-                                                        Comment
-                                                      </span>
-                                                    </legend>
-                                                  </fieldset>
-                                                </ForwardRef(NotchedOutline)>
-                                              </WithStyles(ForwardRef(NotchedOutline))>
-                                            </div>
-                                          </ForwardRef(InputBase)>
-                                        </WithStyles(ForwardRef(InputBase))>
-                                      </ForwardRef(OutlinedInput)>
-                                    </WithStyles(ForwardRef(OutlinedInput))>
-                                  </div>
-                                </ForwardRef(FormControl)>
-                              </WithStyles(ForwardRef(FormControl))>
-                            </ForwardRef(TextField)>
-                          </WithStyles(ForwardRef(TextField))>
-                        </div>
-                      </div>
-                    </ForwardRef(CardContent)>
-                  </WithStyles(ForwardRef(CardContent))>
-                  <span
-                    className="MuiCardActionArea-focusHighlight"
-                  />
-                  <WithStyles(memo)
-                    center={false}
-                  >
-                    <ForwardRef(TouchRipple)
-                      center={false}
-                      classes={
-                        Object {
-                          "child": "MuiTouchRipple-child",
-                          "childLeaving": "MuiTouchRipple-childLeaving",
-                          "childPulsate": "MuiTouchRipple-childPulsate",
-                          "ripple": "MuiTouchRipple-ripple",
-                          "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                          "rippleVisible": "MuiTouchRipple-rippleVisible",
-                          "root": "MuiTouchRipple-root",
-                        }
-                      }
-                    >
-                      <span
-                        className="MuiTouchRipple-root"
-                      >
-                        <TransitionGroup
-                          childFactory={[Function]}
-                          component={null}
-                          exit={true}
-                        />
-                      </span>
-                    </ForwardRef(TouchRipple)>
-                  </WithStyles(memo)>
-                </button>
-              </ForwardRef(ButtonBase)>
-            </WithStyles(ForwardRef(ButtonBase))>
-          </ForwardRef(CardActionArea)>
-        </WithStyles(ForwardRef(CardActionArea))>
-        <WithStyles(ForwardRef(CardActions))>
-          <ForwardRef(CardActions)
-            classes={
-              Object {
-                "root": "MuiCardActions-root",
-                "spacing": "MuiCardActions-spacing",
-              }
-            }
-          >
-            <div
-              className="MuiCardActions-root MuiCardActions-spacing"
-            />
-          </ForwardRef(CardActions)>
-        </WithStyles(ForwardRef(CardActions))>
-      </div>
-    </ForwardRef(Container)>
-  </WithStyles(ForwardRef(Container))>
-</CommentField>
-`;
-
 exports[`CommentField should render correctly 1`] = `
-<CommentField>
-  <WithStyles(ForwardRef(Container))
-    className="makeStyles-root-1"
-  >
-    <ForwardRef(Container)
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <CommentField>
+    <WithStyles(ForwardRef(Container))
       className="makeStyles-root-1"
-      classes={
-        Object {
-          "disableGutters": "MuiContainer-disableGutters",
-          "fixed": "MuiContainer-fixed",
-          "maxWidthLg": "MuiContainer-maxWidthLg",
-          "maxWidthMd": "MuiContainer-maxWidthMd",
-          "maxWidthSm": "MuiContainer-maxWidthSm",
-          "maxWidthXl": "MuiContainer-maxWidthXl",
-          "maxWidthXs": "MuiContainer-maxWidthXs",
-          "root": "MuiContainer-root",
-        }
-      }
     >
-      <div
-        className="MuiContainer-root makeStyles-root-1 MuiContainer-maxWidthLg"
+      <ForwardRef(Container)
+        className="makeStyles-root-1"
+        classes={
+          Object {
+            "disableGutters": "MuiContainer-disableGutters",
+            "fixed": "MuiContainer-fixed",
+            "maxWidthLg": "MuiContainer-maxWidthLg",
+            "maxWidthMd": "MuiContainer-maxWidthMd",
+            "maxWidthSm": "MuiContainer-maxWidthSm",
+            "maxWidthXl": "MuiContainer-maxWidthXl",
+            "maxWidthXs": "MuiContainer-maxWidthXs",
+            "root": "MuiContainer-root",
+          }
+        }
       >
-        <WithStyles(ForwardRef(CardActionArea))>
-          <ForwardRef(CardActionArea)
-            classes={
-              Object {
-                "focusHighlight": "MuiCardActionArea-focusHighlight",
-                "focusVisible": "Mui-focusVisible",
-                "root": "MuiCardActionArea-root",
-              }
-            }
-          >
-            <WithStyles(ForwardRef(ButtonBase))
-              className="MuiCardActionArea-root"
-              focusVisibleClassName="Mui-focusVisible"
-            >
-              <ForwardRef(ButtonBase)
-                className="MuiCardActionArea-root"
-                classes={
-                  Object {
-                    "disabled": "Mui-disabled",
-                    "focusVisible": "Mui-focusVisible",
-                    "root": "MuiButtonBase-root",
-                  }
+        <div
+          className="MuiContainer-root makeStyles-root-1 MuiContainer-maxWidthLg"
+        >
+          <WithStyles(ForwardRef(CardActionArea))>
+            <ForwardRef(CardActionArea)
+              classes={
+                Object {
+                  "focusHighlight": "MuiCardActionArea-focusHighlight",
+                  "focusVisible": "Mui-focusVisible",
+                  "root": "MuiCardActionArea-root",
                 }
+              }
+            >
+              <WithStyles(ForwardRef(ButtonBase))
+                className="MuiCardActionArea-root"
                 focusVisibleClassName="Mui-focusVisible"
               >
-                <button
-                  className="MuiButtonBase-root MuiCardActionArea-root"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
+                <ForwardRef(ButtonBase)
+                  className="MuiCardActionArea-root"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "root": "MuiButtonBase-root",
+                    }
+                  }
+                  focusVisibleClassName="Mui-focusVisible"
                 >
-                  <WithStyles(ForwardRef(CardContent))>
-                    <ForwardRef(CardContent)
-                      classes={
-                        Object {
-                          "root": "MuiCardContent-root",
+                  <button
+                    className="MuiButtonBase-root MuiCardActionArea-root"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <WithStyles(ForwardRef(CardContent))>
+                      <ForwardRef(CardContent)
+                        classes={
+                          Object {
+                            "root": "MuiCardContent-root",
+                          }
                         }
-                      }
-                    >
-                      <div
-                        className="MuiCardContent-root"
                       >
-                        <div>
-                          <WithStyles(ForwardRef(TextField))
-                            id="Comment"
-                            label="Comment"
-                            multiline={true}
-                            onChange={[Function]}
-                            rows={4}
-                            style={
-                              Object {
-                                "width": 250,
-                              }
-                            }
-                            value=""
-                            variant="outlined"
-                          >
-                            <ForwardRef(TextField)
-                              classes={
-                                Object {
-                                  "root": "MuiTextField-root",
-                                }
-                              }
+                        <div
+                          className="MuiCardContent-root"
+                        >
+                          <div>
+                            <WithStyles(ForwardRef(TextField))
                               id="Comment"
                               label="Comment"
                               multiline={true}
@@ -575,30 +102,27 @@ exports[`CommentField should render correctly 1`] = `
                               value=""
                               variant="outlined"
                             >
-                              <WithStyles(ForwardRef(FormControl))
-                                className="MuiTextField-root"
-                                color="primary"
-                                disabled={false}
-                                error={false}
-                                fullWidth={false}
-                                required={false}
+                              <ForwardRef(TextField)
+                                classes={
+                                  Object {
+                                    "root": "MuiTextField-root",
+                                  }
+                                }
+                                id="Comment"
+                                label="Comment"
+                                multiline={true}
+                                onChange={[Function]}
+                                rows={4}
                                 style={
                                   Object {
                                     "width": 250,
                                   }
                                 }
+                                value=""
                                 variant="outlined"
                               >
-                                <ForwardRef(FormControl)
+                                <WithStyles(ForwardRef(FormControl))
                                   className="MuiTextField-root"
-                                  classes={
-                                    Object {
-                                      "fullWidth": "MuiFormControl-fullWidth",
-                                      "marginDense": "MuiFormControl-marginDense",
-                                      "marginNormal": "MuiFormControl-marginNormal",
-                                      "root": "MuiFormControl-root",
-                                    }
-                                  }
                                   color="primary"
                                   disabled={false}
                                   error={false}
@@ -611,118 +135,107 @@ exports[`CommentField should render correctly 1`] = `
                                   }
                                   variant="outlined"
                                 >
-                                  <div
-                                    className="MuiFormControl-root MuiTextField-root"
+                                  <ForwardRef(FormControl)
+                                    className="MuiTextField-root"
+                                    classes={
+                                      Object {
+                                        "fullWidth": "MuiFormControl-fullWidth",
+                                        "marginDense": "MuiFormControl-marginDense",
+                                        "marginNormal": "MuiFormControl-marginNormal",
+                                        "root": "MuiFormControl-root",
+                                      }
+                                    }
+                                    color="primary"
+                                    disabled={false}
+                                    error={false}
+                                    fullWidth={false}
+                                    required={false}
                                     style={
                                       Object {
                                         "width": 250,
                                       }
                                     }
+                                    variant="outlined"
                                   >
-                                    <WithStyles(ForwardRef(InputLabel))
-                                      htmlFor="Comment"
-                                      id="Comment-label"
-                                    >
-                                      <ForwardRef(InputLabel)
-                                        classes={
-                                          Object {
-                                            "animated": "MuiInputLabel-animated",
-                                            "asterisk": "MuiInputLabel-asterisk",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "filled": "MuiInputLabel-filled",
-                                            "focused": "Mui-focused",
-                                            "formControl": "MuiInputLabel-formControl",
-                                            "marginDense": "MuiInputLabel-marginDense",
-                                            "outlined": "MuiInputLabel-outlined",
-                                            "required": "Mui-required",
-                                            "root": "MuiInputLabel-root",
-                                            "shrink": "MuiInputLabel-shrink",
-                                          }
+                                    <div
+                                      className="MuiFormControl-root MuiTextField-root"
+                                      style={
+                                        Object {
+                                          "width": 250,
                                         }
+                                      }
+                                    >
+                                      <WithStyles(ForwardRef(InputLabel))
                                         htmlFor="Comment"
                                         id="Comment-label"
                                       >
-                                        <WithStyles(ForwardRef(FormLabel))
-                                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                                        <ForwardRef(InputLabel)
                                           classes={
                                             Object {
+                                              "animated": "MuiInputLabel-animated",
                                               "asterisk": "MuiInputLabel-asterisk",
                                               "disabled": "Mui-disabled",
                                               "error": "Mui-error",
+                                              "filled": "MuiInputLabel-filled",
                                               "focused": "Mui-focused",
+                                              "formControl": "MuiInputLabel-formControl",
+                                              "marginDense": "MuiInputLabel-marginDense",
+                                              "outlined": "MuiInputLabel-outlined",
                                               "required": "Mui-required",
+                                              "root": "MuiInputLabel-root",
+                                              "shrink": "MuiInputLabel-shrink",
                                             }
                                           }
-                                          data-shrink={false}
                                           htmlFor="Comment"
                                           id="Comment-label"
                                         >
-                                          <ForwardRef(FormLabel)
+                                          <WithStyles(ForwardRef(FormLabel))
                                             className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
                                             classes={
                                               Object {
-                                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
-                                                "colorSecondary": "MuiFormLabel-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "filled": "MuiFormLabel-filled",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "required": "Mui-required Mui-required",
-                                                "root": "MuiFormLabel-root",
+                                                "asterisk": "MuiInputLabel-asterisk",
+                                                "disabled": "Mui-disabled",
+                                                "error": "Mui-error",
+                                                "focused": "Mui-focused",
+                                                "required": "Mui-required",
                                               }
                                             }
                                             data-shrink={false}
                                             htmlFor="Comment"
                                             id="Comment-label"
                                           >
-                                            <label
-                                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                                            <ForwardRef(FormLabel)
+                                              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                                              classes={
+                                                Object {
+                                                  "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                                                  "colorSecondary": "MuiFormLabel-colorSecondary",
+                                                  "disabled": "Mui-disabled Mui-disabled",
+                                                  "error": "Mui-error Mui-error",
+                                                  "filled": "MuiFormLabel-filled",
+                                                  "focused": "Mui-focused Mui-focused",
+                                                  "required": "Mui-required Mui-required",
+                                                  "root": "MuiFormLabel-root",
+                                                }
+                                              }
                                               data-shrink={false}
                                               htmlFor="Comment"
                                               id="Comment-label"
                                             >
-                                              Comment
-                                            </label>
-                                          </ForwardRef(FormLabel)>
-                                        </WithStyles(ForwardRef(FormLabel))>
-                                      </ForwardRef(InputLabel)>
-                                    </WithStyles(ForwardRef(InputLabel))>
-                                    <WithStyles(ForwardRef(OutlinedInput))
-                                      autoFocus={false}
-                                      fullWidth={false}
-                                      id="Comment"
-                                      label={
-                                        <React.Fragment>
-                                          Comment
-                                        </React.Fragment>
-                                      }
-                                      multiline={true}
-                                      onChange={[Function]}
-                                      rows={4}
-                                      value=""
-                                    >
-                                      <ForwardRef(OutlinedInput)
+                                              <label
+                                                className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+                                                data-shrink={false}
+                                                htmlFor="Comment"
+                                                id="Comment-label"
+                                              >
+                                                Comment
+                                              </label>
+                                            </ForwardRef(FormLabel)>
+                                          </WithStyles(ForwardRef(FormLabel))>
+                                        </ForwardRef(InputLabel)>
+                                      </WithStyles(ForwardRef(InputLabel))>
+                                      <WithStyles(ForwardRef(OutlinedInput))
                                         autoFocus={false}
-                                        classes={
-                                          Object {
-                                            "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                            "adornedStart": "MuiOutlinedInput-adornedStart",
-                                            "colorSecondary": "MuiOutlinedInput-colorSecondary",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "focused": "Mui-focused",
-                                            "input": "MuiOutlinedInput-input",
-                                            "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                            "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                            "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                            "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                            "marginDense": "MuiOutlinedInput-marginDense",
-                                            "multiline": "MuiOutlinedInput-multiline",
-                                            "notchedOutline": "MuiOutlinedInput-notchedOutline",
-                                            "root": "MuiOutlinedInput-root",
-                                          }
-                                        }
                                         fullWidth={false}
                                         id="Comment"
                                         label={
@@ -735,7 +248,7 @@ exports[`CommentField should render correctly 1`] = `
                                         rows={4}
                                         value=""
                                       >
-                                        <WithStyles(ForwardRef(InputBase))
+                                        <ForwardRef(OutlinedInput)
                                           autoFocus={false}
                                           classes={
                                             Object {
@@ -752,507 +265,41 @@ exports[`CommentField should render correctly 1`] = `
                                               "inputMultiline": "MuiOutlinedInput-inputMultiline",
                                               "marginDense": "MuiOutlinedInput-marginDense",
                                               "multiline": "MuiOutlinedInput-multiline",
-                                              "notchedOutline": null,
+                                              "notchedOutline": "MuiOutlinedInput-notchedOutline",
                                               "root": "MuiOutlinedInput-root",
                                             }
                                           }
                                           fullWidth={false}
                                           id="Comment"
-                                          inputComponent="input"
-                                          multiline={true}
-                                          onChange={[Function]}
-                                          renderSuffix={[Function]}
-                                          rows={4}
-                                          type="text"
-                                          value=""
-                                        >
-                                          <ForwardRef(InputBase)
-                                            autoFocus={false}
-                                            classes={
-                                              Object {
-                                                "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
-                                                "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
-                                                "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "formControl": "MuiInputBase-formControl",
-                                                "fullWidth": "MuiInputBase-fullWidth",
-                                                "input": "MuiInputBase-input MuiOutlinedInput-input",
-                                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
-                                                "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
-                                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
-                                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
-                                                "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
-                                                "inputTypeSearch": "MuiInputBase-inputTypeSearch",
-                                                "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
-                                                "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
-                                                "root": "MuiInputBase-root MuiOutlinedInput-root",
-                                              }
-                                            }
-                                            fullWidth={false}
-                                            id="Comment"
-                                            inputComponent="input"
-                                            multiline={true}
-                                            onChange={[Function]}
-                                            renderSuffix={[Function]}
-                                            rows={4}
-                                            type="text"
-                                            value=""
-                                          >
-                                            <div
-                                              className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
-                                              onClick={[Function]}
-                                            >
-                                              <textarea
-                                                aria-invalid={false}
-                                                autoFocus={false}
-                                                className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
-                                                disabled={false}
-                                                id="Comment"
-                                                onAnimationStart={[Function]}
-                                                onBlur={[Function]}
-                                                onChange={[Function]}
-                                                onFocus={[Function]}
-                                                required={false}
-                                                rows={4}
-                                                value=""
-                                              />
-                                              <WithStyles(ForwardRef(NotchedOutline))
-                                                className="MuiOutlinedInput-notchedOutline"
-                                                label={
-                                                  <React.Fragment>
-                                                    Comment
-                                                  </React.Fragment>
-                                                }
-                                                labelWidth={0}
-                                                notched={false}
-                                              >
-                                                <ForwardRef(NotchedOutline)
-                                                  className="MuiOutlinedInput-notchedOutline"
-                                                  classes={
-                                                    Object {
-                                                      "legend": "PrivateNotchedOutline-legend-4",
-                                                      "legendLabelled": "PrivateNotchedOutline-legendLabelled-5",
-                                                      "legendNotched": "PrivateNotchedOutline-legendNotched-6",
-                                                      "root": "PrivateNotchedOutline-root-3",
-                                                    }
-                                                  }
-                                                  label={
-                                                    <React.Fragment>
-                                                      Comment
-                                                    </React.Fragment>
-                                                  }
-                                                  labelWidth={0}
-                                                  notched={false}
-                                                >
-                                                  <fieldset
-                                                    aria-hidden={true}
-                                                    className="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
-                                                  >
-                                                    <legend
-                                                      className="PrivateNotchedOutline-legendLabelled-5"
-                                                    >
-                                                      <span>
-                                                        Comment
-                                                      </span>
-                                                    </legend>
-                                                  </fieldset>
-                                                </ForwardRef(NotchedOutline)>
-                                              </WithStyles(ForwardRef(NotchedOutline))>
-                                            </div>
-                                          </ForwardRef(InputBase)>
-                                        </WithStyles(ForwardRef(InputBase))>
-                                      </ForwardRef(OutlinedInput)>
-                                    </WithStyles(ForwardRef(OutlinedInput))>
-                                  </div>
-                                </ForwardRef(FormControl)>
-                              </WithStyles(ForwardRef(FormControl))>
-                            </ForwardRef(TextField)>
-                          </WithStyles(ForwardRef(TextField))>
-                        </div>
-                      </div>
-                    </ForwardRef(CardContent)>
-                  </WithStyles(ForwardRef(CardContent))>
-                  <span
-                    className="MuiCardActionArea-focusHighlight"
-                  />
-                  <WithStyles(memo)
-                    center={false}
-                  >
-                    <ForwardRef(TouchRipple)
-                      center={false}
-                      classes={
-                        Object {
-                          "child": "MuiTouchRipple-child",
-                          "childLeaving": "MuiTouchRipple-childLeaving",
-                          "childPulsate": "MuiTouchRipple-childPulsate",
-                          "ripple": "MuiTouchRipple-ripple",
-                          "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                          "rippleVisible": "MuiTouchRipple-rippleVisible",
-                          "root": "MuiTouchRipple-root",
-                        }
-                      }
-                    >
-                      <span
-                        className="MuiTouchRipple-root"
-                      >
-                        <TransitionGroup
-                          childFactory={[Function]}
-                          component={null}
-                          exit={true}
-                        />
-                      </span>
-                    </ForwardRef(TouchRipple)>
-                  </WithStyles(memo)>
-                </button>
-              </ForwardRef(ButtonBase)>
-            </WithStyles(ForwardRef(ButtonBase))>
-          </ForwardRef(CardActionArea)>
-        </WithStyles(ForwardRef(CardActionArea))>
-        <WithStyles(ForwardRef(CardActions))>
-          <ForwardRef(CardActions)
-            classes={
-              Object {
-                "root": "MuiCardActions-root",
-                "spacing": "MuiCardActions-spacing",
-              }
-            }
-          >
-            <div
-              className="MuiCardActions-root MuiCardActions-spacing"
-            />
-          </ForwardRef(CardActions)>
-        </WithStyles(ForwardRef(CardActions))>
-      </div>
-    </ForwardRef(Container)>
-  </WithStyles(ForwardRef(Container))>
-</CommentField>
-`;
-
-exports[`CommentField should render without crashing 1`] = `
-<CommentField>
-  <WithStyles(ForwardRef(Container))
-    className="makeStyles-root-1"
-  >
-    <ForwardRef(Container)
-      className="makeStyles-root-1"
-      classes={
-        Object {
-          "disableGutters": "MuiContainer-disableGutters",
-          "fixed": "MuiContainer-fixed",
-          "maxWidthLg": "MuiContainer-maxWidthLg",
-          "maxWidthMd": "MuiContainer-maxWidthMd",
-          "maxWidthSm": "MuiContainer-maxWidthSm",
-          "maxWidthXl": "MuiContainer-maxWidthXl",
-          "maxWidthXs": "MuiContainer-maxWidthXs",
-          "root": "MuiContainer-root",
-        }
-      }
-    >
-      <div
-        className="MuiContainer-root makeStyles-root-1 MuiContainer-maxWidthLg"
-      >
-        <WithStyles(ForwardRef(CardActionArea))>
-          <ForwardRef(CardActionArea)
-            classes={
-              Object {
-                "focusHighlight": "MuiCardActionArea-focusHighlight",
-                "focusVisible": "Mui-focusVisible",
-                "root": "MuiCardActionArea-root",
-              }
-            }
-          >
-            <WithStyles(ForwardRef(ButtonBase))
-              className="MuiCardActionArea-root"
-              focusVisibleClassName="Mui-focusVisible"
-            >
-              <ForwardRef(ButtonBase)
-                className="MuiCardActionArea-root"
-                classes={
-                  Object {
-                    "disabled": "Mui-disabled",
-                    "focusVisible": "Mui-focusVisible",
-                    "root": "MuiButtonBase-root",
-                  }
-                }
-                focusVisibleClassName="Mui-focusVisible"
-              >
-                <button
-                  className="MuiButtonBase-root MuiCardActionArea-root"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <WithStyles(ForwardRef(CardContent))>
-                    <ForwardRef(CardContent)
-                      classes={
-                        Object {
-                          "root": "MuiCardContent-root",
-                        }
-                      }
-                    >
-                      <div
-                        className="MuiCardContent-root"
-                      >
-                        <div>
-                          <WithStyles(ForwardRef(TextField))
-                            id="Comment"
-                            label="Comment"
-                            multiline={true}
-                            onChange={[Function]}
-                            rows={4}
-                            style={
-                              Object {
-                                "width": 250,
-                              }
-                            }
-                            value=""
-                            variant="outlined"
-                          >
-                            <ForwardRef(TextField)
-                              classes={
-                                Object {
-                                  "root": "MuiTextField-root",
-                                }
-                              }
-                              id="Comment"
-                              label="Comment"
-                              multiline={true}
-                              onChange={[Function]}
-                              rows={4}
-                              style={
-                                Object {
-                                  "width": 250,
-                                }
-                              }
-                              value=""
-                              variant="outlined"
-                            >
-                              <WithStyles(ForwardRef(FormControl))
-                                className="MuiTextField-root"
-                                color="primary"
-                                disabled={false}
-                                error={false}
-                                fullWidth={false}
-                                required={false}
-                                style={
-                                  Object {
-                                    "width": 250,
-                                  }
-                                }
-                                variant="outlined"
-                              >
-                                <ForwardRef(FormControl)
-                                  className="MuiTextField-root"
-                                  classes={
-                                    Object {
-                                      "fullWidth": "MuiFormControl-fullWidth",
-                                      "marginDense": "MuiFormControl-marginDense",
-                                      "marginNormal": "MuiFormControl-marginNormal",
-                                      "root": "MuiFormControl-root",
-                                    }
-                                  }
-                                  color="primary"
-                                  disabled={false}
-                                  error={false}
-                                  fullWidth={false}
-                                  required={false}
-                                  style={
-                                    Object {
-                                      "width": 250,
-                                    }
-                                  }
-                                  variant="outlined"
-                                >
-                                  <div
-                                    className="MuiFormControl-root MuiTextField-root"
-                                    style={
-                                      Object {
-                                        "width": 250,
-                                      }
-                                    }
-                                  >
-                                    <WithStyles(ForwardRef(InputLabel))
-                                      htmlFor="Comment"
-                                      id="Comment-label"
-                                    >
-                                      <ForwardRef(InputLabel)
-                                        classes={
-                                          Object {
-                                            "animated": "MuiInputLabel-animated",
-                                            "asterisk": "MuiInputLabel-asterisk",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "filled": "MuiInputLabel-filled",
-                                            "focused": "Mui-focused",
-                                            "formControl": "MuiInputLabel-formControl",
-                                            "marginDense": "MuiInputLabel-marginDense",
-                                            "outlined": "MuiInputLabel-outlined",
-                                            "required": "Mui-required",
-                                            "root": "MuiInputLabel-root",
-                                            "shrink": "MuiInputLabel-shrink",
-                                          }
-                                        }
-                                        htmlFor="Comment"
-                                        id="Comment-label"
-                                      >
-                                        <WithStyles(ForwardRef(FormLabel))
-                                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                          classes={
-                                            Object {
-                                              "asterisk": "MuiInputLabel-asterisk",
-                                              "disabled": "Mui-disabled",
-                                              "error": "Mui-error",
-                                              "focused": "Mui-focused",
-                                              "required": "Mui-required",
-                                            }
-                                          }
-                                          data-shrink={false}
-                                          htmlFor="Comment"
-                                          id="Comment-label"
-                                        >
-                                          <ForwardRef(FormLabel)
-                                            className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                            classes={
-                                              Object {
-                                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
-                                                "colorSecondary": "MuiFormLabel-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "filled": "MuiFormLabel-filled",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "required": "Mui-required Mui-required",
-                                                "root": "MuiFormLabel-root",
-                                              }
-                                            }
-                                            data-shrink={false}
-                                            htmlFor="Comment"
-                                            id="Comment-label"
-                                          >
-                                            <label
-                                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                              data-shrink={false}
-                                              htmlFor="Comment"
-                                              id="Comment-label"
-                                            >
+                                          label={
+                                            <React.Fragment>
                                               Comment
-                                            </label>
-                                          </ForwardRef(FormLabel)>
-                                        </WithStyles(ForwardRef(FormLabel))>
-                                      </ForwardRef(InputLabel)>
-                                    </WithStyles(ForwardRef(InputLabel))>
-                                    <WithStyles(ForwardRef(OutlinedInput))
-                                      autoFocus={false}
-                                      fullWidth={false}
-                                      id="Comment"
-                                      label={
-                                        <React.Fragment>
-                                          Comment
-                                        </React.Fragment>
-                                      }
-                                      multiline={true}
-                                      onChange={[Function]}
-                                      rows={4}
-                                      value=""
-                                    >
-                                      <ForwardRef(OutlinedInput)
-                                        autoFocus={false}
-                                        classes={
-                                          Object {
-                                            "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                            "adornedStart": "MuiOutlinedInput-adornedStart",
-                                            "colorSecondary": "MuiOutlinedInput-colorSecondary",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "focused": "Mui-focused",
-                                            "input": "MuiOutlinedInput-input",
-                                            "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                            "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                            "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                            "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                            "marginDense": "MuiOutlinedInput-marginDense",
-                                            "multiline": "MuiOutlinedInput-multiline",
-                                            "notchedOutline": "MuiOutlinedInput-notchedOutline",
-                                            "root": "MuiOutlinedInput-root",
+                                            </React.Fragment>
                                           }
-                                        }
-                                        fullWidth={false}
-                                        id="Comment"
-                                        label={
-                                          <React.Fragment>
-                                            Comment
-                                          </React.Fragment>
-                                        }
-                                        multiline={true}
-                                        onChange={[Function]}
-                                        rows={4}
-                                        value=""
-                                      >
-                                        <WithStyles(ForwardRef(InputBase))
-                                          autoFocus={false}
-                                          classes={
-                                            Object {
-                                              "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                              "adornedStart": "MuiOutlinedInput-adornedStart",
-                                              "colorSecondary": "MuiOutlinedInput-colorSecondary",
-                                              "disabled": "Mui-disabled",
-                                              "error": "Mui-error",
-                                              "focused": "Mui-focused",
-                                              "input": "MuiOutlinedInput-input",
-                                              "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                              "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                              "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                              "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                              "marginDense": "MuiOutlinedInput-marginDense",
-                                              "multiline": "MuiOutlinedInput-multiline",
-                                              "notchedOutline": null,
-                                              "root": "MuiOutlinedInput-root",
-                                            }
-                                          }
-                                          fullWidth={false}
-                                          id="Comment"
-                                          inputComponent="input"
                                           multiline={true}
                                           onChange={[Function]}
-                                          renderSuffix={[Function]}
                                           rows={4}
-                                          type="text"
                                           value=""
                                         >
-                                          <ForwardRef(InputBase)
+                                          <WithStyles(ForwardRef(InputBase))
                                             autoFocus={false}
                                             classes={
                                               Object {
-                                                "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
-                                                "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
-                                                "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "formControl": "MuiInputBase-formControl",
-                                                "fullWidth": "MuiInputBase-fullWidth",
-                                                "input": "MuiInputBase-input MuiOutlinedInput-input",
-                                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
-                                                "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
-                                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
-                                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
-                                                "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
-                                                "inputTypeSearch": "MuiInputBase-inputTypeSearch",
-                                                "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
-                                                "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
-                                                "root": "MuiInputBase-root MuiOutlinedInput-root",
+                                                "adornedEnd": "MuiOutlinedInput-adornedEnd",
+                                                "adornedStart": "MuiOutlinedInput-adornedStart",
+                                                "colorSecondary": "MuiOutlinedInput-colorSecondary",
+                                                "disabled": "Mui-disabled",
+                                                "error": "Mui-error",
+                                                "focused": "Mui-focused",
+                                                "input": "MuiOutlinedInput-input",
+                                                "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
+                                                "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
+                                                "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
+                                                "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                                "marginDense": "MuiOutlinedInput-marginDense",
+                                                "multiline": "MuiOutlinedInput-multiline",
+                                                "notchedOutline": null,
+                                                "root": "MuiOutlinedInput-root",
                                               }
                                             }
                                             fullWidth={false}
@@ -1265,44 +312,60 @@ exports[`CommentField should render without crashing 1`] = `
                                             type="text"
                                             value=""
                                           >
-                                            <div
-                                              className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
-                                              onClick={[Function]}
-                                            >
-                                              <textarea
-                                                aria-invalid={false}
-                                                autoFocus={false}
-                                                className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
-                                                disabled={false}
-                                                id="Comment"
-                                                onAnimationStart={[Function]}
-                                                onBlur={[Function]}
-                                                onChange={[Function]}
-                                                onFocus={[Function]}
-                                                required={false}
-                                                rows={4}
-                                                value=""
-                                              />
-                                              <WithStyles(ForwardRef(NotchedOutline))
-                                                className="MuiOutlinedInput-notchedOutline"
-                                                label={
-                                                  <React.Fragment>
-                                                    Comment
-                                                  </React.Fragment>
+                                            <ForwardRef(InputBase)
+                                              autoFocus={false}
+                                              classes={
+                                                Object {
+                                                  "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
+                                                  "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
+                                                  "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
+                                                  "disabled": "Mui-disabled Mui-disabled",
+                                                  "error": "Mui-error Mui-error",
+                                                  "focused": "Mui-focused Mui-focused",
+                                                  "formControl": "MuiInputBase-formControl",
+                                                  "fullWidth": "MuiInputBase-fullWidth",
+                                                  "input": "MuiInputBase-input MuiOutlinedInput-input",
+                                                  "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
+                                                  "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
+                                                  "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                                                  "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
+                                                  "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                                  "inputTypeSearch": "MuiInputBase-inputTypeSearch",
+                                                  "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
+                                                  "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
+                                                  "root": "MuiInputBase-root MuiOutlinedInput-root",
                                                 }
-                                                labelWidth={0}
-                                                notched={false}
+                                              }
+                                              fullWidth={false}
+                                              id="Comment"
+                                              inputComponent="input"
+                                              multiline={true}
+                                              onChange={[Function]}
+                                              renderSuffix={[Function]}
+                                              rows={4}
+                                              type="text"
+                                              value=""
+                                            >
+                                              <div
+                                                className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
+                                                onClick={[Function]}
                                               >
-                                                <ForwardRef(NotchedOutline)
+                                                <textarea
+                                                  aria-invalid={false}
+                                                  autoFocus={false}
+                                                  className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
+                                                  disabled={false}
+                                                  id="Comment"
+                                                  onAnimationStart={[Function]}
+                                                  onBlur={[Function]}
+                                                  onChange={[Function]}
+                                                  onFocus={[Function]}
+                                                  required={false}
+                                                  rows={4}
+                                                  value=""
+                                                />
+                                                <WithStyles(ForwardRef(NotchedOutline))
                                                   className="MuiOutlinedInput-notchedOutline"
-                                                  classes={
-                                                    Object {
-                                                      "legend": "PrivateNotchedOutline-legend-4",
-                                                      "legendLabelled": "PrivateNotchedOutline-legendLabelled-5",
-                                                      "legendNotched": "PrivateNotchedOutline-legendNotched-6",
-                                                      "root": "PrivateNotchedOutline-root-3",
-                                                    }
-                                                  }
                                                   label={
                                                     <React.Fragment>
                                                       Comment
@@ -1311,551 +374,105 @@ exports[`CommentField should render without crashing 1`] = `
                                                   labelWidth={0}
                                                   notched={false}
                                                 >
-                                                  <fieldset
-                                                    aria-hidden={true}
-                                                    className="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
-                                                  >
-                                                    <legend
-                                                      className="PrivateNotchedOutline-legendLabelled-5"
-                                                    >
-                                                      <span>
+                                                  <ForwardRef(NotchedOutline)
+                                                    className="MuiOutlinedInput-notchedOutline"
+                                                    classes={
+                                                      Object {
+                                                        "legend": "PrivateNotchedOutline-legend-4",
+                                                        "legendLabelled": "PrivateNotchedOutline-legendLabelled-5",
+                                                        "legendNotched": "PrivateNotchedOutline-legendNotched-6",
+                                                        "root": "PrivateNotchedOutline-root-3",
+                                                      }
+                                                    }
+                                                    label={
+                                                      <React.Fragment>
                                                         Comment
-                                                      </span>
-                                                    </legend>
-                                                  </fieldset>
-                                                </ForwardRef(NotchedOutline)>
-                                              </WithStyles(ForwardRef(NotchedOutline))>
-                                            </div>
-                                          </ForwardRef(InputBase)>
-                                        </WithStyles(ForwardRef(InputBase))>
-                                      </ForwardRef(OutlinedInput)>
-                                    </WithStyles(ForwardRef(OutlinedInput))>
-                                  </div>
-                                </ForwardRef(FormControl)>
-                              </WithStyles(ForwardRef(FormControl))>
-                            </ForwardRef(TextField)>
-                          </WithStyles(ForwardRef(TextField))>
+                                                      </React.Fragment>
+                                                    }
+                                                    labelWidth={0}
+                                                    notched={false}
+                                                  >
+                                                    <fieldset
+                                                      aria-hidden={true}
+                                                      className="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
+                                                    >
+                                                      <legend
+                                                        className="PrivateNotchedOutline-legendLabelled-5"
+                                                      >
+                                                        <span>
+                                                          Comment
+                                                        </span>
+                                                      </legend>
+                                                    </fieldset>
+                                                  </ForwardRef(NotchedOutline)>
+                                                </WithStyles(ForwardRef(NotchedOutline))>
+                                              </div>
+                                            </ForwardRef(InputBase)>
+                                          </WithStyles(ForwardRef(InputBase))>
+                                        </ForwardRef(OutlinedInput)>
+                                      </WithStyles(ForwardRef(OutlinedInput))>
+                                    </div>
+                                  </ForwardRef(FormControl)>
+                                </WithStyles(ForwardRef(FormControl))>
+                              </ForwardRef(TextField)>
+                            </WithStyles(ForwardRef(TextField))>
+                          </div>
                         </div>
-                      </div>
-                    </ForwardRef(CardContent)>
-                  </WithStyles(ForwardRef(CardContent))>
-                  <span
-                    className="MuiCardActionArea-focusHighlight"
-                  />
-                  <WithStyles(memo)
-                    center={false}
-                  >
-                    <ForwardRef(TouchRipple)
+                      </ForwardRef(CardContent)>
+                    </WithStyles(ForwardRef(CardContent))>
+                    <span
+                      className="MuiCardActionArea-focusHighlight"
+                    />
+                    <WithStyles(memo)
                       center={false}
-                      classes={
-                        Object {
-                          "child": "MuiTouchRipple-child",
-                          "childLeaving": "MuiTouchRipple-childLeaving",
-                          "childPulsate": "MuiTouchRipple-childPulsate",
-                          "ripple": "MuiTouchRipple-ripple",
-                          "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                          "rippleVisible": "MuiTouchRipple-rippleVisible",
-                          "root": "MuiTouchRipple-root",
-                        }
-                      }
                     >
-                      <span
-                        className="MuiTouchRipple-root"
+                      <ForwardRef(TouchRipple)
+                        center={false}
+                        classes={
+                          Object {
+                            "child": "MuiTouchRipple-child",
+                            "childLeaving": "MuiTouchRipple-childLeaving",
+                            "childPulsate": "MuiTouchRipple-childPulsate",
+                            "ripple": "MuiTouchRipple-ripple",
+                            "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                            "rippleVisible": "MuiTouchRipple-rippleVisible",
+                            "root": "MuiTouchRipple-root",
+                          }
+                        }
                       >
-                        <TransitionGroup
-                          childFactory={[Function]}
-                          component={null}
-                          exit={true}
-                        />
-                      </span>
-                    </ForwardRef(TouchRipple)>
-                  </WithStyles(memo)>
-                </button>
-              </ForwardRef(ButtonBase)>
-            </WithStyles(ForwardRef(ButtonBase))>
-          </ForwardRef(CardActionArea)>
-        </WithStyles(ForwardRef(CardActionArea))>
-        <WithStyles(ForwardRef(CardActions))>
-          <ForwardRef(CardActions)
-            classes={
-              Object {
-                "root": "MuiCardActions-root",
-                "spacing": "MuiCardActions-spacing",
-              }
-            }
-          >
-            <div
-              className="MuiCardActions-root MuiCardActions-spacing"
-            />
-          </ForwardRef(CardActions)>
-        </WithStyles(ForwardRef(CardActions))>
-      </div>
-    </ForwardRef(Container)>
-  </WithStyles(ForwardRef(Container))>
-</CommentField>
-`;
-
-exports[`CommentField should render without crashing 2`] = `
-<CommentField>
-  <WithStyles(ForwardRef(Container))
-    className="makeStyles-root-1"
-  >
-    <ForwardRef(Container)
-      className="makeStyles-root-1"
-      classes={
-        Object {
-          "disableGutters": "MuiContainer-disableGutters",
-          "fixed": "MuiContainer-fixed",
-          "maxWidthLg": "MuiContainer-maxWidthLg",
-          "maxWidthMd": "MuiContainer-maxWidthMd",
-          "maxWidthSm": "MuiContainer-maxWidthSm",
-          "maxWidthXl": "MuiContainer-maxWidthXl",
-          "maxWidthXs": "MuiContainer-maxWidthXs",
-          "root": "MuiContainer-root",
-        }
-      }
-    >
-      <div
-        className="MuiContainer-root makeStyles-root-1 MuiContainer-maxWidthLg"
-      >
-        <WithStyles(ForwardRef(CardActionArea))>
-          <ForwardRef(CardActionArea)
-            classes={
-              Object {
-                "focusHighlight": "MuiCardActionArea-focusHighlight",
-                "focusVisible": "Mui-focusVisible",
-                "root": "MuiCardActionArea-root",
-              }
-            }
-          >
-            <WithStyles(ForwardRef(ButtonBase))
-              className="MuiCardActionArea-root"
-              focusVisibleClassName="Mui-focusVisible"
-            >
-              <ForwardRef(ButtonBase)
-                className="MuiCardActionArea-root"
-                classes={
-                  Object {
-                    "disabled": "Mui-disabled",
-                    "focusVisible": "Mui-focusVisible",
-                    "root": "MuiButtonBase-root",
-                  }
+                        <span
+                          className="MuiTouchRipple-root"
+                        >
+                          <TransitionGroup
+                            childFactory={[Function]}
+                            component={null}
+                            exit={true}
+                          />
+                        </span>
+                      </ForwardRef(TouchRipple)>
+                    </WithStyles(memo)>
+                  </button>
+                </ForwardRef(ButtonBase)>
+              </WithStyles(ForwardRef(ButtonBase))>
+            </ForwardRef(CardActionArea)>
+          </WithStyles(ForwardRef(CardActionArea))>
+          <WithStyles(ForwardRef(CardActions))>
+            <ForwardRef(CardActions)
+              classes={
+                Object {
+                  "root": "MuiCardActions-root",
+                  "spacing": "MuiCardActions-spacing",
                 }
-                focusVisibleClassName="Mui-focusVisible"
-              >
-                <button
-                  className="MuiButtonBase-root MuiCardActionArea-root"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <WithStyles(ForwardRef(CardContent))>
-                    <ForwardRef(CardContent)
-                      classes={
-                        Object {
-                          "root": "MuiCardContent-root",
-                        }
-                      }
-                    >
-                      <div
-                        className="MuiCardContent-root"
-                      >
-                        <div>
-                          <WithStyles(ForwardRef(TextField))
-                            id="Comment"
-                            label="Comment"
-                            multiline={true}
-                            onChange={[Function]}
-                            rows={4}
-                            style={
-                              Object {
-                                "width": 250,
-                              }
-                            }
-                            value=""
-                            variant="outlined"
-                          >
-                            <ForwardRef(TextField)
-                              classes={
-                                Object {
-                                  "root": "MuiTextField-root",
-                                }
-                              }
-                              id="Comment"
-                              label="Comment"
-                              multiline={true}
-                              onChange={[Function]}
-                              rows={4}
-                              style={
-                                Object {
-                                  "width": 250,
-                                }
-                              }
-                              value=""
-                              variant="outlined"
-                            >
-                              <WithStyles(ForwardRef(FormControl))
-                                className="MuiTextField-root"
-                                color="primary"
-                                disabled={false}
-                                error={false}
-                                fullWidth={false}
-                                required={false}
-                                style={
-                                  Object {
-                                    "width": 250,
-                                  }
-                                }
-                                variant="outlined"
-                              >
-                                <ForwardRef(FormControl)
-                                  className="MuiTextField-root"
-                                  classes={
-                                    Object {
-                                      "fullWidth": "MuiFormControl-fullWidth",
-                                      "marginDense": "MuiFormControl-marginDense",
-                                      "marginNormal": "MuiFormControl-marginNormal",
-                                      "root": "MuiFormControl-root",
-                                    }
-                                  }
-                                  color="primary"
-                                  disabled={false}
-                                  error={false}
-                                  fullWidth={false}
-                                  required={false}
-                                  style={
-                                    Object {
-                                      "width": 250,
-                                    }
-                                  }
-                                  variant="outlined"
-                                >
-                                  <div
-                                    className="MuiFormControl-root MuiTextField-root"
-                                    style={
-                                      Object {
-                                        "width": 250,
-                                      }
-                                    }
-                                  >
-                                    <WithStyles(ForwardRef(InputLabel))
-                                      htmlFor="Comment"
-                                      id="Comment-label"
-                                    >
-                                      <ForwardRef(InputLabel)
-                                        classes={
-                                          Object {
-                                            "animated": "MuiInputLabel-animated",
-                                            "asterisk": "MuiInputLabel-asterisk",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "filled": "MuiInputLabel-filled",
-                                            "focused": "Mui-focused",
-                                            "formControl": "MuiInputLabel-formControl",
-                                            "marginDense": "MuiInputLabel-marginDense",
-                                            "outlined": "MuiInputLabel-outlined",
-                                            "required": "Mui-required",
-                                            "root": "MuiInputLabel-root",
-                                            "shrink": "MuiInputLabel-shrink",
-                                          }
-                                        }
-                                        htmlFor="Comment"
-                                        id="Comment-label"
-                                      >
-                                        <WithStyles(ForwardRef(FormLabel))
-                                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                          classes={
-                                            Object {
-                                              "asterisk": "MuiInputLabel-asterisk",
-                                              "disabled": "Mui-disabled",
-                                              "error": "Mui-error",
-                                              "focused": "Mui-focused",
-                                              "required": "Mui-required",
-                                            }
-                                          }
-                                          data-shrink={false}
-                                          htmlFor="Comment"
-                                          id="Comment-label"
-                                        >
-                                          <ForwardRef(FormLabel)
-                                            className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                            classes={
-                                              Object {
-                                                "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
-                                                "colorSecondary": "MuiFormLabel-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "filled": "MuiFormLabel-filled",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "required": "Mui-required Mui-required",
-                                                "root": "MuiFormLabel-root",
-                                              }
-                                            }
-                                            data-shrink={false}
-                                            htmlFor="Comment"
-                                            id="Comment-label"
-                                          >
-                                            <label
-                                              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
-                                              data-shrink={false}
-                                              htmlFor="Comment"
-                                              id="Comment-label"
-                                            >
-                                              Comment
-                                            </label>
-                                          </ForwardRef(FormLabel)>
-                                        </WithStyles(ForwardRef(FormLabel))>
-                                      </ForwardRef(InputLabel)>
-                                    </WithStyles(ForwardRef(InputLabel))>
-                                    <WithStyles(ForwardRef(OutlinedInput))
-                                      autoFocus={false}
-                                      fullWidth={false}
-                                      id="Comment"
-                                      label={
-                                        <React.Fragment>
-                                          Comment
-                                        </React.Fragment>
-                                      }
-                                      multiline={true}
-                                      onChange={[Function]}
-                                      rows={4}
-                                      value=""
-                                    >
-                                      <ForwardRef(OutlinedInput)
-                                        autoFocus={false}
-                                        classes={
-                                          Object {
-                                            "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                            "adornedStart": "MuiOutlinedInput-adornedStart",
-                                            "colorSecondary": "MuiOutlinedInput-colorSecondary",
-                                            "disabled": "Mui-disabled",
-                                            "error": "Mui-error",
-                                            "focused": "Mui-focused",
-                                            "input": "MuiOutlinedInput-input",
-                                            "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                            "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                            "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                            "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                            "marginDense": "MuiOutlinedInput-marginDense",
-                                            "multiline": "MuiOutlinedInput-multiline",
-                                            "notchedOutline": "MuiOutlinedInput-notchedOutline",
-                                            "root": "MuiOutlinedInput-root",
-                                          }
-                                        }
-                                        fullWidth={false}
-                                        id="Comment"
-                                        label={
-                                          <React.Fragment>
-                                            Comment
-                                          </React.Fragment>
-                                        }
-                                        multiline={true}
-                                        onChange={[Function]}
-                                        rows={4}
-                                        value=""
-                                      >
-                                        <WithStyles(ForwardRef(InputBase))
-                                          autoFocus={false}
-                                          classes={
-                                            Object {
-                                              "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                              "adornedStart": "MuiOutlinedInput-adornedStart",
-                                              "colorSecondary": "MuiOutlinedInput-colorSecondary",
-                                              "disabled": "Mui-disabled",
-                                              "error": "Mui-error",
-                                              "focused": "Mui-focused",
-                                              "input": "MuiOutlinedInput-input",
-                                              "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                              "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                              "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                              "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                              "marginDense": "MuiOutlinedInput-marginDense",
-                                              "multiline": "MuiOutlinedInput-multiline",
-                                              "notchedOutline": null,
-                                              "root": "MuiOutlinedInput-root",
-                                            }
-                                          }
-                                          fullWidth={false}
-                                          id="Comment"
-                                          inputComponent="input"
-                                          multiline={true}
-                                          onChange={[Function]}
-                                          renderSuffix={[Function]}
-                                          rows={4}
-                                          type="text"
-                                          value=""
-                                        >
-                                          <ForwardRef(InputBase)
-                                            autoFocus={false}
-                                            classes={
-                                              Object {
-                                                "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
-                                                "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
-                                                "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
-                                                "disabled": "Mui-disabled Mui-disabled",
-                                                "error": "Mui-error Mui-error",
-                                                "focused": "Mui-focused Mui-focused",
-                                                "formControl": "MuiInputBase-formControl",
-                                                "fullWidth": "MuiInputBase-fullWidth",
-                                                "input": "MuiInputBase-input MuiOutlinedInput-input",
-                                                "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
-                                                "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
-                                                "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
-                                                "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
-                                                "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
-                                                "inputTypeSearch": "MuiInputBase-inputTypeSearch",
-                                                "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
-                                                "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
-                                                "root": "MuiInputBase-root MuiOutlinedInput-root",
-                                              }
-                                            }
-                                            fullWidth={false}
-                                            id="Comment"
-                                            inputComponent="input"
-                                            multiline={true}
-                                            onChange={[Function]}
-                                            renderSuffix={[Function]}
-                                            rows={4}
-                                            type="text"
-                                            value=""
-                                          >
-                                            <div
-                                              className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
-                                              onClick={[Function]}
-                                            >
-                                              <textarea
-                                                aria-invalid={false}
-                                                autoFocus={false}
-                                                className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
-                                                disabled={false}
-                                                id="Comment"
-                                                onAnimationStart={[Function]}
-                                                onBlur={[Function]}
-                                                onChange={[Function]}
-                                                onFocus={[Function]}
-                                                required={false}
-                                                rows={4}
-                                                value=""
-                                              />
-                                              <WithStyles(ForwardRef(NotchedOutline))
-                                                className="MuiOutlinedInput-notchedOutline"
-                                                label={
-                                                  <React.Fragment>
-                                                    Comment
-                                                  </React.Fragment>
-                                                }
-                                                labelWidth={0}
-                                                notched={false}
-                                              >
-                                                <ForwardRef(NotchedOutline)
-                                                  className="MuiOutlinedInput-notchedOutline"
-                                                  classes={
-                                                    Object {
-                                                      "legend": "PrivateNotchedOutline-legend-4",
-                                                      "legendLabelled": "PrivateNotchedOutline-legendLabelled-5",
-                                                      "legendNotched": "PrivateNotchedOutline-legendNotched-6",
-                                                      "root": "PrivateNotchedOutline-root-3",
-                                                    }
-                                                  }
-                                                  label={
-                                                    <React.Fragment>
-                                                      Comment
-                                                    </React.Fragment>
-                                                  }
-                                                  labelWidth={0}
-                                                  notched={false}
-                                                >
-                                                  <fieldset
-                                                    aria-hidden={true}
-                                                    className="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
-                                                  >
-                                                    <legend
-                                                      className="PrivateNotchedOutline-legendLabelled-5"
-                                                    >
-                                                      <span>
-                                                        Comment
-                                                      </span>
-                                                    </legend>
-                                                  </fieldset>
-                                                </ForwardRef(NotchedOutline)>
-                                              </WithStyles(ForwardRef(NotchedOutline))>
-                                            </div>
-                                          </ForwardRef(InputBase)>
-                                        </WithStyles(ForwardRef(InputBase))>
-                                      </ForwardRef(OutlinedInput)>
-                                    </WithStyles(ForwardRef(OutlinedInput))>
-                                  </div>
-                                </ForwardRef(FormControl)>
-                              </WithStyles(ForwardRef(FormControl))>
-                            </ForwardRef(TextField)>
-                          </WithStyles(ForwardRef(TextField))>
-                        </div>
-                      </div>
-                    </ForwardRef(CardContent)>
-                  </WithStyles(ForwardRef(CardContent))>
-                  <span
-                    className="MuiCardActionArea-focusHighlight"
-                  />
-                  <WithStyles(memo)
-                    center={false}
-                  >
-                    <ForwardRef(TouchRipple)
-                      center={false}
-                      classes={
-                        Object {
-                          "child": "MuiTouchRipple-child",
-                          "childLeaving": "MuiTouchRipple-childLeaving",
-                          "childPulsate": "MuiTouchRipple-childPulsate",
-                          "ripple": "MuiTouchRipple-ripple",
-                          "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                          "rippleVisible": "MuiTouchRipple-rippleVisible",
-                          "root": "MuiTouchRipple-root",
-                        }
-                      }
-                    >
-                      <span
-                        className="MuiTouchRipple-root"
-                      >
-                        <TransitionGroup
-                          childFactory={[Function]}
-                          component={null}
-                          exit={true}
-                        />
-                      </span>
-                    </ForwardRef(TouchRipple)>
-                  </WithStyles(memo)>
-                </button>
-              </ForwardRef(ButtonBase)>
-            </WithStyles(ForwardRef(ButtonBase))>
-          </ForwardRef(CardActionArea)>
-        </WithStyles(ForwardRef(CardActionArea))>
-        <WithStyles(ForwardRef(CardActions))>
-          <ForwardRef(CardActions)
-            classes={
-              Object {
-                "root": "MuiCardActions-root",
-                "spacing": "MuiCardActions-spacing",
               }
-            }
-          >
-            <div
-              className="MuiCardActions-root MuiCardActions-spacing"
-            />
-          </ForwardRef(CardActions)>
-        </WithStyles(ForwardRef(CardActions))>
-      </div>
-    </ForwardRef(Container)>
-  </WithStyles(ForwardRef(Container))>
-</CommentField>
+            >
+              <div
+                className="MuiCardActions-root MuiCardActions-spacing"
+              />
+            </ForwardRef(CardActions)>
+          </WithStyles(ForwardRef(CardActions))>
+        </div>
+      </ForwardRef(Container)>
+    </WithStyles(ForwardRef(Container))>
+  </CommentField>
+</Provider>
 `;

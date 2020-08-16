@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import NotifCard from "./Notifications/NotifCard";
 
 
 class Notifications extends Component {
     render() {
         return (
             <div className="Notifications" style={{marginTop:60}} >
-                <div>
-                    test 5
-                </div>
+                <NotifCard/>
             </div>
         );
     }

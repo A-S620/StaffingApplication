@@ -11,6 +11,7 @@ import Notifications from "../Notifications";
 import Calendar from "../Calendar";
 import HelpCentre from "../HelpCentre";
 import Settings from "../Settings";
+import CreateShifts from "../CreateShifts";
 
 const drawerWidth = 240;
 
@@ -75,7 +76,6 @@ export default function Navigation() {
         setTab(newValue);
         setOpen(true)
     };
-    console.log(tab);
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -104,7 +104,7 @@ export default function Navigation() {
                 <Tabs value={tab} onChange={handleTabChange} orientation={'vertical'} indicatorColor="primary" textColor="primary">
                     <Tab label={"Home"} {...a11yProps(0)}  />
                     <Tab label={"Days Off"} {...a11yProps(1)} />
-                    <Tab label={"Swap Shifts"} {...a11yProps(2)} />
+                    <Tab label={"Create Shifts"} {...a11yProps(2)} />
                     <Tab label={"Amend Data"} {...a11yProps(3)} />
                     <Tab label={"Notifications"} {...a11yProps(4)} />
                     <Tab label={"Calendar"} {...a11yProps(5)} />
@@ -120,7 +120,7 @@ export default function Navigation() {
                 <DaysOff/>
             </TabPanel>
             <TabPanel value={tab} index={2}>
-                <SwapShifts/>
+                <CreateShifts/>
             </TabPanel>
             <TabPanel value={tab} index={3}>
                 <AmendData/>
