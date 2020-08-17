@@ -2,7 +2,15 @@ import React from 'react';
 import {Button, Container, CssBaseline, Grid, TextField, Typography} from '@material-ui/core'
 import {connect} from "react-redux";
 import {makeStyles} from '@material-ui/core/styles';
+import Slide from "@material-ui/core/Slide";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
 import {store} from "../../store/Store";
+import IconButton from "@material-ui/core/IconButton";
+import ClearIcon from "@material-ui/icons/Clear";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,12 +40,25 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
+
 function Shift(props) {
     const classes = useStyles();
     const [startDate, setStartDate] = React.useState();
     const [endDate, setEndDate] = React.useState();
     const [shiftType, setShiftType] = React.useState();
     const [location, setLocation] = React.useState();
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
         <Container component="main" maxWidth="xs">
@@ -48,6 +69,7 @@ function Shift(props) {
                 </Typography>
                 <form className={classes.form} noValidate>
                     <Grid container spacing={2}>
+
 
                         <Grid item xs={12}>
 
@@ -136,34 +158,54 @@ function Shift(props) {
                             })}
                         </Grid>
                     </Grid>
+                    <div>
+                        <Button fullWidth
+                                variant="outlined"
+                                color="primary"
+                                className={classes.submit}
+                                onClick={() => {
+                                    handleClickOpen();
+                                    store.dispatch({
+                                        type: "ADD_SHIFT",
+                                        payload: {
+                                            PersonId: 244,
+                                            ShiftStartDate: startDate,
+                                            ShiftEndDate: endDate,
+                                            ShiftType: shiftType,
+                                            Location: location
+                                        }
 
-
-                    <Button
-                        onClick={() => {
-                            console.log(startDate + endDate + shiftType + location);
-
-                            store.dispatch({
-                                type: "ADD_SHIFT",
-                                payload: {
-                                    PersonId: 244,
-                                    ShiftStartDate: startDate,
-                                    ShiftEndDate: endDate,
-                                    ShiftType: shiftType,
-                                    Location: location
+                                    });
                                 }
+                                }>
+                            Create Shift
+                        </Button>
+                        <Dialog
+                            open={open}
+                            TransitionComponent={Transition}
+                            keepMounted
+                            onClose={handleClose}
+                            aria-labelledby="alert-dialog-slide-title"
+                            aria-describedby="alert-dialog-slide-description"
+                        >
+                            <Grid
+                                container
+                                direction="row"
+                                justify="flex-end"
+                                alignItems="flex-start"
+                            >
+                                <IconButton onClick={handleClose}>
+                                    <ClearIcon/>
+                                </IconButton>
 
-                            });
-                            console.log(props.shifts)
+                            </Grid>
+                            <DialogTitle id="alert-dialog-slide-title">{"Shift has been created"}</DialogTitle>
 
-                        }}
-                        // type="submit"
-                        fullWidth
-                        variant="outlined"
-                        color="primary"
-                        className={classes.submit}
-                    >
-                        Save Changes
-                    </Button>
+
+                        </Dialog>
+                    </div>
+
+
                 </form>
             </div>
         </Container>

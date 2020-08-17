@@ -106,10 +106,11 @@ export default function Navigation() {
                     <Tab label={"Days Off"} {...a11yProps(1)} />
                     <Tab label={"Create Shifts"} {...a11yProps(2)} />
                     <Tab label={"Amend Data"} {...a11yProps(3)} />
-                    <Tab label={"Notifications"} {...a11yProps(4)} />
-                    <Tab label={"Calendar"} {...a11yProps(5)} />
-                    <Tab label={"Help Centre"} {...a11yProps(6)} />
-                    <Tab label={"Settings"} {...a11yProps(7)} />
+                    <Tab label={"Swap Shifts"} {...a11yProps(4)} />
+                    <Tab label={"Notifications"} {...a11yProps(5)} />
+                    <Tab label={"Calendar"} {...a11yProps(6)} />
+                    <Tab label={"Help Centre"} {...a11yProps(7)} />
+                    <Tab label={"Settings"} {...a11yProps(8)} />
                 </Tabs>
 
             </Drawer>
@@ -124,17 +125,20 @@ export default function Navigation() {
             </TabPanel>
             <TabPanel value={tab} index={3}>
                 <AmendData/>
-            </TabPanel>
+            </TabPanel >
             <TabPanel value={tab} index={4}>
-                <Notifications/>
+                <SwapShifts/>
             </TabPanel>
             <TabPanel value={tab} index={5}>
-                <Calendar/>
+                <Notifications/>
             </TabPanel>
             <TabPanel value={tab} index={6}>
-                <HelpCentre/>
+                <Calendar/>
             </TabPanel>
             <TabPanel value={tab} index={7}>
+                <HelpCentre/>
+            </TabPanel>
+            <TabPanel value={tab} index={8}>
                 <Settings/>
             </TabPanel>
         </div>

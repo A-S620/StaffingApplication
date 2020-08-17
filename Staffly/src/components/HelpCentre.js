@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import HelpCard from "./HelpCentre/HelpCard";
+import RequestHelp from "./HelpCentre/RequestHelp";
 
 
 class HelpCentre extends Component {
@@ -6,7 +8,8 @@ class HelpCentre extends Component {
         return (
             <div className="HelpCentre" style={{marginTop:60}} >
                 <div>
-                    test 4
+                    <RequestHelp/>
+                    <HelpCard/>
                 </div>
             </div>
         );

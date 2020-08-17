@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App  should render correctly in "debug" mode 1`] = `
+exports[`App  should render correctly  1`] = `
 <div
   className="HelpCentre"
   style={
@@ -10,7 +10,7 @@ exports[`App  should render correctly in "debug" mode 1`] = `
   }
 >
   <div>
-    test 4
+    <Connect(HelpCard) />
   </div>
 </div>
 `;

@@ -227,7 +227,7 @@ export default function DaysOffStepper() {
                                 Back
                             </Button>
                             <Button
-                                variant="contained"
+                                variant="outlined"
                                 color="primary"
                                 onClick={handleNext}
                                 className={classes.button}
@@ -251,7 +251,7 @@ export default function DaysOffStepper() {
                                     Step {activeStep + 1} already completed
                                 </Typography>
                             ) : (
-                                <Button variant="contained" color="primary" onClick={handleComplete}>
+                                <Button variant="outlined" color="primary" onClick={handleComplete}>
                                     {completedSteps() === totalSteps() - 1 ? 'Submit' : 'Complete Step'}
                                 </Button>
                             ))}

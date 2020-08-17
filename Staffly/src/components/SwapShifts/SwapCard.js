@@ -41,7 +41,7 @@ export default function SwapCard() {
             </CardContent>
             <CardActions style={{justifyContent: 'center'}}>
 
-                <Button variant="contained" color="primary">
+                <Button variant="outlined" color="primary">
                     Submit
                 </Button>
 

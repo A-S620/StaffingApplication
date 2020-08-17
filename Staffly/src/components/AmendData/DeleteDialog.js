@@ -33,7 +33,7 @@ function DeleteDialog(props) {
 
     return (
         <div>
-            <Button className={classes.button} variant="contained" color="primary" onClick={handleClickOpen}>
+            <Button className={classes.button} variant="outlined" color="primary" onClick={handleClickOpen}>
                 Delete
             </Button>
             <Dialog

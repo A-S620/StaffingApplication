@@ -97,7 +97,7 @@ function EditDialog(props) {
 
     return (
         <div>
-            <Button className={classes.button} variant="contained" color="primary" onClick={() => {
+            <Button className={classes.button} variant="outlined" color="primary" onClick={() => {
                 handleClickOpen();
                 // store.dispatch({
                 //     type: "DELETE_SHIFT",
@@ -265,7 +265,7 @@ function EditDialog(props) {
                         }
                         type="submit"
                         fullWidth
-                        variant="contained"
+                        variant="outlined"
                         color="primary"
                         className={classes.submit}
 
