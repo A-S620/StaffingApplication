@@ -40,9 +40,7 @@ function HelpCard(props) {
     //
     // })}
     const handleDelete = (cardToDelete) => () => {
-        console.log(cardToDelete.NotifId);
         var index= cardData.indexOf(cardToDelete);
-        console.log(index);
         cardData.splice(index,1);
         // setCardData((cards) => cards.filter((card) => card.NotifId !== cardToDelete.NotifId));
     };

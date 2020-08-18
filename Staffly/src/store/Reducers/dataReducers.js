@@ -1,5 +1,8 @@
 const initialState = {
     selectedRow: {},
+    login: {
+        login: true
+    },
     help: [
         {
             ID:1,
@@ -98,7 +101,8 @@ const initialState = {
             LastName: "Marley",
             UserName: "BobM1",
             UserType: 1,
-            Email: "BobM@example.com",
+            Email: "BobM",
+            Password: "test123"
         }
     ],
     shifts: [
@@ -167,6 +171,12 @@ export default function dataReducer(state = initialState, action) {
             return {
                 ...state,
                 selectedRow: action.payload
+            };
+        case "SET_isLoggedIn":
+            console.log(action.payload);
+            return {
+                ...state,
+                isLoggedIn: action.payload
             };
         case "ADD_PERSON":
             return {

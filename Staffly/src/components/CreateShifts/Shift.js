@@ -158,55 +158,57 @@ function Shift(props) {
                             })}
                         </Grid>
                     </Grid>
-                    <div>
-                        <Button fullWidth
-                                variant="outlined"
-                                color="primary"
-                                className={classes.submit}
-                                onClick={() => {
-                                    handleClickOpen();
-                                    store.dispatch({
-                                        type: "ADD_SHIFT",
-                                        payload: {
-                                            PersonId: 244,
-                                            ShiftStartDate: startDate,
-                                            ShiftEndDate: endDate,
-                                            ShiftType: shiftType,
-                                            Location: location
-                                        }
 
-                                    });
-                                }
-                                }>
-                            Create Shift
-                        </Button>
-                        <Dialog
-                            open={open}
-                            TransitionComponent={Transition}
-                            keepMounted
-                            onClose={handleClose}
-                            aria-labelledby="alert-dialog-slide-title"
-                            aria-describedby="alert-dialog-slide-description"
-                        >
-                            <Grid
-                                container
-                                direction="row"
-                                justify="flex-end"
-                                alignItems="flex-start"
-                            >
-                                <IconButton onClick={handleClose}>
-                                    <ClearIcon/>
-                                </IconButton>
-
-                            </Grid>
-                            <DialogTitle id="alert-dialog-slide-title">{"Shift has been created"}</DialogTitle>
-
-
-                        </Dialog>
-                    </div>
 
 
                 </form>
+                <div>
+                <Button fullWidth
+                        style={{minWidth: 380}}
+                        variant="outlined"
+                        color="primary"
+                        className={classes.submit}
+                        onClick={() => {
+                            handleClickOpen();
+                            store.dispatch({
+                                type: "ADD_SHIFT",
+                                payload: {
+                                    PersonId: 244,
+                                    ShiftStartDate: startDate,
+                                    ShiftEndDate: endDate,
+                                    ShiftType: shiftType,
+                                    Location: location
+                                }
+
+                            });
+                        }
+                        }>
+                    Create Shift
+                </Button>
+                <Dialog
+                    open={open}
+                    TransitionComponent={Transition}
+                    keepMounted
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-slide-title"
+                    aria-describedby="alert-dialog-slide-description"
+                >
+                    <Grid
+                        container
+                        direction="row"
+                        justify="flex-end"
+                        alignItems="flex-start"
+                    >
+                        <IconButton onClick={handleClose}>
+                            <ClearIcon/>
+                        </IconButton>
+
+                    </Grid>
+                    <DialogTitle id="alert-dialog-slide-title">{"Shift has been created"}</DialogTitle>
+
+
+                </Dialog>
+            </div>
             </div>
         </Container>
     );

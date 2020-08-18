@@ -16,7 +16,6 @@ export default function Comment() {
 
     const handleChange = (event) => {
         setValue(event.target.value);
-        console.log(value)
     };
     return (
         <div>
@@ -31,7 +30,6 @@ export default function Comment() {
                 value={value}
                 onChange={(event) => {
                     setValue(event.target.value);
-                    console.log("value   " + value)
 
                 }}
             />

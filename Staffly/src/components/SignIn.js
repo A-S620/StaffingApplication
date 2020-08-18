@@ -12,13 +12,15 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import {connect} from "react-redux";
+import {store} from "../store/Store";
 
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
             <Link color="inherit" href="https://material-ui.com/">
-                Your Website
+                Staffly
             </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -45,9 +47,16 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(3, 0, 2),
     },
 }));
+function validateLogIn(email, password, actEmail, actPassword){
+    return email === actEmail && password === actPassword;
 
+
+}
 export default function SignIn() {
     const classes = useStyles();
+    const [email, setEmail]= React.useState();
+    const [password,setPassword] = React.useState();
+
 
     return (
         <Container component="main" maxWidth="xs">
@@ -70,6 +79,9 @@ export default function SignIn() {
                         name="email"
                         autoComplete="email"
                         autoFocus
+                        onChange={(event) => {
+                            setEmail(event.target.value)
+                        }}
                     />
                     <TextField
                         variant="outlined"
@@ -81,6 +93,9 @@ export default function SignIn() {
                         type="password"
                         id="password"
                         autoComplete="current-password"
+                        onChange={(event) => {
+                            setPassword(event.target.value)
+                        }}
                     />
                     <FormControlLabel
                         control={<Checkbox value="remember" color="primary" />}
@@ -92,6 +107,21 @@ export default function SignIn() {
                         variant="outlined"
                         color="primary"
                         className={classes.submit}
+                        onClick={() =>{
+                            console.log(email);
+                            // console.log(props.email);
+
+
+                            // store.dispatch({
+                            //     type: "SET_isLoggedIn",
+                            //     payload: {
+                            //         logIn: validateLogIn(email,password,props.Email,props.Password)
+                            //     }
+                            //
+                            //     }
+                            //
+                            // )
+                        }}
                     >
                         Sign In
                     </Button>
@@ -115,3 +145,12 @@ export default function SignIn() {
         </Container>
     );
 }
+// const mapStateToProps = state => {
+//     return {
+//         Email: state.person.Email,
+//         Password: state.person.Password,
+//         isLoggedIn: state.isLoggedIn
+//
+//     }
+// };
+// export default connect(mapStateToProps, {})(SignIn);

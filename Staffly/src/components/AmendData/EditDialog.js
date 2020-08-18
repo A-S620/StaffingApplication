@@ -18,6 +18,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ClearIcon from "@material-ui/icons/Clear";
 import {connect} from "react-redux";
 import {store} from "../../store/Store";
+import grey from '@material-ui/core/colors'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -68,8 +69,6 @@ function EditDialog(props) {
     };
     const typeCheck = () => {
         if (shiftType === ""){
-            console.log("shift type    "+shiftType);
-            console.log("shift type 2    "+props.selectedRow.ShiftType);
             return props.selectedRow.ShiftType;
 
         }
@@ -85,8 +84,6 @@ function EditDialog(props) {
         }
         else if (shiftType === ""){
             setShiftType(props.selectedRow.ShiftType);
-            console.log("shift type    "+shiftType);
-            console.log("shift type 2    "+props.selectedRow.ShiftType)
         }
         else if (location === ""){
             setLocation(props.selectedRow.Location)
@@ -130,7 +127,7 @@ function EditDialog(props) {
                         <Container component="main" maxWidth="xs">
                             <CssBaseline />
                             <div className={classes.paper}>
-                                <Typography component="h1" variant="h5">
+                                <Typography component="h1" variant="h5" >
                                     Edit Shift
                                 </Typography>
 
@@ -239,7 +236,6 @@ function EditDialog(props) {
                     <Button
                         onClick={() => {
                             setEmptyStates();
-                            console.log("shift id     "+props.selectedRow.ShiftId);
                             store.dispatch({
                                 type: "DELETE_SHIFT",
                                 payload: props.selectedRow.ShiftId

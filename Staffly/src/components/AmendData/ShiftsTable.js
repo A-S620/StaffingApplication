@@ -13,7 +13,7 @@ import {store} from "../../store/Store";
 
 const columns = [
     {id: 'ShiftId', label: 'Shift ID', minWidth: 170},
-    {id: 'PersonId', label: 'PersonId', minWidth: 100},
+    {id: 'PersonId', label: 'Person ID', minWidth: 100},
     {id: 'ShiftStartDate', label: 'Start Date', minWidth: 170, align: 'right',},
     {id: 'ShiftEndDate', label: 'End Date', minWidth: 170, align: 'right',},
     {id: 'ShiftType', label: 'Shift Type', minWidth: 170, align: 'right',},
@@ -43,7 +43,6 @@ function ShiftsTable(props) {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
-    console.log(props.shifts);
 
     // function getData() {
     //     var request = new XMLHttpRequest();
@@ -78,14 +77,12 @@ function ShiftsTable(props) {
                             return (
                                 <TableRow hover role="checkbox" tabIndex={-1} key={row.ShiftId}
                                           onClick={() => {setSelectedRow(row.ShiftId);
-                                          console.log(row);
 
                                           store.dispatch({
                                               type: "SET_SELECTED_ROW",
                                               payload: row
                                           });
-                                              console.log("selected row   "+ selectedRow)}
-                                          }
+                                          }}
                                 >
                                     {columns.map((column) => {
                                         const value = row[column.id];

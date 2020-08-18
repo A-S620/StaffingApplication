@@ -18,11 +18,8 @@ export default function CommentField() {
 
     const handleChange = (event) => {
         setValue(event.target.value);
-        console.log(value)
     };
     const onClick = () => {
-        console.log("beeep");
-        console.log(value)
     };
     return (
         <Container className={classes.root}>
@@ -40,7 +37,6 @@ export default function CommentField() {
                             value={value}
                             onChange={(event) => {
                                 setValue(event.target.value);
-                                console.log("value   " + value)
 
                             }}
                         />

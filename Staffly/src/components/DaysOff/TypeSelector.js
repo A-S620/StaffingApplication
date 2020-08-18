@@ -27,7 +27,6 @@ export default function TypeSelector() {
                 value={value}
                 onChange={(event) => {
                     setValue(event.target.value);
-                    console.log("value   " + value.toString())
                 }}
                 inputProps={{
                     name: 'typeSelector',

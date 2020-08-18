@@ -11,7 +11,6 @@ import TableRow from '@material-ui/core/TableRow';
 import {connect} from "react-redux";
 
 const columns = [
-    {id: 'RequestID', label: 'Request ID', minWidth: 50},
     {id: 'TypeId', label: 'Type ID', minWidth: 50},
     {id: 'PersonId', label: 'Person ID', minWidth: 100},
     {id: 'RequestDate', label: 'Request Date', minWidth: 170},

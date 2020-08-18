@@ -42,7 +42,7 @@ function DeleteDialog(props) {
                 keepMounted
                 onClose={handleClose}
             >
-                <DialogTitle >{"Delete shift"}</DialogTitle>
+                <DialogTitle >{"Delete Shift"}</DialogTitle>
                 <DialogContent>
                     <DialogContentText >
                         Are you sure you want to delete this shift?
