@@ -8202,7 +8202,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                         <WithStyles(ForwardRef(Typography))
                           className="MuiTablePagination-caption"
                           color="inherit"
-                          id="mui-95356"
+                          id="mui-74861"
                           variant="body2"
                         >
                           <ForwardRef(Typography)
@@ -8242,12 +8242,12 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                               }
                             }
                             color="inherit"
-                            id="mui-95356"
+                            id="mui-74861"
                             variant="body2"
                           >
                             <p
                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                              id="mui-95356"
+                              id="mui-74861"
                             >
                               Rows per page:
                             </p>
@@ -8260,13 +8260,13 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                               "select": "MuiTablePagination-select",
                             }
                           }
-                          id="mui-12856"
+                          id="mui-44168"
                           input={
                             <ForwardRef(WithStyles)
                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                             />
                           }
-                          labelId="mui-95356"
+                          labelId="mui-74861"
                           onChange={[Function]}
                           value={10}
                         >
@@ -8286,13 +8286,13 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                 "selectMenu": "MuiSelect-selectMenu",
                               }
                             }
-                            id="mui-12856"
+                            id="mui-44168"
                             input={
                               <ForwardRef(WithStyles)
                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                               />
                             }
-                            labelId="mui-95356"
+                            labelId="mui-74861"
                             onChange={[Function]}
                             value={10}
                           >
@@ -8346,7 +8346,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                   },
                                   "MenuProps": undefined,
                                   "SelectDisplayProps": Object {
-                                    "id": "mui-12856",
+                                    "id": "mui-44168",
                                   },
                                   "autoWidth": false,
                                   "children": Array [
@@ -8383,7 +8383,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   },
                                   "displayEmpty": false,
-                                  "labelId": "mui-95356",
+                                  "labelId": "mui-74861",
                                   "multiple": false,
                                   "onClose": undefined,
                                   "onOpen": undefined,
@@ -8468,7 +8468,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     },
                                     "MenuProps": undefined,
                                     "SelectDisplayProps": Object {
-                                      "id": "mui-12856",
+                                      "id": "mui-44168",
                                     },
                                     "autoWidth": false,
                                     "children": Array [
@@ -8505,7 +8505,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                       "selectMenu": "MuiSelect-selectMenu",
                                     },
                                     "displayEmpty": false,
-                                    "labelId": "mui-95356",
+                                    "labelId": "mui-74861",
                                     "multiple": false,
                                     "onClose": undefined,
                                     "onOpen": undefined,
@@ -8535,7 +8535,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     }
                                     SelectDisplayProps={
                                       Object {
-                                        "id": "mui-12856",
+                                        "id": "mui-44168",
                                       }
                                     }
                                     autoWidth={false}
@@ -8557,7 +8557,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     }
                                     displayEmpty={false}
                                     inputRef={[Function]}
-                                    labelId="mui-95356"
+                                    labelId="mui-74861"
                                     multiple={false}
                                     onAnimationStart={[Function]}
                                     onBlur={[Function]}
@@ -8568,9 +8568,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                   >
                                     <div
                                       aria-haspopup="listbox"
-                                      aria-labelledby="mui-95356 mui-12856"
+                                      aria-labelledby="mui-74861 mui-44168"
                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                      id="mui-12856"
+                                      id="mui-44168"
                                       onBlur={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
@@ -8626,7 +8626,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     <WithStyles(ForwardRef(Menu))
                                       MenuListProps={
                                         Object {
-                                          "aria-labelledby": "mui-95356",
+                                          "aria-labelledby": "mui-74861",
                                           "disableListWrap": true,
                                           "role": "listbox",
                                         }
@@ -8641,9 +8641,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                       anchorEl={
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-95356 mui-12856"
+                                          aria-labelledby="mui-74861 mui-44168"
                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-12856"
+                                          id="mui-44168"
                                           role="button"
                                           tabindex="0"
                                         >
@@ -8657,7 +8657,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                       <ForwardRef(Menu)
                                         MenuListProps={
                                           Object {
-                                            "aria-labelledby": "mui-95356",
+                                            "aria-labelledby": "mui-74861",
                                             "disableListWrap": true,
                                             "role": "listbox",
                                           }
@@ -8672,9 +8672,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                         anchorEl={
                                           <div
                                             aria-haspopup="listbox"
-                                            aria-labelledby="mui-95356 mui-12856"
+                                            aria-labelledby="mui-74861 mui-44168"
                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                            id="mui-12856"
+                                            id="mui-44168"
                                             role="button"
                                             tabindex="0"
                                           >
@@ -8705,9 +8705,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-95356 mui-12856"
+                                              aria-labelledby="mui-74861 mui-44168"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-12856"
+                                              id="mui-44168"
                                               role="button"
                                               tabindex="0"
                                             >
@@ -8747,9 +8747,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                             anchorEl={
                                               <div
                                                 aria-haspopup="listbox"
-                                                aria-labelledby="mui-95356 mui-12856"
+                                                aria-labelledby="mui-74861 mui-44168"
                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                id="mui-12856"
+                                                id="mui-44168"
                                                 role="button"
                                                 tabindex="0"
                                               >
@@ -10955,7 +10955,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                             <WithStyles(ForwardRef(Typography))
                               className="MuiTablePagination-caption"
                               color="inherit"
-                              id="mui-31881"
+                              id="mui-72225"
                               variant="body2"
                             >
                               <ForwardRef(Typography)
@@ -10995,12 +10995,12 @@ exports[`Amend Data page  should render correctly  1`] = `
                                   }
                                 }
                                 color="inherit"
-                                id="mui-31881"
+                                id="mui-72225"
                                 variant="body2"
                               >
                                 <p
                                   className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                  id="mui-31881"
+                                  id="mui-72225"
                                 >
                                   Rows per page:
                                 </p>
@@ -11013,13 +11013,13 @@ exports[`Amend Data page  should render correctly  1`] = `
                                   "select": "MuiTablePagination-select",
                                 }
                               }
-                              id="mui-25729"
+                              id="mui-20094"
                               input={
                                 <ForwardRef(WithStyles)
                                   className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                 />
                               }
-                              labelId="mui-31881"
+                              labelId="mui-72225"
                               onChange={[Function]}
                               value={10}
                             >
@@ -11039,13 +11039,13 @@ exports[`Amend Data page  should render correctly  1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   }
                                 }
-                                id="mui-25729"
+                                id="mui-20094"
                                 input={
                                   <ForwardRef(WithStyles)
                                     className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                   />
                                 }
-                                labelId="mui-31881"
+                                labelId="mui-72225"
                                 onChange={[Function]}
                                 value={10}
                               >
@@ -11099,7 +11099,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                       },
                                       "MenuProps": undefined,
                                       "SelectDisplayProps": Object {
-                                        "id": "mui-25729",
+                                        "id": "mui-20094",
                                       },
                                       "autoWidth": false,
                                       "children": Array [
@@ -11136,7 +11136,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         "selectMenu": "MuiSelect-selectMenu",
                                       },
                                       "displayEmpty": false,
-                                      "labelId": "mui-31881",
+                                      "labelId": "mui-72225",
                                       "multiple": false,
                                       "onClose": undefined,
                                       "onOpen": undefined,
@@ -11221,7 +11221,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         },
                                         "MenuProps": undefined,
                                         "SelectDisplayProps": Object {
-                                          "id": "mui-25729",
+                                          "id": "mui-20094",
                                         },
                                         "autoWidth": false,
                                         "children": Array [
@@ -11258,7 +11258,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           "selectMenu": "MuiSelect-selectMenu",
                                         },
                                         "displayEmpty": false,
-                                        "labelId": "mui-31881",
+                                        "labelId": "mui-72225",
                                         "multiple": false,
                                         "onClose": undefined,
                                         "onOpen": undefined,
@@ -11288,7 +11288,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         }
                                         SelectDisplayProps={
                                           Object {
-                                            "id": "mui-25729",
+                                            "id": "mui-20094",
                                           }
                                         }
                                         autoWidth={false}
@@ -11310,7 +11310,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         }
                                         displayEmpty={false}
                                         inputRef={[Function]}
-                                        labelId="mui-31881"
+                                        labelId="mui-72225"
                                         multiple={false}
                                         onAnimationStart={[Function]}
                                         onBlur={[Function]}
@@ -11321,9 +11321,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                       >
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-31881 mui-25729"
+                                          aria-labelledby="mui-72225 mui-20094"
                                           className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-25729"
+                                          id="mui-20094"
                                           onBlur={[Function]}
                                           onFocus={[Function]}
                                           onKeyDown={[Function]}
@@ -11379,7 +11379,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         <WithStyles(ForwardRef(Menu))
                                           MenuListProps={
                                             Object {
-                                              "aria-labelledby": "mui-31881",
+                                              "aria-labelledby": "mui-72225",
                                               "disableListWrap": true,
                                               "role": "listbox",
                                             }
@@ -11394,9 +11394,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-31881 mui-25729"
+                                              aria-labelledby="mui-72225 mui-20094"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-25729"
+                                              id="mui-20094"
                                               role="button"
                                               tabindex="0"
                                             >
@@ -11410,7 +11410,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           <ForwardRef(Menu)
                                             MenuListProps={
                                               Object {
-                                                "aria-labelledby": "mui-31881",
+                                                "aria-labelledby": "mui-72225",
                                                 "disableListWrap": true,
                                                 "role": "listbox",
                                               }
@@ -11425,9 +11425,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                             anchorEl={
                                               <div
                                                 aria-haspopup="listbox"
-                                                aria-labelledby="mui-31881 mui-25729"
+                                                aria-labelledby="mui-72225 mui-20094"
                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                id="mui-25729"
+                                                id="mui-20094"
                                                 role="button"
                                                 tabindex="0"
                                               >
@@ -11458,9 +11458,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                               anchorEl={
                                                 <div
                                                   aria-haspopup="listbox"
-                                                  aria-labelledby="mui-31881 mui-25729"
+                                                  aria-labelledby="mui-72225 mui-20094"
                                                   class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                  id="mui-25729"
+                                                  id="mui-20094"
                                                   role="button"
                                                   tabindex="0"
                                                 >
@@ -11500,9 +11500,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                                 anchorEl={
                                                   <div
                                                     aria-haspopup="listbox"
-                                                    aria-labelledby="mui-31881 mui-25729"
+                                                    aria-labelledby="mui-72225 mui-20094"
                                                     class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                    id="mui-25729"
+                                                    id="mui-20094"
                                                     role="button"
                                                     tabindex="0"
                                                   >

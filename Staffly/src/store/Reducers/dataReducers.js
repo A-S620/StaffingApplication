@@ -184,11 +184,6 @@ export default function dataReducer(state = initialState, action) {
                 person: [...state.person, action.payload]
             };
         case "ADD_SHIFT":
-            // if (state.shifts.filter(shift => shift.ShiftId === action.payload.ShiftId)) {
-            //     console.log("error id already exists");
-            //     return state;
-            //
-            // }
             console.log([...state.shifts, {...action.payload, ShiftId: state.shifts.length}]);
             return {
                 ...state,
@@ -219,7 +214,6 @@ export default function dataReducer(state = initialState, action) {
                 ...state.newDayOff,
                 newDayOff: [...state.newDayOff][i][action.payload.key] = action.payload.value
             };
-
 
         default:
             return state;
