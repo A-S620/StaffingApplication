@@ -5,7 +5,6 @@ import ClearIcon from '@material-ui/icons/Clear';
 import {connect} from "react-redux";
 import IconButton from "@material-ui/core/IconButton";
 import {store} from "../../store/Store";
-
 const useStyles = makeStyles({
     root: {
         minWidth: 275,
@@ -24,25 +23,13 @@ const useStyles = makeStyles({
     },
 
 });
-
 function NotifCard(props) {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
     const [cardData, setCardData] = React.useState(props.notifs);
-    // setCardData(props);
-    // console.log(cardData[0].NotifId);
-
-    // {props.notifs.map((singleNotif) => {
-    //
-    //     return (
-    //         cardData.push(singleNotif)
-    //     )
-    //
-    // })}
     const handleDelete = (cardToDelete) => () => {
         var index= cardData.indexOf(cardToDelete);
         cardData.splice(index,1);
-        // setCardData((cards) => cards.filter((card) => card.NotifId !== cardToDelete.NotifId));
     };
     return (
 
@@ -92,30 +79,6 @@ function NotifCard(props) {
                 )
             })}
 
-
-
-
-            {/*<Card className={classes.root}>*/}
-            {/*    <CardContent>*/}
-            {/*        <Typography className={classes.title} color="textSecondary" gutterBottom>*/}
-            {/*            Word of the Day*/}
-            {/*        </Typography>*/}
-            {/*        <Typography variant="h5" component="h2">*/}
-            {/*            be{bull}nev{bull}o{bull}lent*/}
-            {/*        </Typography>*/}
-            {/*        <Typography className={classes.pos} color="textSecondary">*/}
-            {/*            adjective*/}
-            {/*        </Typography>*/}
-            {/*        <Typography variant="body2" component="p">*/}
-            {/*            well meaning and kindly.*/}
-            {/*            <br/>*/}
-            {/*            {'"a benevolent smile"'}*/}
-            {/*        </Typography>*/}
-            {/*    </CardContent>*/}
-            {/*    <CardActions>*/}
-            {/*        <Button size="small">Learn More</Button>*/}
-            {/*    </CardActions>*/}
-            {/*</Card>*/}
         </Grid>
     );
 }

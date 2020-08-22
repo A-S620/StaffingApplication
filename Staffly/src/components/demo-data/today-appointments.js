@@ -21,7 +21,9 @@ const makeTodayAppointment = (startDate, endDate) => {
     };
 };
 
-export default appointments.map(({ startDate, endDate, ...restArgs }) => {
+export default appointments.map(({ startDate, endDate,
+                                     ...restArgs
+}) => {
     const result = {
         ...makeTodayAppointment(startDate, endDate),
         ...restArgs,

@@ -27,10 +27,8 @@ const useStyles = makeStyles((theme) => ({
         padding: "40px"
     }
 }));
-
 export default function SwapShiftsGrid() {
     const classes = useStyles();
-
     return (
         <Box display="flex" justifyContent="center" orientation="vertical">
             <UserShifts/>

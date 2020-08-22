@@ -4,7 +4,6 @@ import UserShifts from "./UserShifts";
 import NewShift from "./NewShift";
 import Comment from "./Comment";
 import {Box, Button, CardActions, CardContent, Paper} from "@material-ui/core";
-
 const useStyles = makeStyles({
     root: {
         minWidth: 700,
@@ -22,10 +21,8 @@ const useStyles = makeStyles({
         marginBottom: 12,
     },
 });
-
 export default function SwapCard() {
     const classes = useStyles();
-
     return (
         <Paper display="flex" justifyContent="center" orientation={"vertical"}>
             <CardContent>
@@ -36,8 +33,6 @@ export default function SwapCard() {
                 <Box style={{marginTop: 30}}>
                     <Comment/>
                 </Box>
-
-
             </CardContent>
             <CardActions style={{justifyContent: 'center'}}>
 

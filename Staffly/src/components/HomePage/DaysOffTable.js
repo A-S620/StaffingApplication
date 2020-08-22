@@ -19,8 +19,6 @@ const columns = [
     {id: 'Comment', label: 'Comment', minWidth: 170},
 ];
 
-
-
 const useStyles = makeStyles({
     root: {
         // width: '100%',

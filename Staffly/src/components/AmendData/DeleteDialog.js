@@ -9,6 +9,8 @@ import Slide from '@material-ui/core/Slide';
 import {makeStyles} from '@material-ui/core/styles';
 import {store} from "../../store/Store";
 import {connect} from "react-redux";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
 
     button: {
@@ -44,6 +46,23 @@ function DeleteDialog(props) {
             >
                 <DialogTitle >{"Delete Shift"}</DialogTitle>
                 <DialogContent>
+                    <Grid item xs={12}>
+                        <Typography>
+                            Selected Shift:
+                        </Typography>
+                        <Typography>
+                            Dates: {props.selectedRow.ShiftStartDate} - {props.selectedRow.ShiftEndDate}
+
+                        </Typography>
+                        <Typography>
+                            Shift Type: {props.selectedRow.ShiftType}
+                        </Typography>
+                        <Typography>
+
+                            Location: {props.selectedRow.Location}
+                        </Typography>
+                    </Grid>
+
                     <DialogContentText >
                         Are you sure you want to delete this shift?
                     </DialogContentText>

@@ -52,7 +52,7 @@ function validateLogIn(email, password, actEmail, actPassword){
 
 
 }
-export default function SignIn() {
+function SignIn(props) {
     const classes = useStyles();
     const [email, setEmail]= React.useState();
     const [password,setPassword] = React.useState();
@@ -109,18 +109,18 @@ export default function SignIn() {
                         className={classes.submit}
                         onClick={() =>{
                             console.log(email);
-                            // console.log(props.email);
+                            console.log(props.email);
 
 
-                            // store.dispatch({
-                            //     type: "SET_isLoggedIn",
-                            //     payload: {
-                            //         logIn: validateLogIn(email,password,props.Email,props.Password)
-                            //     }
-                            //
-                            //     }
-                            //
-                            // )
+                            store.dispatch({
+                                type: "SET_login",
+                                payload: {
+                                    logIn: validateLogIn(email,password,props.Email,props.Password)
+                                }
+
+                                }
+
+                            )
                         }}
                     >
                         Sign In
@@ -145,12 +145,12 @@ export default function SignIn() {
         </Container>
     );
 }
-// const mapStateToProps = state => {
-//     return {
-//         Email: state.person.Email,
-//         Password: state.person.Password,
-//         isLoggedIn: state.isLoggedIn
-//
-//     }
-// };
-// export default connect(mapStateToProps, {})(SignIn);
+const mapStateToProps = state => {
+    return {
+        Email: state.person.Email,
+        Password: state.person.Password,
+        isLoggedIn: state.isLoggedIn
+
+    }
+};
+export default connect(mapStateToProps, {})(SignIn);

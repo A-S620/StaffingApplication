@@ -46,20 +46,12 @@ export default function RequestHelp(props) {
     const [row, setRow] = React.useState(props.selectedRow);
     const [title, setTitle] = React.useState();
     const [comment, setComment] = React.useState();
-
-
     const handleClickOpen = () => {
         setOpen(true);
     };
-
     const handleClose = () => {
         setOpen(false);
     };
-
-
-
-    // console.log(props.selectedRow.ShiftStartDate);
-
     return (
         <div>
             <Button className={classes.button} variant="outlined" color="primary" onClick={() => {
@@ -82,7 +74,6 @@ export default function RequestHelp(props) {
                 <IconButton onClick={handleClose}>
                     <ClearIcon/>
                 </IconButton>
-
             </Grid>
                 <DialogContent>
                     <DialogContentText>
@@ -92,15 +83,9 @@ export default function RequestHelp(props) {
                                 <Typography component="h1" variant="h5">
                                     Help Request
                                 </Typography>
-
                                 <form className={classes.form} noValidate>
-
-
                                     <Grid container spacing={2}>
-
-
                                         <Grid item xs={12}>
-
                                             <TextField
                                                 variant="outlined"
                                                 required
@@ -113,7 +98,6 @@ export default function RequestHelp(props) {
                                                     setTitle(event.target.value)
                                                 }}
                                             />
-
                                         </Grid>
                                         <Grid item xs={12}>
                                             <TextField
@@ -128,7 +112,6 @@ export default function RequestHelp(props) {
                                                 value={comment}
                                                 onChange={(event) => {
                                                     setComment(event.target.value);
-
                                                 }}
                                             />
                                         </Grid>

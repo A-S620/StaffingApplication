@@ -128,34 +128,34 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-// function Display(props) {
-//     const classes = useStyles();
-//     const isLoggedIn = props.login;
-//     if (isLoggedIn ) {
-//         return (
-//             <div className={classes.root}>
-//                 <Grid style={{marginTop: 10}}
-//                       container
-//                       direction="row"
-//                       justify="center"
-//                       alignItems="center"
-//                 >
-//                     <Grid item>
-//                         <Navigation/>
-//                     </Grid>
-//                     <Grid item>
-//                         <BrowserRouter basename="/">
-//                             <Route exact path={"/"}>
-//                             </Route>
-//                         </BrowserRouter>
-//                     </Grid>
-//                 </Grid>
-//
-//             </div>
-//         )
-//     }
-//     return (<SignIn/>);
-// }
+function Display(props) {
+    const classes = useStyles();
+    const isLoggedIn = props.login;
+    if (isLoggedIn ) {
+        return (
+            <div className={classes.root}>
+                <Grid style={{marginTop: 10}}
+                      container
+                      direction="row"
+                      justify="center"
+                      alignItems="center"
+                >
+                    <Grid item>
+                        <Navigation/>
+                    </Grid>
+                    <Grid item>
+                        <BrowserRouter basename="/">
+                            <Route exact path={"/"}>
+                            </Route>
+                        </BrowserRouter>
+                    </Grid>
+                </Grid>
+
+            </div>
+        )
+    }
+    return (<SignIn/>);
+}
 
 export default function App() {
     const classes = useStyles();

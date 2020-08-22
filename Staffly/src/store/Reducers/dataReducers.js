@@ -1,14 +1,16 @@
 const initialState = {
     selectedRow: {},
     login: {
-        login: true
+        login: false
     },
     help: [
         {
             ID:1,
             PostDate: "21/08/2020",
             PostTitle: "Test",
-            PostText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique odio condimentum varius maximus. Aliquam at purus posuere, dignissim nisl ut, commodo lorem. Cras ut efficitur ex. Donec dapibus tellus eget dolor dapibus tincidunt. Maecenas eleifend semper iaculis. Cras vitae condimentum tortor, sed blandit mi. Fusce dapibus rhoncus ipsum nec facilisis. "
+            PostText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique odio condimentum varius maximus. " +
+                "Aliquam at purus posuere, dignissim nisl ut, commodo lorem. Cras ut efficitur ex. Donec dapibus tellus eget dolor " +
+                "dapibus tincidunt. Maecenas eleifend semper iaculis. Cras vitae condimentum tortor, sed blandit mi. Fusce dapibus rhoncus ipsum nec facilisis. "
         },
         {
             ID:2,
@@ -134,6 +136,17 @@ const initialState = {
             Comment: "Approved by team lead"
 
 
+        },
+        {
+            RequestId: 1,
+            TypeId: 3,
+            PersonId: 244,
+            RequestDate: "02/08/2020 ",
+            StartDate: "03/08/2020",
+            EndDate: "08/08/2020",
+            Comment: "Sick Days Request"
+
+
         }
     ],
     notifications: [
@@ -152,7 +165,6 @@ const initialState = {
     ]
 
 };
-
 export default function dataReducer(state = initialState, action) {
     switch (action.type) {
         case "DELETE_NOTIFICATION":
@@ -172,11 +184,11 @@ export default function dataReducer(state = initialState, action) {
                 ...state,
                 selectedRow: action.payload
             };
-        case "SET_isLoggedIn":
+        case "SET_login":
             console.log(action.payload);
             return {
                 ...state,
-                isLoggedIn: action.payload
+                login: action.payload
             };
         case "ADD_PERSON":
             return {

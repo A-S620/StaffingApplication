@@ -2,7 +2,6 @@ import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Box, Container, FormControl, Grid, InputLabel, Select, Typography} from "@material-ui/core"
 import {connect} from "react-redux";
-
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 500,
@@ -19,15 +18,11 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(2),
     },
 }));
-
 function BalancePaper(props) {
     const classes = useStyles();
     const [value, setValue] = React.useState({
         typeSelect: '',
     });
-
-
-
     return (
         <Container className={classes.root}>
             <div>
@@ -82,8 +77,6 @@ function BalancePaper(props) {
                         )
                     }
                 )}
-
-
             </div>
             <FormControl className={classes.formControl}>
                 <InputLabel htmlFor="type-selector">Type</InputLabel>
@@ -110,7 +103,6 @@ function BalancePaper(props) {
         </Container>
     );
 }
-
 const mapStateToProps = state => {
     return {
         bal: state.balance,

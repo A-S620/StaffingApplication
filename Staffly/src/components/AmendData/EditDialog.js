@@ -1,14 +1,11 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Avatar from "@material-ui/core/Avatar";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
@@ -18,7 +15,6 @@ import IconButton from "@material-ui/core/IconButton";
 import ClearIcon from "@material-ui/icons/Clear";
 import {connect} from "react-redux";
 import {store} from "../../store/Store";
-import grey from '@material-ui/core/colors'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -50,10 +46,10 @@ function EditDialog(props) {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [row, setRow] = React.useState(props.selectedRow);
-    const [startDate, setStartDate]= React.useState();
-    const [endDate, setEndDate] =  React.useState();
-    const [shiftType, setShiftType] =  React.useState();
-    const [location, setLocation] =  React.useState();
+    const [startDate, setStartDate] = React.useState();
+    const [endDate, setEndDate] = React.useState();
+    const [shiftType, setShiftType] = React.useState();
+    const [location, setLocation] = React.useState();
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -62,30 +58,27 @@ function EditDialog(props) {
     const handleClose = () => {
         setOpen(false);
     };
-    const handleDateChange =(event) => {
+    const handleDateChange = (event) => {
 
         setStartDate(event.target.value);
 
     };
     const typeCheck = () => {
-        if (shiftType === ""){
+        if (shiftType === "") {
             return props.selectedRow.ShiftType;
 
         }
         return shiftType;
     }
-    const setEmptyStates =() => {
-        if (startDate === ""){
+    const setEmptyStates = () => {
+        if (startDate === "") {
             setStartDate(props.selectedRow.ShiftStartDate);
 
-        }
-        else if (endDate === ""){
+        } else if (endDate === "") {
             setEndDate(props.selectedRow.ShiftEndDate)
-        }
-        else if (shiftType === ""){
+        } else if (shiftType === "") {
             setShiftType(props.selectedRow.ShiftType);
-        }
-        else if (location === ""){
+        } else if (location === "") {
             setLocation(props.selectedRow.Location)
         }
     };
@@ -123,11 +116,11 @@ function EditDialog(props) {
 
             </Grid>
                 <DialogContent>
-                    <DialogContentText >
+                    <DialogContentText>
                         <Container component="main" maxWidth="xs">
-                            <CssBaseline />
+                            <CssBaseline/>
                             <div className={classes.paper}>
-                                <Typography component="h1" variant="h5" >
+                                <Typography component="h1" variant="h5">
                                     Edit Shift
                                 </Typography>
 
@@ -239,18 +232,14 @@ function EditDialog(props) {
                             store.dispatch({
                                 type: "DELETE_SHIFT",
                                 payload: props.selectedRow.ShiftId
-
-
                             });
-
-
                             store.dispatch({
                                 type: "ADD_SHIFT",
                                 payload: {
                                     ShiftId: props.selectedRow.ShiftId,
                                     PersonId: props.selectedRow.PersonId,
                                     ShiftStartDate: startDate,
-                                    ShiftEndDate: endDate, 
+                                    ShiftEndDate: endDate,
                                     ShiftType: typeCheck(),
                                     Location: location
                                 }
@@ -272,9 +261,7 @@ function EditDialog(props) {
             </Dialog>
         </div>
     );
-
 }
-
 const mapStateToProps = state => {
     return {
         selectedRow: state.selectedRow,
