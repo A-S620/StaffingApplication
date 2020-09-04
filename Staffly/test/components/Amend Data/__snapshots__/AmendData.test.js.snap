@@ -928,6 +928,31 @@ exports[`Amend Data Delete Dialog  should render correctly  1`] = `
                             <div
                               class="MuiDialogContent-root"
                             >
+                              <div
+                                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                              >
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Selected Shift:
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Dates: 
+                                   - 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Shift Type: 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Location: 
+                                </p>
+                              </div>
                               <p
                                 class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                               >
@@ -1379,6 +1404,31 @@ exports[`Amend Data Delete Dialog  should render correctly  1`] = `
                             <div
                               class="MuiDialogContent-root"
                             >
+                              <div
+                                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                              >
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Selected Shift:
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Dates: 
+                                   - 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Shift Type: 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Location: 
+                                </p>
+                              </div>
                               <p
                                 class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                               >
@@ -1586,6 +1636,31 @@ exports[`Amend Data Delete Dialog  should render correctly  1`] = `
                                     <div
                                       class="MuiDialogContent-root"
                                     >
+                                      <div
+                                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                      >
+                                        <p
+                                          class="MuiTypography-root MuiTypography-body1"
+                                        >
+                                          Selected Shift:
+                                        </p>
+                                        <p
+                                          class="MuiTypography-root MuiTypography-body1"
+                                        >
+                                          Dates: 
+                                           - 
+                                        </p>
+                                        <p
+                                          class="MuiTypography-root MuiTypography-body1"
+                                        >
+                                          Shift Type: 
+                                        </p>
+                                        <p
+                                          class="MuiTypography-root MuiTypography-body1"
+                                        >
+                                          Location: 
+                                        </p>
+                                      </div>
                                       <p
                                         class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                       >
@@ -1777,6 +1852,304 @@ exports[`Amend Data Delete Dialog  should render correctly  1`] = `
                                         <div
                                           className="MuiDialogContent-root"
                                         >
+                                          <WithStyles(ForwardRef(Grid))
+                                            item={true}
+                                            xs={12}
+                                          >
+                                            <ForwardRef(Grid)
+                                              classes={
+                                                Object {
+                                                  "align-content-xs-center": "MuiGrid-align-content-xs-center",
+                                                  "align-content-xs-flex-end": "MuiGrid-align-content-xs-flex-end",
+                                                  "align-content-xs-flex-start": "MuiGrid-align-content-xs-flex-start",
+                                                  "align-content-xs-space-around": "MuiGrid-align-content-xs-space-around",
+                                                  "align-content-xs-space-between": "MuiGrid-align-content-xs-space-between",
+                                                  "align-items-xs-baseline": "MuiGrid-align-items-xs-baseline",
+                                                  "align-items-xs-center": "MuiGrid-align-items-xs-center",
+                                                  "align-items-xs-flex-end": "MuiGrid-align-items-xs-flex-end",
+                                                  "align-items-xs-flex-start": "MuiGrid-align-items-xs-flex-start",
+                                                  "container": "MuiGrid-container",
+                                                  "direction-xs-column": "MuiGrid-direction-xs-column",
+                                                  "direction-xs-column-reverse": "MuiGrid-direction-xs-column-reverse",
+                                                  "direction-xs-row-reverse": "MuiGrid-direction-xs-row-reverse",
+                                                  "grid-lg-1": "MuiGrid-grid-lg-1",
+                                                  "grid-lg-10": "MuiGrid-grid-lg-10",
+                                                  "grid-lg-11": "MuiGrid-grid-lg-11",
+                                                  "grid-lg-12": "MuiGrid-grid-lg-12",
+                                                  "grid-lg-2": "MuiGrid-grid-lg-2",
+                                                  "grid-lg-3": "MuiGrid-grid-lg-3",
+                                                  "grid-lg-4": "MuiGrid-grid-lg-4",
+                                                  "grid-lg-5": "MuiGrid-grid-lg-5",
+                                                  "grid-lg-6": "MuiGrid-grid-lg-6",
+                                                  "grid-lg-7": "MuiGrid-grid-lg-7",
+                                                  "grid-lg-8": "MuiGrid-grid-lg-8",
+                                                  "grid-lg-9": "MuiGrid-grid-lg-9",
+                                                  "grid-lg-auto": "MuiGrid-grid-lg-auto",
+                                                  "grid-lg-true": "MuiGrid-grid-lg-true",
+                                                  "grid-md-1": "MuiGrid-grid-md-1",
+                                                  "grid-md-10": "MuiGrid-grid-md-10",
+                                                  "grid-md-11": "MuiGrid-grid-md-11",
+                                                  "grid-md-12": "MuiGrid-grid-md-12",
+                                                  "grid-md-2": "MuiGrid-grid-md-2",
+                                                  "grid-md-3": "MuiGrid-grid-md-3",
+                                                  "grid-md-4": "MuiGrid-grid-md-4",
+                                                  "grid-md-5": "MuiGrid-grid-md-5",
+                                                  "grid-md-6": "MuiGrid-grid-md-6",
+                                                  "grid-md-7": "MuiGrid-grid-md-7",
+                                                  "grid-md-8": "MuiGrid-grid-md-8",
+                                                  "grid-md-9": "MuiGrid-grid-md-9",
+                                                  "grid-md-auto": "MuiGrid-grid-md-auto",
+                                                  "grid-md-true": "MuiGrid-grid-md-true",
+                                                  "grid-sm-1": "MuiGrid-grid-sm-1",
+                                                  "grid-sm-10": "MuiGrid-grid-sm-10",
+                                                  "grid-sm-11": "MuiGrid-grid-sm-11",
+                                                  "grid-sm-12": "MuiGrid-grid-sm-12",
+                                                  "grid-sm-2": "MuiGrid-grid-sm-2",
+                                                  "grid-sm-3": "MuiGrid-grid-sm-3",
+                                                  "grid-sm-4": "MuiGrid-grid-sm-4",
+                                                  "grid-sm-5": "MuiGrid-grid-sm-5",
+                                                  "grid-sm-6": "MuiGrid-grid-sm-6",
+                                                  "grid-sm-7": "MuiGrid-grid-sm-7",
+                                                  "grid-sm-8": "MuiGrid-grid-sm-8",
+                                                  "grid-sm-9": "MuiGrid-grid-sm-9",
+                                                  "grid-sm-auto": "MuiGrid-grid-sm-auto",
+                                                  "grid-sm-true": "MuiGrid-grid-sm-true",
+                                                  "grid-xl-1": "MuiGrid-grid-xl-1",
+                                                  "grid-xl-10": "MuiGrid-grid-xl-10",
+                                                  "grid-xl-11": "MuiGrid-grid-xl-11",
+                                                  "grid-xl-12": "MuiGrid-grid-xl-12",
+                                                  "grid-xl-2": "MuiGrid-grid-xl-2",
+                                                  "grid-xl-3": "MuiGrid-grid-xl-3",
+                                                  "grid-xl-4": "MuiGrid-grid-xl-4",
+                                                  "grid-xl-5": "MuiGrid-grid-xl-5",
+                                                  "grid-xl-6": "MuiGrid-grid-xl-6",
+                                                  "grid-xl-7": "MuiGrid-grid-xl-7",
+                                                  "grid-xl-8": "MuiGrid-grid-xl-8",
+                                                  "grid-xl-9": "MuiGrid-grid-xl-9",
+                                                  "grid-xl-auto": "MuiGrid-grid-xl-auto",
+                                                  "grid-xl-true": "MuiGrid-grid-xl-true",
+                                                  "grid-xs-1": "MuiGrid-grid-xs-1",
+                                                  "grid-xs-10": "MuiGrid-grid-xs-10",
+                                                  "grid-xs-11": "MuiGrid-grid-xs-11",
+                                                  "grid-xs-12": "MuiGrid-grid-xs-12",
+                                                  "grid-xs-2": "MuiGrid-grid-xs-2",
+                                                  "grid-xs-3": "MuiGrid-grid-xs-3",
+                                                  "grid-xs-4": "MuiGrid-grid-xs-4",
+                                                  "grid-xs-5": "MuiGrid-grid-xs-5",
+                                                  "grid-xs-6": "MuiGrid-grid-xs-6",
+                                                  "grid-xs-7": "MuiGrid-grid-xs-7",
+                                                  "grid-xs-8": "MuiGrid-grid-xs-8",
+                                                  "grid-xs-9": "MuiGrid-grid-xs-9",
+                                                  "grid-xs-auto": "MuiGrid-grid-xs-auto",
+                                                  "grid-xs-true": "MuiGrid-grid-xs-true",
+                                                  "item": "MuiGrid-item",
+                                                  "justify-xs-center": "MuiGrid-justify-xs-center",
+                                                  "justify-xs-flex-end": "MuiGrid-justify-xs-flex-end",
+                                                  "justify-xs-space-around": "MuiGrid-justify-xs-space-around",
+                                                  "justify-xs-space-between": "MuiGrid-justify-xs-space-between",
+                                                  "justify-xs-space-evenly": "MuiGrid-justify-xs-space-evenly",
+                                                  "root": "MuiGrid-root",
+                                                  "spacing-xs-1": "MuiGrid-spacing-xs-1",
+                                                  "spacing-xs-10": "MuiGrid-spacing-xs-10",
+                                                  "spacing-xs-2": "MuiGrid-spacing-xs-2",
+                                                  "spacing-xs-3": "MuiGrid-spacing-xs-3",
+                                                  "spacing-xs-4": "MuiGrid-spacing-xs-4",
+                                                  "spacing-xs-5": "MuiGrid-spacing-xs-5",
+                                                  "spacing-xs-6": "MuiGrid-spacing-xs-6",
+                                                  "spacing-xs-7": "MuiGrid-spacing-xs-7",
+                                                  "spacing-xs-8": "MuiGrid-spacing-xs-8",
+                                                  "spacing-xs-9": "MuiGrid-spacing-xs-9",
+                                                  "wrap-xs-nowrap": "MuiGrid-wrap-xs-nowrap",
+                                                  "wrap-xs-wrap-reverse": "MuiGrid-wrap-xs-wrap-reverse",
+                                                  "zeroMinWidth": "MuiGrid-zeroMinWidth",
+                                                }
+                                              }
+                                              item={true}
+                                              xs={12}
+                                            >
+                                              <div
+                                                className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                              >
+                                                <WithStyles(ForwardRef(Typography))>
+                                                  <ForwardRef(Typography)
+                                                    classes={
+                                                      Object {
+                                                        "alignCenter": "MuiTypography-alignCenter",
+                                                        "alignJustify": "MuiTypography-alignJustify",
+                                                        "alignLeft": "MuiTypography-alignLeft",
+                                                        "alignRight": "MuiTypography-alignRight",
+                                                        "body1": "MuiTypography-body1",
+                                                        "body2": "MuiTypography-body2",
+                                                        "button": "MuiTypography-button",
+                                                        "caption": "MuiTypography-caption",
+                                                        "colorError": "MuiTypography-colorError",
+                                                        "colorInherit": "MuiTypography-colorInherit",
+                                                        "colorPrimary": "MuiTypography-colorPrimary",
+                                                        "colorSecondary": "MuiTypography-colorSecondary",
+                                                        "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                        "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                        "displayBlock": "MuiTypography-displayBlock",
+                                                        "displayInline": "MuiTypography-displayInline",
+                                                        "gutterBottom": "MuiTypography-gutterBottom",
+                                                        "h1": "MuiTypography-h1",
+                                                        "h2": "MuiTypography-h2",
+                                                        "h3": "MuiTypography-h3",
+                                                        "h4": "MuiTypography-h4",
+                                                        "h5": "MuiTypography-h5",
+                                                        "h6": "MuiTypography-h6",
+                                                        "noWrap": "MuiTypography-noWrap",
+                                                        "overline": "MuiTypography-overline",
+                                                        "paragraph": "MuiTypography-paragraph",
+                                                        "root": "MuiTypography-root",
+                                                        "srOnly": "MuiTypography-srOnly",
+                                                        "subtitle1": "MuiTypography-subtitle1",
+                                                        "subtitle2": "MuiTypography-subtitle2",
+                                                      }
+                                                    }
+                                                  >
+                                                    <p
+                                                      className="MuiTypography-root MuiTypography-body1"
+                                                    >
+                                                      Selected Shift:
+                                                    </p>
+                                                  </ForwardRef(Typography)>
+                                                </WithStyles(ForwardRef(Typography))>
+                                                <WithStyles(ForwardRef(Typography))>
+                                                  <ForwardRef(Typography)
+                                                    classes={
+                                                      Object {
+                                                        "alignCenter": "MuiTypography-alignCenter",
+                                                        "alignJustify": "MuiTypography-alignJustify",
+                                                        "alignLeft": "MuiTypography-alignLeft",
+                                                        "alignRight": "MuiTypography-alignRight",
+                                                        "body1": "MuiTypography-body1",
+                                                        "body2": "MuiTypography-body2",
+                                                        "button": "MuiTypography-button",
+                                                        "caption": "MuiTypography-caption",
+                                                        "colorError": "MuiTypography-colorError",
+                                                        "colorInherit": "MuiTypography-colorInherit",
+                                                        "colorPrimary": "MuiTypography-colorPrimary",
+                                                        "colorSecondary": "MuiTypography-colorSecondary",
+                                                        "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                        "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                        "displayBlock": "MuiTypography-displayBlock",
+                                                        "displayInline": "MuiTypography-displayInline",
+                                                        "gutterBottom": "MuiTypography-gutterBottom",
+                                                        "h1": "MuiTypography-h1",
+                                                        "h2": "MuiTypography-h2",
+                                                        "h3": "MuiTypography-h3",
+                                                        "h4": "MuiTypography-h4",
+                                                        "h5": "MuiTypography-h5",
+                                                        "h6": "MuiTypography-h6",
+                                                        "noWrap": "MuiTypography-noWrap",
+                                                        "overline": "MuiTypography-overline",
+                                                        "paragraph": "MuiTypography-paragraph",
+                                                        "root": "MuiTypography-root",
+                                                        "srOnly": "MuiTypography-srOnly",
+                                                        "subtitle1": "MuiTypography-subtitle1",
+                                                        "subtitle2": "MuiTypography-subtitle2",
+                                                      }
+                                                    }
+                                                  >
+                                                    <p
+                                                      className="MuiTypography-root MuiTypography-body1"
+                                                    >
+                                                      Dates: 
+                                                       - 
+                                                    </p>
+                                                  </ForwardRef(Typography)>
+                                                </WithStyles(ForwardRef(Typography))>
+                                                <WithStyles(ForwardRef(Typography))>
+                                                  <ForwardRef(Typography)
+                                                    classes={
+                                                      Object {
+                                                        "alignCenter": "MuiTypography-alignCenter",
+                                                        "alignJustify": "MuiTypography-alignJustify",
+                                                        "alignLeft": "MuiTypography-alignLeft",
+                                                        "alignRight": "MuiTypography-alignRight",
+                                                        "body1": "MuiTypography-body1",
+                                                        "body2": "MuiTypography-body2",
+                                                        "button": "MuiTypography-button",
+                                                        "caption": "MuiTypography-caption",
+                                                        "colorError": "MuiTypography-colorError",
+                                                        "colorInherit": "MuiTypography-colorInherit",
+                                                        "colorPrimary": "MuiTypography-colorPrimary",
+                                                        "colorSecondary": "MuiTypography-colorSecondary",
+                                                        "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                        "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                        "displayBlock": "MuiTypography-displayBlock",
+                                                        "displayInline": "MuiTypography-displayInline",
+                                                        "gutterBottom": "MuiTypography-gutterBottom",
+                                                        "h1": "MuiTypography-h1",
+                                                        "h2": "MuiTypography-h2",
+                                                        "h3": "MuiTypography-h3",
+                                                        "h4": "MuiTypography-h4",
+                                                        "h5": "MuiTypography-h5",
+                                                        "h6": "MuiTypography-h6",
+                                                        "noWrap": "MuiTypography-noWrap",
+                                                        "overline": "MuiTypography-overline",
+                                                        "paragraph": "MuiTypography-paragraph",
+                                                        "root": "MuiTypography-root",
+                                                        "srOnly": "MuiTypography-srOnly",
+                                                        "subtitle1": "MuiTypography-subtitle1",
+                                                        "subtitle2": "MuiTypography-subtitle2",
+                                                      }
+                                                    }
+                                                  >
+                                                    <p
+                                                      className="MuiTypography-root MuiTypography-body1"
+                                                    >
+                                                      Shift Type: 
+                                                    </p>
+                                                  </ForwardRef(Typography)>
+                                                </WithStyles(ForwardRef(Typography))>
+                                                <WithStyles(ForwardRef(Typography))>
+                                                  <ForwardRef(Typography)
+                                                    classes={
+                                                      Object {
+                                                        "alignCenter": "MuiTypography-alignCenter",
+                                                        "alignJustify": "MuiTypography-alignJustify",
+                                                        "alignLeft": "MuiTypography-alignLeft",
+                                                        "alignRight": "MuiTypography-alignRight",
+                                                        "body1": "MuiTypography-body1",
+                                                        "body2": "MuiTypography-body2",
+                                                        "button": "MuiTypography-button",
+                                                        "caption": "MuiTypography-caption",
+                                                        "colorError": "MuiTypography-colorError",
+                                                        "colorInherit": "MuiTypography-colorInherit",
+                                                        "colorPrimary": "MuiTypography-colorPrimary",
+                                                        "colorSecondary": "MuiTypography-colorSecondary",
+                                                        "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                        "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                        "displayBlock": "MuiTypography-displayBlock",
+                                                        "displayInline": "MuiTypography-displayInline",
+                                                        "gutterBottom": "MuiTypography-gutterBottom",
+                                                        "h1": "MuiTypography-h1",
+                                                        "h2": "MuiTypography-h2",
+                                                        "h3": "MuiTypography-h3",
+                                                        "h4": "MuiTypography-h4",
+                                                        "h5": "MuiTypography-h5",
+                                                        "h6": "MuiTypography-h6",
+                                                        "noWrap": "MuiTypography-noWrap",
+                                                        "overline": "MuiTypography-overline",
+                                                        "paragraph": "MuiTypography-paragraph",
+                                                        "root": "MuiTypography-root",
+                                                        "srOnly": "MuiTypography-srOnly",
+                                                        "subtitle1": "MuiTypography-subtitle1",
+                                                        "subtitle2": "MuiTypography-subtitle2",
+                                                      }
+                                                    }
+                                                  >
+                                                    <p
+                                                      className="MuiTypography-root MuiTypography-body1"
+                                                    >
+                                                      Location: 
+                                                    </p>
+                                                  </ForwardRef(Typography)>
+                                                </WithStyles(ForwardRef(Typography))>
+                                              </div>
+                                            </ForwardRef(Grid)>
+                                          </WithStyles(ForwardRef(Grid))>
                                           <WithStyles(ForwardRef(DialogContentText))>
                                             <ForwardRef(DialogContentText)
                                               classes={
@@ -3097,6 +3470,31 @@ exports[`Amend Data Edit Dialog  should render correctly  1`] = `
                             <div
                               class="MuiDialogContent-root"
                             >
+                              <div
+                                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                              >
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Selected Shift:
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Dates: 
+                                   - 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Shift Type: 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Location: 
+                                </p>
+                              </div>
                               <p
                                 class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                               >
@@ -3548,6 +3946,31 @@ exports[`Amend Data Edit Dialog  should render correctly  1`] = `
                             <div
                               class="MuiDialogContent-root"
                             >
+                              <div
+                                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                              >
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Selected Shift:
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Dates: 
+                                   - 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Shift Type: 
+                                </p>
+                                <p
+                                  class="MuiTypography-root MuiTypography-body1"
+                                >
+                                  Location: 
+                                </p>
+                              </div>
                               <p
                                 class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                               >
@@ -8202,7 +8625,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                         <WithStyles(ForwardRef(Typography))
                           className="MuiTablePagination-caption"
                           color="inherit"
-                          id="mui-74861"
+                          id="mui-41312"
                           variant="body2"
                         >
                           <ForwardRef(Typography)
@@ -8242,12 +8665,12 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                               }
                             }
                             color="inherit"
-                            id="mui-74861"
+                            id="mui-41312"
                             variant="body2"
                           >
                             <p
                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                              id="mui-74861"
+                              id="mui-41312"
                             >
                               Rows per page:
                             </p>
@@ -8260,13 +8683,13 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                               "select": "MuiTablePagination-select",
                             }
                           }
-                          id="mui-44168"
+                          id="mui-37491"
                           input={
                             <ForwardRef(WithStyles)
                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                             />
                           }
-                          labelId="mui-74861"
+                          labelId="mui-41312"
                           onChange={[Function]}
                           value={10}
                         >
@@ -8286,13 +8709,13 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                 "selectMenu": "MuiSelect-selectMenu",
                               }
                             }
-                            id="mui-44168"
+                            id="mui-37491"
                             input={
                               <ForwardRef(WithStyles)
                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                               />
                             }
-                            labelId="mui-74861"
+                            labelId="mui-41312"
                             onChange={[Function]}
                             value={10}
                           >
@@ -8346,7 +8769,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                   },
                                   "MenuProps": undefined,
                                   "SelectDisplayProps": Object {
-                                    "id": "mui-44168",
+                                    "id": "mui-37491",
                                   },
                                   "autoWidth": false,
                                   "children": Array [
@@ -8383,7 +8806,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   },
                                   "displayEmpty": false,
-                                  "labelId": "mui-74861",
+                                  "labelId": "mui-41312",
                                   "multiple": false,
                                   "onClose": undefined,
                                   "onOpen": undefined,
@@ -8468,7 +8891,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     },
                                     "MenuProps": undefined,
                                     "SelectDisplayProps": Object {
-                                      "id": "mui-44168",
+                                      "id": "mui-37491",
                                     },
                                     "autoWidth": false,
                                     "children": Array [
@@ -8505,7 +8928,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                       "selectMenu": "MuiSelect-selectMenu",
                                     },
                                     "displayEmpty": false,
-                                    "labelId": "mui-74861",
+                                    "labelId": "mui-41312",
                                     "multiple": false,
                                     "onClose": undefined,
                                     "onOpen": undefined,
@@ -8535,7 +8958,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     }
                                     SelectDisplayProps={
                                       Object {
-                                        "id": "mui-44168",
+                                        "id": "mui-37491",
                                       }
                                     }
                                     autoWidth={false}
@@ -8557,7 +8980,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     }
                                     displayEmpty={false}
                                     inputRef={[Function]}
-                                    labelId="mui-74861"
+                                    labelId="mui-41312"
                                     multiple={false}
                                     onAnimationStart={[Function]}
                                     onBlur={[Function]}
@@ -8568,9 +8991,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                   >
                                     <div
                                       aria-haspopup="listbox"
-                                      aria-labelledby="mui-74861 mui-44168"
+                                      aria-labelledby="mui-41312 mui-37491"
                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                      id="mui-44168"
+                                      id="mui-37491"
                                       onBlur={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
@@ -8626,7 +9049,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                     <WithStyles(ForwardRef(Menu))
                                       MenuListProps={
                                         Object {
-                                          "aria-labelledby": "mui-74861",
+                                          "aria-labelledby": "mui-41312",
                                           "disableListWrap": true,
                                           "role": "listbox",
                                         }
@@ -8641,9 +9064,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                       anchorEl={
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-74861 mui-44168"
+                                          aria-labelledby="mui-41312 mui-37491"
                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-44168"
+                                          id="mui-37491"
                                           role="button"
                                           tabindex="0"
                                         >
@@ -8657,7 +9080,7 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                       <ForwardRef(Menu)
                                         MenuListProps={
                                           Object {
-                                            "aria-labelledby": "mui-74861",
+                                            "aria-labelledby": "mui-41312",
                                             "disableListWrap": true,
                                             "role": "listbox",
                                           }
@@ -8672,9 +9095,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                         anchorEl={
                                           <div
                                             aria-haspopup="listbox"
-                                            aria-labelledby="mui-74861 mui-44168"
+                                            aria-labelledby="mui-41312 mui-37491"
                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                            id="mui-44168"
+                                            id="mui-37491"
                                             role="button"
                                             tabindex="0"
                                           >
@@ -8705,9 +9128,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-74861 mui-44168"
+                                              aria-labelledby="mui-41312 mui-37491"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-44168"
+                                              id="mui-37491"
                                               role="button"
                                               tabindex="0"
                                             >
@@ -8747,9 +9170,9 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                             anchorEl={
                                               <div
                                                 aria-haspopup="listbox"
-                                                aria-labelledby="mui-74861 mui-44168"
+                                                aria-labelledby="mui-41312 mui-37491"
                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                id="mui-44168"
+                                                id="mui-37491"
                                                 role="button"
                                                 tabindex="0"
                                               >
@@ -9196,6 +9619,31 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                                         <div
                                                           class="MuiDialogContent-root"
                                                         >
+                                                          <div
+                                                            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                                          >
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Selected Shift:
+                                                            </p>
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Dates: 
+                                                               - 
+                                                            </p>
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Shift Type: 
+                                                            </p>
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Location: 
+                                                            </p>
+                                                          </div>
                                                           <p
                                                             class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                                           >
@@ -9647,6 +10095,31 @@ exports[`Amend Data ShiftsTable  should render correctly  1`] = `
                                                         <div
                                                           class="MuiDialogContent-root"
                                                         >
+                                                          <div
+                                                            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                                          >
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Selected Shift:
+                                                            </p>
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Dates: 
+                                                               - 
+                                                            </p>
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Shift Type: 
+                                                            </p>
+                                                            <p
+                                                              class="MuiTypography-root MuiTypography-body1"
+                                                            >
+                                                              Location: 
+                                                            </p>
+                                                          </div>
                                                           <p
                                                             class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                                           >
@@ -10955,7 +11428,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                             <WithStyles(ForwardRef(Typography))
                               className="MuiTablePagination-caption"
                               color="inherit"
-                              id="mui-72225"
+                              id="mui-29495"
                               variant="body2"
                             >
                               <ForwardRef(Typography)
@@ -10995,12 +11468,12 @@ exports[`Amend Data page  should render correctly  1`] = `
                                   }
                                 }
                                 color="inherit"
-                                id="mui-72225"
+                                id="mui-29495"
                                 variant="body2"
                               >
                                 <p
                                   className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                  id="mui-72225"
+                                  id="mui-29495"
                                 >
                                   Rows per page:
                                 </p>
@@ -11013,13 +11486,13 @@ exports[`Amend Data page  should render correctly  1`] = `
                                   "select": "MuiTablePagination-select",
                                 }
                               }
-                              id="mui-20094"
+                              id="mui-17628"
                               input={
                                 <ForwardRef(WithStyles)
                                   className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                 />
                               }
-                              labelId="mui-72225"
+                              labelId="mui-29495"
                               onChange={[Function]}
                               value={10}
                             >
@@ -11039,13 +11512,13 @@ exports[`Amend Data page  should render correctly  1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   }
                                 }
-                                id="mui-20094"
+                                id="mui-17628"
                                 input={
                                   <ForwardRef(WithStyles)
                                     className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                   />
                                 }
-                                labelId="mui-72225"
+                                labelId="mui-29495"
                                 onChange={[Function]}
                                 value={10}
                               >
@@ -11099,7 +11572,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                       },
                                       "MenuProps": undefined,
                                       "SelectDisplayProps": Object {
-                                        "id": "mui-20094",
+                                        "id": "mui-17628",
                                       },
                                       "autoWidth": false,
                                       "children": Array [
@@ -11136,7 +11609,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         "selectMenu": "MuiSelect-selectMenu",
                                       },
                                       "displayEmpty": false,
-                                      "labelId": "mui-72225",
+                                      "labelId": "mui-29495",
                                       "multiple": false,
                                       "onClose": undefined,
                                       "onOpen": undefined,
@@ -11221,7 +11694,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         },
                                         "MenuProps": undefined,
                                         "SelectDisplayProps": Object {
-                                          "id": "mui-20094",
+                                          "id": "mui-17628",
                                         },
                                         "autoWidth": false,
                                         "children": Array [
@@ -11258,7 +11731,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           "selectMenu": "MuiSelect-selectMenu",
                                         },
                                         "displayEmpty": false,
-                                        "labelId": "mui-72225",
+                                        "labelId": "mui-29495",
                                         "multiple": false,
                                         "onClose": undefined,
                                         "onOpen": undefined,
@@ -11288,7 +11761,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         }
                                         SelectDisplayProps={
                                           Object {
-                                            "id": "mui-20094",
+                                            "id": "mui-17628",
                                           }
                                         }
                                         autoWidth={false}
@@ -11310,7 +11783,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         }
                                         displayEmpty={false}
                                         inputRef={[Function]}
-                                        labelId="mui-72225"
+                                        labelId="mui-29495"
                                         multiple={false}
                                         onAnimationStart={[Function]}
                                         onBlur={[Function]}
@@ -11321,9 +11794,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                       >
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-72225 mui-20094"
+                                          aria-labelledby="mui-29495 mui-17628"
                                           className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-20094"
+                                          id="mui-17628"
                                           onBlur={[Function]}
                                           onFocus={[Function]}
                                           onKeyDown={[Function]}
@@ -11379,7 +11852,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                         <WithStyles(ForwardRef(Menu))
                                           MenuListProps={
                                             Object {
-                                              "aria-labelledby": "mui-72225",
+                                              "aria-labelledby": "mui-29495",
                                               "disableListWrap": true,
                                               "role": "listbox",
                                             }
@@ -11394,9 +11867,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-72225 mui-20094"
+                                              aria-labelledby="mui-29495 mui-17628"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-20094"
+                                              id="mui-17628"
                                               role="button"
                                               tabindex="0"
                                             >
@@ -11410,7 +11883,7 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           <ForwardRef(Menu)
                                             MenuListProps={
                                               Object {
-                                                "aria-labelledby": "mui-72225",
+                                                "aria-labelledby": "mui-29495",
                                                 "disableListWrap": true,
                                                 "role": "listbox",
                                               }
@@ -11425,9 +11898,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                             anchorEl={
                                               <div
                                                 aria-haspopup="listbox"
-                                                aria-labelledby="mui-72225 mui-20094"
+                                                aria-labelledby="mui-29495 mui-17628"
                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                id="mui-20094"
+                                                id="mui-17628"
                                                 role="button"
                                                 tabindex="0"
                                               >
@@ -11458,9 +11931,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                               anchorEl={
                                                 <div
                                                   aria-haspopup="listbox"
-                                                  aria-labelledby="mui-72225 mui-20094"
+                                                  aria-labelledby="mui-29495 mui-17628"
                                                   class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                  id="mui-20094"
+                                                  id="mui-17628"
                                                   role="button"
                                                   tabindex="0"
                                                 >
@@ -11500,9 +11973,9 @@ exports[`Amend Data page  should render correctly  1`] = `
                                                 anchorEl={
                                                   <div
                                                     aria-haspopup="listbox"
-                                                    aria-labelledby="mui-72225 mui-20094"
+                                                    aria-labelledby="mui-29495 mui-17628"
                                                     class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                    id="mui-20094"
+                                                    id="mui-17628"
                                                     role="button"
                                                     tabindex="0"
                                                   >
@@ -11949,6 +12422,31 @@ exports[`Amend Data page  should render correctly  1`] = `
                                                             <div
                                                               class="MuiDialogContent-root"
                                                             >
+                                                              <div
+                                                                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                                              >
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Selected Shift:
+                                                                </p>
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Dates: 
+                                                                   - 
+                                                                </p>
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Shift Type: 
+                                                                </p>
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Location: 
+                                                                </p>
+                                                              </div>
                                                               <p
                                                                 class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                                               >
@@ -12400,6 +12898,31 @@ exports[`Amend Data page  should render correctly  1`] = `
                                                             <div
                                                               class="MuiDialogContent-root"
                                                             >
+                                                              <div
+                                                                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                                              >
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Selected Shift:
+                                                                </p>
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Dates: 
+                                                                   - 
+                                                                </p>
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Shift Type: 
+                                                                </p>
+                                                                <p
+                                                                  class="MuiTypography-root MuiTypography-body1"
+                                                                >
+                                                                  Location: 
+                                                                </p>
+                                                              </div>
                                                               <p
                                                                 class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                                               >
@@ -13792,6 +14315,31 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           <div
                                             class="MuiDialogContent-root"
                                           >
+                                            <div
+                                              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                            >
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Selected Shift:
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Dates: 
+                                                 - 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Shift Type: 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Location: 
+                                              </p>
+                                            </div>
                                             <p
                                               class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                             >
@@ -14243,6 +14791,31 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           <div
                                             class="MuiDialogContent-root"
                                           >
+                                            <div
+                                              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                            >
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Selected Shift:
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Dates: 
+                                                 - 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Shift Type: 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Location: 
+                                              </p>
+                                            </div>
                                             <p
                                               class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                             >
@@ -18898,6 +19471,31 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           <div
                                             class="MuiDialogContent-root"
                                           >
+                                            <div
+                                              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                            >
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Selected Shift:
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Dates: 
+                                                 - 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Shift Type: 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Location: 
+                                              </p>
+                                            </div>
                                             <p
                                               class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                             >
@@ -19349,6 +19947,31 @@ exports[`Amend Data page  should render correctly  1`] = `
                                           <div
                                             class="MuiDialogContent-root"
                                           >
+                                            <div
+                                              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                            >
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Selected Shift:
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Dates: 
+                                                 - 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Shift Type: 
+                                              </p>
+                                              <p
+                                                class="MuiTypography-root MuiTypography-body1"
+                                              >
+                                                Location: 
+                                              </p>
+                                            </div>
                                             <p
                                               class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                             >
@@ -19556,6 +20179,31 @@ exports[`Amend Data page  should render correctly  1`] = `
                                                   <div
                                                     class="MuiDialogContent-root"
                                                   >
+                                                    <div
+                                                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                                    >
+                                                      <p
+                                                        class="MuiTypography-root MuiTypography-body1"
+                                                      >
+                                                        Selected Shift:
+                                                      </p>
+                                                      <p
+                                                        class="MuiTypography-root MuiTypography-body1"
+                                                      >
+                                                        Dates: 
+                                                         - 
+                                                      </p>
+                                                      <p
+                                                        class="MuiTypography-root MuiTypography-body1"
+                                                      >
+                                                        Shift Type: 
+                                                      </p>
+                                                      <p
+                                                        class="MuiTypography-root MuiTypography-body1"
+                                                      >
+                                                        Location: 
+                                                      </p>
+                                                    </div>
                                                     <p
                                                       class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
                                                     >
@@ -19747,6 +20395,304 @@ exports[`Amend Data page  should render correctly  1`] = `
                                                       <div
                                                         className="MuiDialogContent-root"
                                                       >
+                                                        <WithStyles(ForwardRef(Grid))
+                                                          item={true}
+                                                          xs={12}
+                                                        >
+                                                          <ForwardRef(Grid)
+                                                            classes={
+                                                              Object {
+                                                                "align-content-xs-center": "MuiGrid-align-content-xs-center",
+                                                                "align-content-xs-flex-end": "MuiGrid-align-content-xs-flex-end",
+                                                                "align-content-xs-flex-start": "MuiGrid-align-content-xs-flex-start",
+                                                                "align-content-xs-space-around": "MuiGrid-align-content-xs-space-around",
+                                                                "align-content-xs-space-between": "MuiGrid-align-content-xs-space-between",
+                                                                "align-items-xs-baseline": "MuiGrid-align-items-xs-baseline",
+                                                                "align-items-xs-center": "MuiGrid-align-items-xs-center",
+                                                                "align-items-xs-flex-end": "MuiGrid-align-items-xs-flex-end",
+                                                                "align-items-xs-flex-start": "MuiGrid-align-items-xs-flex-start",
+                                                                "container": "MuiGrid-container",
+                                                                "direction-xs-column": "MuiGrid-direction-xs-column",
+                                                                "direction-xs-column-reverse": "MuiGrid-direction-xs-column-reverse",
+                                                                "direction-xs-row-reverse": "MuiGrid-direction-xs-row-reverse",
+                                                                "grid-lg-1": "MuiGrid-grid-lg-1",
+                                                                "grid-lg-10": "MuiGrid-grid-lg-10",
+                                                                "grid-lg-11": "MuiGrid-grid-lg-11",
+                                                                "grid-lg-12": "MuiGrid-grid-lg-12",
+                                                                "grid-lg-2": "MuiGrid-grid-lg-2",
+                                                                "grid-lg-3": "MuiGrid-grid-lg-3",
+                                                                "grid-lg-4": "MuiGrid-grid-lg-4",
+                                                                "grid-lg-5": "MuiGrid-grid-lg-5",
+                                                                "grid-lg-6": "MuiGrid-grid-lg-6",
+                                                                "grid-lg-7": "MuiGrid-grid-lg-7",
+                                                                "grid-lg-8": "MuiGrid-grid-lg-8",
+                                                                "grid-lg-9": "MuiGrid-grid-lg-9",
+                                                                "grid-lg-auto": "MuiGrid-grid-lg-auto",
+                                                                "grid-lg-true": "MuiGrid-grid-lg-true",
+                                                                "grid-md-1": "MuiGrid-grid-md-1",
+                                                                "grid-md-10": "MuiGrid-grid-md-10",
+                                                                "grid-md-11": "MuiGrid-grid-md-11",
+                                                                "grid-md-12": "MuiGrid-grid-md-12",
+                                                                "grid-md-2": "MuiGrid-grid-md-2",
+                                                                "grid-md-3": "MuiGrid-grid-md-3",
+                                                                "grid-md-4": "MuiGrid-grid-md-4",
+                                                                "grid-md-5": "MuiGrid-grid-md-5",
+                                                                "grid-md-6": "MuiGrid-grid-md-6",
+                                                                "grid-md-7": "MuiGrid-grid-md-7",
+                                                                "grid-md-8": "MuiGrid-grid-md-8",
+                                                                "grid-md-9": "MuiGrid-grid-md-9",
+                                                                "grid-md-auto": "MuiGrid-grid-md-auto",
+                                                                "grid-md-true": "MuiGrid-grid-md-true",
+                                                                "grid-sm-1": "MuiGrid-grid-sm-1",
+                                                                "grid-sm-10": "MuiGrid-grid-sm-10",
+                                                                "grid-sm-11": "MuiGrid-grid-sm-11",
+                                                                "grid-sm-12": "MuiGrid-grid-sm-12",
+                                                                "grid-sm-2": "MuiGrid-grid-sm-2",
+                                                                "grid-sm-3": "MuiGrid-grid-sm-3",
+                                                                "grid-sm-4": "MuiGrid-grid-sm-4",
+                                                                "grid-sm-5": "MuiGrid-grid-sm-5",
+                                                                "grid-sm-6": "MuiGrid-grid-sm-6",
+                                                                "grid-sm-7": "MuiGrid-grid-sm-7",
+                                                                "grid-sm-8": "MuiGrid-grid-sm-8",
+                                                                "grid-sm-9": "MuiGrid-grid-sm-9",
+                                                                "grid-sm-auto": "MuiGrid-grid-sm-auto",
+                                                                "grid-sm-true": "MuiGrid-grid-sm-true",
+                                                                "grid-xl-1": "MuiGrid-grid-xl-1",
+                                                                "grid-xl-10": "MuiGrid-grid-xl-10",
+                                                                "grid-xl-11": "MuiGrid-grid-xl-11",
+                                                                "grid-xl-12": "MuiGrid-grid-xl-12",
+                                                                "grid-xl-2": "MuiGrid-grid-xl-2",
+                                                                "grid-xl-3": "MuiGrid-grid-xl-3",
+                                                                "grid-xl-4": "MuiGrid-grid-xl-4",
+                                                                "grid-xl-5": "MuiGrid-grid-xl-5",
+                                                                "grid-xl-6": "MuiGrid-grid-xl-6",
+                                                                "grid-xl-7": "MuiGrid-grid-xl-7",
+                                                                "grid-xl-8": "MuiGrid-grid-xl-8",
+                                                                "grid-xl-9": "MuiGrid-grid-xl-9",
+                                                                "grid-xl-auto": "MuiGrid-grid-xl-auto",
+                                                                "grid-xl-true": "MuiGrid-grid-xl-true",
+                                                                "grid-xs-1": "MuiGrid-grid-xs-1",
+                                                                "grid-xs-10": "MuiGrid-grid-xs-10",
+                                                                "grid-xs-11": "MuiGrid-grid-xs-11",
+                                                                "grid-xs-12": "MuiGrid-grid-xs-12",
+                                                                "grid-xs-2": "MuiGrid-grid-xs-2",
+                                                                "grid-xs-3": "MuiGrid-grid-xs-3",
+                                                                "grid-xs-4": "MuiGrid-grid-xs-4",
+                                                                "grid-xs-5": "MuiGrid-grid-xs-5",
+                                                                "grid-xs-6": "MuiGrid-grid-xs-6",
+                                                                "grid-xs-7": "MuiGrid-grid-xs-7",
+                                                                "grid-xs-8": "MuiGrid-grid-xs-8",
+                                                                "grid-xs-9": "MuiGrid-grid-xs-9",
+                                                                "grid-xs-auto": "MuiGrid-grid-xs-auto",
+                                                                "grid-xs-true": "MuiGrid-grid-xs-true",
+                                                                "item": "MuiGrid-item",
+                                                                "justify-xs-center": "MuiGrid-justify-xs-center",
+                                                                "justify-xs-flex-end": "MuiGrid-justify-xs-flex-end",
+                                                                "justify-xs-space-around": "MuiGrid-justify-xs-space-around",
+                                                                "justify-xs-space-between": "MuiGrid-justify-xs-space-between",
+                                                                "justify-xs-space-evenly": "MuiGrid-justify-xs-space-evenly",
+                                                                "root": "MuiGrid-root",
+                                                                "spacing-xs-1": "MuiGrid-spacing-xs-1",
+                                                                "spacing-xs-10": "MuiGrid-spacing-xs-10",
+                                                                "spacing-xs-2": "MuiGrid-spacing-xs-2",
+                                                                "spacing-xs-3": "MuiGrid-spacing-xs-3",
+                                                                "spacing-xs-4": "MuiGrid-spacing-xs-4",
+                                                                "spacing-xs-5": "MuiGrid-spacing-xs-5",
+                                                                "spacing-xs-6": "MuiGrid-spacing-xs-6",
+                                                                "spacing-xs-7": "MuiGrid-spacing-xs-7",
+                                                                "spacing-xs-8": "MuiGrid-spacing-xs-8",
+                                                                "spacing-xs-9": "MuiGrid-spacing-xs-9",
+                                                                "wrap-xs-nowrap": "MuiGrid-wrap-xs-nowrap",
+                                                                "wrap-xs-wrap-reverse": "MuiGrid-wrap-xs-wrap-reverse",
+                                                                "zeroMinWidth": "MuiGrid-zeroMinWidth",
+                                                              }
+                                                            }
+                                                            item={true}
+                                                            xs={12}
+                                                          >
+                                                            <div
+                                                              className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                                                            >
+                                                              <WithStyles(ForwardRef(Typography))>
+                                                                <ForwardRef(Typography)
+                                                                  classes={
+                                                                    Object {
+                                                                      "alignCenter": "MuiTypography-alignCenter",
+                                                                      "alignJustify": "MuiTypography-alignJustify",
+                                                                      "alignLeft": "MuiTypography-alignLeft",
+                                                                      "alignRight": "MuiTypography-alignRight",
+                                                                      "body1": "MuiTypography-body1",
+                                                                      "body2": "MuiTypography-body2",
+                                                                      "button": "MuiTypography-button",
+                                                                      "caption": "MuiTypography-caption",
+                                                                      "colorError": "MuiTypography-colorError",
+                                                                      "colorInherit": "MuiTypography-colorInherit",
+                                                                      "colorPrimary": "MuiTypography-colorPrimary",
+                                                                      "colorSecondary": "MuiTypography-colorSecondary",
+                                                                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                                      "displayBlock": "MuiTypography-displayBlock",
+                                                                      "displayInline": "MuiTypography-displayInline",
+                                                                      "gutterBottom": "MuiTypography-gutterBottom",
+                                                                      "h1": "MuiTypography-h1",
+                                                                      "h2": "MuiTypography-h2",
+                                                                      "h3": "MuiTypography-h3",
+                                                                      "h4": "MuiTypography-h4",
+                                                                      "h5": "MuiTypography-h5",
+                                                                      "h6": "MuiTypography-h6",
+                                                                      "noWrap": "MuiTypography-noWrap",
+                                                                      "overline": "MuiTypography-overline",
+                                                                      "paragraph": "MuiTypography-paragraph",
+                                                                      "root": "MuiTypography-root",
+                                                                      "srOnly": "MuiTypography-srOnly",
+                                                                      "subtitle1": "MuiTypography-subtitle1",
+                                                                      "subtitle2": "MuiTypography-subtitle2",
+                                                                    }
+                                                                  }
+                                                                >
+                                                                  <p
+                                                                    className="MuiTypography-root MuiTypography-body1"
+                                                                  >
+                                                                    Selected Shift:
+                                                                  </p>
+                                                                </ForwardRef(Typography)>
+                                                              </WithStyles(ForwardRef(Typography))>
+                                                              <WithStyles(ForwardRef(Typography))>
+                                                                <ForwardRef(Typography)
+                                                                  classes={
+                                                                    Object {
+                                                                      "alignCenter": "MuiTypography-alignCenter",
+                                                                      "alignJustify": "MuiTypography-alignJustify",
+                                                                      "alignLeft": "MuiTypography-alignLeft",
+                                                                      "alignRight": "MuiTypography-alignRight",
+                                                                      "body1": "MuiTypography-body1",
+                                                                      "body2": "MuiTypography-body2",
+                                                                      "button": "MuiTypography-button",
+                                                                      "caption": "MuiTypography-caption",
+                                                                      "colorError": "MuiTypography-colorError",
+                                                                      "colorInherit": "MuiTypography-colorInherit",
+                                                                      "colorPrimary": "MuiTypography-colorPrimary",
+                                                                      "colorSecondary": "MuiTypography-colorSecondary",
+                                                                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                                      "displayBlock": "MuiTypography-displayBlock",
+                                                                      "displayInline": "MuiTypography-displayInline",
+                                                                      "gutterBottom": "MuiTypography-gutterBottom",
+                                                                      "h1": "MuiTypography-h1",
+                                                                      "h2": "MuiTypography-h2",
+                                                                      "h3": "MuiTypography-h3",
+                                                                      "h4": "MuiTypography-h4",
+                                                                      "h5": "MuiTypography-h5",
+                                                                      "h6": "MuiTypography-h6",
+                                                                      "noWrap": "MuiTypography-noWrap",
+                                                                      "overline": "MuiTypography-overline",
+                                                                      "paragraph": "MuiTypography-paragraph",
+                                                                      "root": "MuiTypography-root",
+                                                                      "srOnly": "MuiTypography-srOnly",
+                                                                      "subtitle1": "MuiTypography-subtitle1",
+                                                                      "subtitle2": "MuiTypography-subtitle2",
+                                                                    }
+                                                                  }
+                                                                >
+                                                                  <p
+                                                                    className="MuiTypography-root MuiTypography-body1"
+                                                                  >
+                                                                    Dates: 
+                                                                     - 
+                                                                  </p>
+                                                                </ForwardRef(Typography)>
+                                                              </WithStyles(ForwardRef(Typography))>
+                                                              <WithStyles(ForwardRef(Typography))>
+                                                                <ForwardRef(Typography)
+                                                                  classes={
+                                                                    Object {
+                                                                      "alignCenter": "MuiTypography-alignCenter",
+                                                                      "alignJustify": "MuiTypography-alignJustify",
+                                                                      "alignLeft": "MuiTypography-alignLeft",
+                                                                      "alignRight": "MuiTypography-alignRight",
+                                                                      "body1": "MuiTypography-body1",
+                                                                      "body2": "MuiTypography-body2",
+                                                                      "button": "MuiTypography-button",
+                                                                      "caption": "MuiTypography-caption",
+                                                                      "colorError": "MuiTypography-colorError",
+                                                                      "colorInherit": "MuiTypography-colorInherit",
+                                                                      "colorPrimary": "MuiTypography-colorPrimary",
+                                                                      "colorSecondary": "MuiTypography-colorSecondary",
+                                                                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                                      "displayBlock": "MuiTypography-displayBlock",
+                                                                      "displayInline": "MuiTypography-displayInline",
+                                                                      "gutterBottom": "MuiTypography-gutterBottom",
+                                                                      "h1": "MuiTypography-h1",
+                                                                      "h2": "MuiTypography-h2",
+                                                                      "h3": "MuiTypography-h3",
+                                                                      "h4": "MuiTypography-h4",
+                                                                      "h5": "MuiTypography-h5",
+                                                                      "h6": "MuiTypography-h6",
+                                                                      "noWrap": "MuiTypography-noWrap",
+                                                                      "overline": "MuiTypography-overline",
+                                                                      "paragraph": "MuiTypography-paragraph",
+                                                                      "root": "MuiTypography-root",
+                                                                      "srOnly": "MuiTypography-srOnly",
+                                                                      "subtitle1": "MuiTypography-subtitle1",
+                                                                      "subtitle2": "MuiTypography-subtitle2",
+                                                                    }
+                                                                  }
+                                                                >
+                                                                  <p
+                                                                    className="MuiTypography-root MuiTypography-body1"
+                                                                  >
+                                                                    Shift Type: 
+                                                                  </p>
+                                                                </ForwardRef(Typography)>
+                                                              </WithStyles(ForwardRef(Typography))>
+                                                              <WithStyles(ForwardRef(Typography))>
+                                                                <ForwardRef(Typography)
+                                                                  classes={
+                                                                    Object {
+                                                                      "alignCenter": "MuiTypography-alignCenter",
+                                                                      "alignJustify": "MuiTypography-alignJustify",
+                                                                      "alignLeft": "MuiTypography-alignLeft",
+                                                                      "alignRight": "MuiTypography-alignRight",
+                                                                      "body1": "MuiTypography-body1",
+                                                                      "body2": "MuiTypography-body2",
+                                                                      "button": "MuiTypography-button",
+                                                                      "caption": "MuiTypography-caption",
+                                                                      "colorError": "MuiTypography-colorError",
+                                                                      "colorInherit": "MuiTypography-colorInherit",
+                                                                      "colorPrimary": "MuiTypography-colorPrimary",
+                                                                      "colorSecondary": "MuiTypography-colorSecondary",
+                                                                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                                                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                                                      "displayBlock": "MuiTypography-displayBlock",
+                                                                      "displayInline": "MuiTypography-displayInline",
+                                                                      "gutterBottom": "MuiTypography-gutterBottom",
+                                                                      "h1": "MuiTypography-h1",
+                                                                      "h2": "MuiTypography-h2",
+                                                                      "h3": "MuiTypography-h3",
+                                                                      "h4": "MuiTypography-h4",
+                                                                      "h5": "MuiTypography-h5",
+                                                                      "h6": "MuiTypography-h6",
+                                                                      "noWrap": "MuiTypography-noWrap",
+                                                                      "overline": "MuiTypography-overline",
+                                                                      "paragraph": "MuiTypography-paragraph",
+                                                                      "root": "MuiTypography-root",
+                                                                      "srOnly": "MuiTypography-srOnly",
+                                                                      "subtitle1": "MuiTypography-subtitle1",
+                                                                      "subtitle2": "MuiTypography-subtitle2",
+                                                                    }
+                                                                  }
+                                                                >
+                                                                  <p
+                                                                    className="MuiTypography-root MuiTypography-body1"
+                                                                  >
+                                                                    Location: 
+                                                                  </p>
+                                                                </ForwardRef(Typography)>
+                                                              </WithStyles(ForwardRef(Typography))>
+                                                            </div>
+                                                          </ForwardRef(Grid)>
+                                                        </WithStyles(ForwardRef(Grid))>
                                                         <WithStyles(ForwardRef(DialogContentText))>
                                                           <ForwardRef(DialogContentText)
                                                             classes={

@@ -90,41 +90,41 @@ const useStyles = makeStyles((theme) => ({
         // backgroundColor: theme.palette.background.default
 
     },
-    alignItemsAndJustifyContent: {
-        width: 500,
-        height: 80,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'pink',
-    },
-    appBar: {
-        // For full-height drawer
-        maxWidth: `calc(100% - ${theme.layout.drawerWidth}px)`
-    },
-    toolbarActions: {
-        marginLeft: "auto"
-    },
+    // alignItemsAndJustifyContent: {
+    //     width: 500,
+    //     height: 80,
+    //     display: 'flex',
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    //     backgroundColor: 'pink',
+    // },
+    // appBar: {
+    //     // For full-height drawer
+    //     maxWidth: `calc(100% - ${theme.layout.drawerWidth}px)`
+    // },
+    // toolbarActions: {
+    //     marginLeft: "auto"
+    // },
     // Styles for the root `div` element in the `Drawer` component.
-    drawer: {
-        width: theme.layout.drawerWidth
-    },
+    // drawer: {
+    //     width: theme.layout.drawerWidth
+    // },
     // Styles for the `Paper` component rendered by `Drawer`.
-    drawerPaper: {
-        width: "inherit"
-    },
+    // drawerPaper: {
+    //     width: "inherit"
+    // },
     // Styles for the content area. It fills the available space
     // in the flex container to the right (or left) of the drawer.
-    appContent: {
-        // https://github.com/philipwalton/flexbugs#flexbug-17
-        //flex: "1 1 100%",
-        maxWidth: "100%",
-        paddingTop: 80, // equal to AppBar height + 16px
-        //margin: "0 auto",
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
+    // appContent: {
+    //     // https://github.com/philipwalton/flexbugs#flexbug-17
+    //     //flex: "1 1 100%",
+    //     maxWidth: "100%",
+    //     paddingTop: 80, // equal to AppBar height + 16px
+    //     //margin: "0 auto",
+    //     display: 'flex',
+    //     alignItems: 'center',
+    //     justifyContent: 'center'
+    // }
 
 }));
 

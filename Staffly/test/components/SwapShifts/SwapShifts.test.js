@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux'
 import SwapShifts from "../../../src/components/SwapShifts";
-describe('App ', () => {
+describe('Swap Shifts ', () => {
     const component = mount(<SwapShifts/>);
     it('should render correctly', () => {
 
