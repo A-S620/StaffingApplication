@@ -34,7 +34,7 @@ setup(
       },
       #   no dependencies in this example
       install_requires=[
-            'pip==20.0.1',
+            'pip==21.1',
             'Kivy'],
       #   no scripts in this example
       include_package_data=True,
